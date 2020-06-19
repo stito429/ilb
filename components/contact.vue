@@ -10,12 +10,8 @@
     :clickToClose="false"
     width="60%"
     height="auto"
-    @before-open="beforeOpen"
-    @opened="opened"
-    @before-close="beforeClose"
-    @closed="closed"
   >
-    <form name="contact" class="form" method="POST" netlify data-netlify="true">
+    <form name="contact" action="/" class="form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
       <fieldset>
         <!-- Form Name -->
         <legend class="has-text-centered has-text-weight-bold">Contact Us</legend>
@@ -287,7 +283,7 @@
 
         <div class="field is-grouped is-grouped-centered">
           <p class="control">
-            <button type="submit" form="contact" value="Submit">Submit</button>
+            <button type="submit" form="contact" value="Submit" @click="$modal.hide('Contact')">Submit</button>
           </p>
           <p class="control">
             <a class="button is-light" @click="$modal.hide('Contact')">Cancel</a>

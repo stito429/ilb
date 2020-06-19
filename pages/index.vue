@@ -90,7 +90,7 @@
     <section class="container section" id="product-cats">
       <div class="columns is-centered">
         <div class="column is-12">
-          <div class="title is-2 highlighted has-text-centered shadowed">Why is ILB Different?</div>
+          <h2 class="title is-2 highlighted has-text-centered shadowed">Why is ILB Different?</h2>
         </div>
       </div>
       <div class="columns is-4 is-multiline is-vcentered is-centered">
@@ -664,7 +664,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .hero.bg {
   background: linear-gradient(to right, #00000000, #ffffff00),
     url("../assets/images/img/hero-bg-with-logo.jpg") no-repeat center left fixed;
