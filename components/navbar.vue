@@ -87,6 +87,7 @@
 
 <script>
 import companyLogo from '~/assets/images/logos/ilblogo.png'
+import contact from '~/components/contact'
 export default {
 
   data() {

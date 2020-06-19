@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    <nav-bar />
+    <navbar />
+    <contact-form/>
   <nuxt />
   </div>
 </template>
 
 
 <script>
-import NavBar from '~/components/navbar.vue'
+import navbar from '~/components/navbar.vue'
+import ContactForm from '~/components/contact.vue'
 export default {
+  name: 'app',
   components: {
-    NavBar
+    navbar,
+    ContactForm
   }
 }
 
