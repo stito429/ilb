@@ -11,7 +11,7 @@
     width="60%"
     height="auto"
   >
-    <form name="contact" action="/" class="form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <form name="contact" action="/" class="form" method="POST" data-netlify="true" netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
       <fieldset>
         <!-- Form Name -->
         <legend class="has-text-centered has-text-weight-bold">Contact Us</legend>
@@ -296,7 +296,35 @@
 
 <script>
 export default {
-  name: "contact"
+  name: "contact",
+  methods: {
+    // This function puts all the form fields into a FormData constructor, which we later encode with the URLSearchParams constructor
+    createFormDataObj(data) {
+      const formData = new FormData();
+      for (const key of Object.keys(data)) {
+        formData.append(key, data[key]);
+      }
+      return formData;
+    },
+    // This is our custom onSubmit function; don't forget to add `@submit.prevent="handleSubmit"` inside your <form> tag
+    handleSubmit() {
+      // This `data` object is what's passed to the createFormDataObj function. It needs all of your form fields, where the key is the name= attribute and the value is the computed value.
+      const data = {
+        "form-name": "vue-tea",
+        tea: this.teaName
+      };
+      // This POSTs your encoded form to Netlify with the required headers (for text; headers will be different for POSTing a file) and, on success, redirects to the custom success page located at pages/thanks.vue
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(this.createFormDataObj(data)).toString()
+      })
+        // This is how we route to /thanks on successful form submission
+        // More on $router.push function: https://router.vuejs.org/guide/essentials/navigation.html
+        .then(() => this.$router.push("thanks"))
+        .catch(error => alert(error));
+    }
+  }
 };
 </script>
 
@@ -307,14 +335,14 @@ export default {
   padding-right: 20px;
   padding-bottom: 10px;
   background: linear-gradient(
-      to right,
-      #ffffff80 0%,
-      #ffffffa8 10%,
-      #ffffffc4 50%,
-      #ffffff9a 90%,
-      #ffffff87 100%
-    )
-    /* url("../assets/backgrounds/gray.jpg") no-repeat center center fixed;
+    to right,
+    #ffffff80 0%,
+    #ffffffa8 10%,
+    #ffffffc4 50%,
+    #ffffff9a 90%,
+    #ffffff87 100%
+  );
+  /* url("../assets/backgrounds/gray.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
