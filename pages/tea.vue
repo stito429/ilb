@@ -9,9 +9,8 @@
         name="vue-tea"
         method="post"
         data-netlify-honeypot="bot-field"
-        @submit.prevent="handleSubmit"
       >
-        <input type="hidden" name="form-name" value="vue-tea" />
+        <input  name="form-name" value="vue-tea" />
         <div class="tea">
           <label
             v-for="tea in teaNames"
@@ -32,8 +31,8 @@
         </div>
         <div>
           <h1>{{ teaName }}</h1>
-        </div>
-        <button>Submit</button>
+        </div><div>
+        <input type="submit"/></div>
       </form>
     </div>
   </div>
@@ -44,25 +43,25 @@
 export default {
   data() {
     return {
-      chosenTea: 'Earl Grey',
+      chosenTea: "Earl Grey",
       teaTypes: {
-        'Earl Grey': 'London',
-        'Irish Breakfast': 'Dublin',
-        Chai: 'Bombay',
-        Rose: 'Atlantic City',
-        Matcha: 'Tokyo',
-        Rooibos: 'Cape Town',
-        'Yerba Mate': 'Montreal',
-        Green: 'Oregon Mist'
+        "Earl Grey": "London",
+        "Irish Breakfast": "Dublin",
+        Chai: "Bombay",
+        Rose: "Atlantic City",
+        Matcha: "Tokyo",
+        Rooibos: "Cape Town",
+        "Yerba Mate": "Montreal",
+        Green: "Oregon Mist"
       }
-    }
+    };
   },
   computed: {
     teaName() {
-      return `${this.teaTypes[this.chosenTea]} Fog`
+      return `${this.teaTypes[this.chosenTea]} Fog`;
     },
     teaNames() {
-      return Object.keys(this.teaTypes)
+      return Object.keys(this.teaTypes);
     }
   },
   methods: {
@@ -75,25 +74,25 @@ export default {
       return formData;
     },
     // This is our custom onSubmit function; don't forget to add `@submit.prevent="handleSubmit"` inside your <form> tag
-    handleSubmit () {
+    handleSubmit() {
       // This `data` object is what's passed to the createFormDataObj function. It needs all of your form fields, where the key is the name= attribute and the value is the computed value.
       const data = {
         "form-name": "vue-tea",
-        "tea": this.teaName
-      }
+        tea: this.teaName
+      };
       // This POSTs your encoded form to Netlify with the required headers (for text; headers will be different for POSTing a file) and, on success, redirects to the custom success page located at pages/thanks.vue
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(this.createFormDataObj(data)).toString()
       })
-      // This is how we route to /thanks on successful form submission
-      // More on $router.push function: https://router.vuejs.org/guide/essentials/navigation.html
-      .then(() => this.$router.push('/'))
-      .catch(error => alert(error))
+        // This is how we route to /thanks on successful form submission
+        // More on $router.push function: https://router.vuejs.org/guide/essentials/navigation.html
+        .then(() => this.$router.push("/"))
+        .catch(error => alert(error));
     }
   }
-}
+};
 </script>
 
 <style>
