@@ -283,7 +283,8 @@
 
         <div class="field is-grouped is-grouped-centered">
           <p class="control">
-            <button type="submit" form="contact" value="Submit">Submit</button>
+            
+            <input type="submit"/>
           </p>
           <p class="control">
             <a class="button is-light">Cancel</a>
