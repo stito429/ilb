@@ -11,7 +11,7 @@
     width="60%"
     height="auto"
   > -->
-    <form name="contact" action="/index" class="form" method="POST" data-netlify="true" netlify-honeypot="bot-field" @submit.ßprevent="handleSubmit">
+    <form name="contact-form" class="form" method="POST" netlify data-netlify="true" netlify-honeypot="bot-field" @submit="handleSubmit">
       <fieldset>
         <!-- Form Name -->
         <legend class="has-text-centered has-text-weight-bold">Contact Us</legend>
@@ -286,7 +286,7 @@
             <button type="submit" form="contact" value="Submit">Submit</button>
           </p>
           <p class="control">
-            <a class="button is-light" @click="$modal.hide('Contact')">Cancel</a>
+            <a class="button is-light">Cancel</a>
           </p>
         </div>
       </fieldset>
@@ -295,9 +295,14 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "contact",
   methods: {
+    submit(){
+       return this.$router.push({ path: '/' })
+
+        },
     // This function puts all the form fields into a FormData constructor, which we later encode with the URLSearchParams constructor
     createFormDataObj(data) {
       const formData = new FormData();
@@ -310,8 +315,8 @@ export default {
     handleSubmit() {
       // This `data` object is what's passed to the createFormDataObj function. It needs all of your form fields, where the key is the name= attribute and the value is the computed value.
       const data = {
-        "form-name": "vue-tea",
-        tea: this.teaName
+        "form-name": "contact-form",
+        contact: this.contact
       };
       // This POSTs your encoded form to Netlify with the required headers (for text; headers will be different for POSTing a file) and, on success, redirects to the custom success page located at pages/thanks.vue
       fetch("/", {
@@ -350,5 +355,4 @@ export default {
   /* min-height: 100vh; */
 }
 </style>
-
 
