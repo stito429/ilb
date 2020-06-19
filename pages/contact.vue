@@ -1,5 +1,5 @@
 <template>
-  <modal
+  <!-- <modal
     name="Contact"
     :min-width="200"
     :min-height="200"
@@ -10,8 +10,8 @@
     :clickToClose="false"
     width="60%"
     height="auto"
-  >
-    <form name="contact" action="/" class="form" method="POST" data-netlify="true" netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
+  > -->
+    <form name="contact" action="/index" class="form" method="POST" data-netlify="true" netlify-honeypot="bot-field" @submit.ßprevent="handleSubmit">
       <fieldset>
         <!-- Form Name -->
         <legend class="has-text-centered has-text-weight-bold">Contact Us</legend>
@@ -283,7 +283,7 @@
 
         <div class="field is-grouped is-grouped-centered">
           <p class="control">
-            <button type="submit" form="contact" value="Submit" @click="$modal.hide('Contact')">Submit</button>
+            <button type="submit" form="contact" value="Submit">Submit</button>
           </p>
           <p class="control">
             <a class="button is-light" @click="$modal.hide('Contact')">Cancel</a>
@@ -291,7 +291,7 @@
         </div>
       </fieldset>
     </form>
-  </modal>
+  <!-- </modal> -->
 </template>
 
 <script>
@@ -321,7 +321,7 @@ export default {
       })
         // This is how we route to /thanks on successful form submission
         // More on $router.push function: https://router.vuejs.org/guide/essentials/navigation.html
-        .then(() => this.$router.push("thanks"))
+        .then(() => this.$router.push("/"))
         .catch(error => alert(error));
     }
   }

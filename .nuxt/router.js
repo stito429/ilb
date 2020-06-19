@@ -4,6 +4,7 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _06235f68 = () => interopDefault(import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */))
+const _5ff43090 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
 const _35662230 = () => interopDefault(import('../pages/products/itc-coatings.vue' /* webpackChunkName: "pages/products/itc-coatings" */))
 const _c99dac32 = () => interopDefault(import('../pages/products/Products.vue' /* webpackChunkName: "pages/products/Products" */))
 const _187f2314 = () => interopDefault(import('../pages/products/quin-global.vue' /* webpackChunkName: "pages/products/quin-global" */))
@@ -33,6 +34,10 @@ export const routerOptions = {
     path: "/about",
     component: _06235f68,
     name: "about"
+  }, {
+    path: "/contact",
+    component: _5ff43090,
+    name: "contact"
   }, {
     path: "/products/itc-coatings",
     component: _35662230,
