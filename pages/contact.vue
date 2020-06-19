@@ -11,7 +11,8 @@
     width="60%"
     height="auto"
   > -->
-    <form name="contact-form" class="form" method="POST" netlify >
+  <div><br/><br/><br/><br/>
+    <form netlify name="contact-form" class="form" method="POST" data-netlify-honeypot="bot-field">
       <fieldset>
         <!-- Form Name -->
         <legend class="has-text-centered has-text-weight-bold">Contact Us</legend>
@@ -291,7 +292,7 @@
           </p>
         </div>
       </fieldset>
-    </form>
+    </form></div>
   <!-- </modal> -->
 </template>
 
