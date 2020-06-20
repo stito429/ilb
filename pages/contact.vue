@@ -25,7 +25,7 @@
           <div class="field-body">
             <div class="field">
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" placeholder="Company Name" />
+                <input class="input" type="text" name="Company Name" placeholder="Company Name" />
                 <span class="icon is-small is-left">
                   <i class="fas fa-building"></i>
                 </span>
@@ -33,8 +33,265 @@
             </div>
           </div>
         </div>
-<div>
-<input type="submit"/></div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label"></label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" placeholder="Address" />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-map-marker"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" placeholder="City" />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-map-marker"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label"></label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" placeholder="State" />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-map-marker"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" placeholder="Zip Code" />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-map-marker"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Contact Info</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" placeholder="Name" />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label"></label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" placeholder="Phone Number" />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-phone"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control is-expanded has-icons-left has-icons-right">
+                <input class="input" type="email" placeholder="Email Address" />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-check"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Your Area of Business</label>
+          </div>
+          <div class="field-body">
+            <div class="control">
+              <label class="checkbox inline">
+                <input type="checkbox" name="multiplecheckboxesinline-0" value="Steel" />
+                Steel 
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="multiplecheckboxesinline-0" value="Cement" />
+                Cement 
+              </label>
+              <label class="checkbox inline">
+                <input
+                  type="checkbox"
+                  name="multiplecheckboxesinline-0"
+                  value="WasteWater Treatment"
+                />
+                WasteWater Treatment 
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="multiplecheckboxesinline-0" value="Chemical" />
+                Chemical <br/>
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="multiplecheckboxesinline-0" value="Grain" />
+                Grain <br/>
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="multiplecheckboxesinline-0" value="Water Treatment" />
+                Water Treatment <br/>
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="multiplecheckboxesinline-0" value="Oil/Gas" />
+                Oil/Gas <br/>
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="multiplecheckboxesinline-0" value="Asphalt" />
+                 Asphalt <br/>
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="multiplecheckboxesinline-0" value="Automotive" />
+                Automotive <br/>
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="multiplecheckboxesinline-0" value="Builder" />
+                Builder <br/>
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="multiplecheckboxesinline-0" value="Trailer" />
+                Trailer <br/>
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="multiplecheckboxesinline-0" value="Construction" />
+                Construction <br/>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Your Line of Business Need</label>
+          </div>
+          <div class="field-body">
+            <div class="control">
+              <label class="checkbox inline">
+                <input type="checkbox" name="LineOfBusiness" value="Sheeting" />
+                Sheeting
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="LineOfBusiness" value="Ceramic" />
+                Ceramic
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="LineOfBusiness" value="Refractories" />
+                Refractories
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="LineOfBusiness" value="Coating" />
+                Coating
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="LineOfBusiness" value="Lining" />
+                Lining
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="LineOfBusiness" value="Engr Services" />
+                Engr Services
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Multiple Checkboxes -->
+        <!-- <div class="field">
+  <label class="label" for="">Multiple Checkboxes</label>
+  <div class="control">
+    <label class="checkbox" for="multiplecheckboxes-2-0">
+      <input type="checkbox" name="multiplecheckboxes-2" id="multiplecheckboxes-2-0" value="Option one">
+      Option one
+    </label>
+    <label class="checkbox" for="multiplecheckboxes-2-1">
+      <input type="checkbox" name="multiplecheckboxes-2" id="multiplecheckboxes-2-1" value="Option two">
+      Option two
+    </label>
+  </div>
+        </div>-->
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Description</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <textarea class="textarea" name="textarea-0"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Request the following information</label>
+          </div>
+          <div class="field-body">
+            <div class="control">
+              <label class="checkbox inline">
+                <input type="checkbox" name="InfoRequest" value="General Information" />
+                General Information
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="InfoRequest" value="Request ILB Visit" />
+                Request ILB Visit
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="InfoRequest" value="Material Quote" />
+                Material Quote
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="InfoRequest" value="Phone Call Discussion" />
+                Phone Call Discussion
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="InfoRequest" value="Samples" />
+                Samples
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="InfoRequest" value="Engineering Solution" />
+                Engineering Solution
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-grouped is-grouped-centered">
+          <p class="control">
+            
+            <input type="submit"/>
+          </p>
+          <p class="control">
+            <a class="button is-light">Cancel</a>
+          </p>
+        </div>
       </fieldset>
     </form></div>
   <!-- </modal> -->
