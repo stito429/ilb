@@ -39,7 +39,7 @@
               </div>
             </div>
             <div class="has-text-centered">
-              <button id="hero-button" class="is-size-4"><a @click="show"
+              <button id="hero-button" class="is-size-4"><a @click="$modal.show('contact-form')"
                 >
                 
                 Click Here and Share Your Needs With Us</a></button>
@@ -95,8 +95,8 @@
       </div>
       <div class="columns is-4 is-multiline is-vcentered is-centered">
         <div class="column is-4" id->
-          <div class="content">
-            <h2 class="title highlighted has-text-centered">One Point of Contact</h2>
+          <div class="">
+            <h2 class="title is- shadowed highlighted has-text-centered">One Point of Contact</h2>
             <div
               class="has-text-weight-semibold has-text-white is-size-5"
               id="text-background"
@@ -474,6 +474,7 @@
       Icons made by
       <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      <p>Publish Date: March 2020--products and applications are copyright of ITC Coatings</p>
     </div>
   </section>
 </template>

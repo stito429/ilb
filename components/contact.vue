@@ -1,7 +1,7 @@
 <template>
   <modal
     name="contact-form"
-    :min-width="200"
+    :min-width="400"
     :min-height="200"
     :pivot-y="0.5"
     :adaptive="true"
@@ -11,15 +11,15 @@
     width="60%"
     height="auto"
   >
-  <div><br/><br/><br/><br/>
+  <div>
     <form action="/" netlify name="contact-form" class="form" method="POST" data-netlify-honeypot="bot-field">
       <input  name="form-name" value="contact-form" hidden/>
       <fieldset>
         <!-- Form Name -->
-        <legend class="has-text-centered has-text-weight-bold">Contact Us</legend>
+        <legend class="title is-3 has-text-centered has-text-weight-bold">Contact Us</legend>
 
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
+        <div class="field">
+          <div class="field-label is-normal has-text-left">
             <label class="label">Company Info</label>
           </div>
           <div class="field-body">
@@ -34,7 +34,7 @@
           </div>
         </div>
 
-        <div class="field is-horizontal">
+        <div class="field">
           <div class="field-label is-normal">
             <label class="label"></label>
           </div>
@@ -58,7 +58,7 @@
           </div>
         </div>
 
-        <div class="field is-horizontal">
+        <div class="field">
           <div class="field-label is-normal">
             <label class="label"></label>
           </div>
@@ -82,8 +82,8 @@
           </div>
         </div>
 
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
+        <div class="field">
+          <div class="field-label is-normal has-text-left">
             <label class="label">Contact Info</label>
           </div>
           <div class="field-body">
@@ -98,7 +98,7 @@
           </div>
         </div>
 
-        <div class="field is-horizontal">
+        <div class="field">
           <div class="field-label is-normal">
             <label class="label"></label>
           </div>
@@ -125,8 +125,8 @@
           </div>
         </div>
 
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
+        <div class="field">
+          <div class="field-label is-normal has-text-left">
             <label class="label">Your Area of Business</label>
           </div>
           <div class="field-body">
@@ -187,8 +187,8 @@
           </div>
         </div>
 
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
+        <div class="field">
+          <div class="field-label is-normal has-text-left">
             <label class="label">Your Line of Business Need</label>
           </div>
           <div class="field-body">
@@ -221,8 +221,8 @@
           </div>
         </div>
 
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
+        <div class="field">
+          <div class="field-label is-normal has-text-left">
             <label class="label">Description</label>
           </div>
           <div class="field-body">
@@ -234,8 +234,8 @@
           </div>
         </div>
 
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
+        <div class="field ">
+          <div class="field-label is-normal has-text-left">
             <label class="label">Request the following information</label>
           </div>
           <div class="field-body">
@@ -271,10 +271,10 @@
         <div class="field is-grouped is-grouped-centered">
           <p class="control">
             
-            <input type="submit"/>
+            <a class="button is-success" type="submit" form="contact" value="Submit">Submit</a>
           </p>
           <p class="control">
-            <a class="button is-light">Cancel</a>
+            <a class="button is-light" @click="$modal.hide('contact-form')">Cancel</a>
           </p>
         </div>
       </fieldset>
@@ -327,13 +327,13 @@ export default {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
-  background: linear-gradient(
-    to right,
-    #ffffff80 0%,
-    #ffffffa8 10%,
-    #ffffffc4 50%,
-    #ffffff9a 90%,
-    #ffffff87 100%
+  background: -webkit-linear-gradient(
+    right,
+    #dcdcdc 0%,
+    #e9e9e9 21%,
+    #e8e7e7 50%,
+    #e6e6e6 80%,
+    #d8d8d8 100%
   );
   /* url("../assets/backgrounds/gray.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -342,5 +342,6 @@ export default {
   background-size: cover; */
   /* min-height: 100vh; */
 }
+
 </style>
 
