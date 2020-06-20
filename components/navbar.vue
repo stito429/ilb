@@ -87,7 +87,7 @@
 
 <script>
 import companyLogo from '~/assets/images/logos/ilblogo.png'
-// import contact from '~/components/contact'
+import contact from '~/components/contact'
 export default {
 
   data() {
@@ -160,14 +160,14 @@ export default {
       ]
     };
   },
-// methods: {
-//   show () {
-//     this.$modal.show('Contact');
-//   },
-//   hide () {
-//     this.$modal.hide('Contact');
-//   }
-// }
+methods: {
+  show () {
+    this.$modal.show('contact-form');
+  },
+  hide () {
+    this.$modal.hide('contact-form');
+  }
+}
 };
 </script>
 

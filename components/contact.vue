@@ -1,6 +1,6 @@
 <template>
-  <!-- <modal
-    name="Contact"
+  <modal
+    name="contact-form"
     :min-width="200"
     :min-height="200"
     :pivot-y="0.5"
@@ -10,7 +10,7 @@
     :clickToClose="false"
     width="60%"
     height="auto"
-  > -->
+  >
   <div><br/><br/><br/><br/>
     <form action="/" netlify name="contact-form" class="form" method="POST" data-netlify-honeypot="bot-field">
       <input  name="form-name" value="contact-form" hidden/>
@@ -142,45 +142,45 @@
               <label class="checkbox inline">
                 <input
                   type="checkbox"
-                  name="Area of Business"
+                  name="Area of Business3"
                   value="WasteWater Treatment"
                 />
                 WasteWater Treatment 
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business3" value="Chemical" />
+                <input type="checkbox" name="Area of Business4" value="Chemical" />
                 Chemical <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business4" value="Grain" />
+                <input type="checkbox" name="Area of Business5" value="Grain" />
                 Grain <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business5" value="Water Treatment" />
+                <input type="checkbox" name="Area of Business6" value="Water Treatment" />
                 Water Treatment <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business6" value="Oil/Gas" />
+                <input type="checkbox" name="Area of Business7" value="Oil/Gas" />
                 Oil/Gas <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business7" value="Asphalt" />
+                <input type="checkbox" name="Area of Business8" value="Asphalt" />
                  Asphalt <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Busines8" value="Automotive" />
+                <input type="checkbox" name="Area of Busines9" value="Automotive" />
                 Automotive <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business9" value="Builder" />
+                <input type="checkbox" name="Area of Business10" value="Builder" />
                 Builder <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business10" value="Trailer" />
+                <input type="checkbox" name="Area of Business11" value="Trailer" />
                 Trailer <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business11" value="Construction" />
+                <input type="checkbox" name="Area of Business12" value="Construction" />
                 Construction <br/>
               </label>
             </div>
@@ -279,7 +279,7 @@
         </div>
       </fieldset>
     </form></div>
-  <!-- </modal> -->
+  </modal>
 </template>
 
 <script>
