@@ -41,7 +41,7 @@
           <div class="field-body">
             <div class="field">
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" placeholder="Address" />
+                <input class="input" type="text" name="Address" placeholder="Address" />
                 <span class="icon is-small is-left">
                   <i class="fas fa-map-marker"></i>
                 </span>
@@ -49,7 +49,7 @@
             </div>
             <div class="field">
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" placeholder="City" />
+                <input class="input" type="text" name="City" placeholder="City" />
                 <span class="icon is-small is-left">
                   <i class="fas fa-map-marker"></i>
                 </span>
@@ -65,7 +65,7 @@
           <div class="field-body">
             <div class="field">
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" placeholder="State" />
+                <input class="input" type="text" name="State" placeholder="State" />
                 <span class="icon is-small is-left">
                   <i class="fas fa-map-marker"></i>
                 </span>
@@ -73,7 +73,7 @@
             </div>
             <div class="field">
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" placeholder="Zip Code" />
+                <input class="input" type="text" name="Zip Code" placeholder="Zip Code" />
                 <span class="icon is-small is-left">
                   <i class="fas fa-map-marker"></i>
                 </span>
@@ -89,7 +89,7 @@
           <div class="field-body">
             <div class="field">
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" placeholder="Name" />
+                <input class="input" type="text" name="Name" placeholder="Name" />
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -105,7 +105,7 @@
           <div class="field-body">
             <div class="field">
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" placeholder="Phone Number" />
+                <input class="input" type="text" name="Phone Number" placeholder="Phone Number" />
                 <span class="icon is-small is-left">
                   <i class="fas fa-phone"></i>
                 </span>
@@ -113,7 +113,7 @@
             </div>
             <div class="field">
               <p class="control is-expanded has-icons-left has-icons-right">
-                <input class="input" type="email" placeholder="Email Address" />
+                <input class="input" type="email" name="Email Address" placeholder="Email Address" />
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -132,55 +132,55 @@
           <div class="field-body">
             <div class="control">
               <label class="checkbox inline">
-                <input type="checkbox" name="multiplecheckboxesinline-0" value="Steel" />
+                <input type="checkbox" name="Area of Business" value="Steel" />
                 Steel 
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="multiplecheckboxesinline-0" value="Cement" />
+                <input type="checkbox" name="Area of Business" value="Cement" />
                 Cement 
               </label>
               <label class="checkbox inline">
                 <input
                   type="checkbox"
-                  name="multiplecheckboxesinline-0"
+                  name="Area of Business"
                   value="WasteWater Treatment"
                 />
                 WasteWater Treatment 
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="multiplecheckboxesinline-0" value="Chemical" />
+                <input type="checkbox" name="Area of Business" value="Chemical" />
                 Chemical <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="multiplecheckboxesinline-0" value="Grain" />
+                <input type="checkbox" name="Area of Business" value="Grain" />
                 Grain <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="multiplecheckboxesinline-0" value="Water Treatment" />
+                <input type="checkbox" name="Area of Business" value="Water Treatment" />
                 Water Treatment <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="multiplecheckboxesinline-0" value="Oil/Gas" />
+                <input type="checkbox" name="Area of Business" value="Oil/Gas" />
                 Oil/Gas <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="multiplecheckboxesinline-0" value="Asphalt" />
+                <input type="checkbox" name="Area of Business" value="Asphalt" />
                  Asphalt <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="multiplecheckboxesinline-0" value="Automotive" />
+                <input type="checkbox" name="Area of Business" value="Automotive" />
                 Automotive <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="multiplecheckboxesinline-0" value="Builder" />
+                <input type="checkbox" name="Area of Business" value="Builder" />
                 Builder <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="multiplecheckboxesinline-0" value="Trailer" />
+                <input type="checkbox" name="Area of Business" value="Trailer" />
                 Trailer <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="multiplecheckboxesinline-0" value="Construction" />
+                <input type="checkbox" name="Area of Business" value="Construction" />
                 Construction <br/>
               </label>
             </div>
@@ -194,47 +194,32 @@
           <div class="field-body">
             <div class="control">
               <label class="checkbox inline">
-                <input type="checkbox" name="LineOfBusiness" value="Sheeting" />
+                <input type="checkbox" name="Needs" value="Sheeting" />
                 Sheeting
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="LineOfBusiness" value="Ceramic" />
+                <input type="checkbox" name="Needs" value="Ceramic" />
                 Ceramic
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="LineOfBusiness" value="Refractories" />
+                <input type="checkbox" name="Needs" value="Refractories" />
                 Refractories
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="LineOfBusiness" value="Coating" />
+                <input type="checkbox" name="Needs" value="Coating" />
                 Coating
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="LineOfBusiness" value="Lining" />
+                <input type="checkbox" name="Needs" value="Lining" />
                 Lining
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="LineOfBusiness" value="Engr Services" />
+                <input type="checkbox" name="Needs" value="Engr Services" />
                 Engr Services
               </label>
             </div>
           </div>
         </div>
-
-        <!-- Multiple Checkboxes -->
-        <!-- <div class="field">
-  <label class="label" for="">Multiple Checkboxes</label>
-  <div class="control">
-    <label class="checkbox" for="multiplecheckboxes-2-0">
-      <input type="checkbox" name="multiplecheckboxes-2" id="multiplecheckboxes-2-0" value="Option one">
-      Option one
-    </label>
-    <label class="checkbox" for="multiplecheckboxes-2-1">
-      <input type="checkbox" name="multiplecheckboxes-2" id="multiplecheckboxes-2-1" value="Option two">
-      Option two
-    </label>
-  </div>
-        </div>-->
 
         <div class="field is-horizontal">
           <div class="field-label is-normal">
@@ -243,7 +228,7 @@
           <div class="field-body">
             <div class="field">
               <div class="control">
-                <textarea class="textarea" name="textarea-0"></textarea>
+                <textarea class="textarea" name="Description"></textarea>
               </div>
             </div>
           </div>
@@ -256,27 +241,27 @@
           <div class="field-body">
             <div class="control">
               <label class="checkbox inline">
-                <input type="checkbox" name="InfoRequest" value="General Information" />
+                <input type="checkbox" name="Info Request" value="General Information" />
                 General Information
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="InfoRequest" value="Request ILB Visit" />
+                <input type="checkbox" name="Info Request" value="Request ILB Visit" />
                 Request ILB Visit
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="InfoRequest" value="Material Quote" />
+                <input type="checkbox" name="Info Request" value="Material Quote" />
                 Material Quote
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="InfoRequest" value="Phone Call Discussion" />
+                <input type="checkbox" name="Info Request" value="Phone Call Discussion" />
                 Phone Call Discussion
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="InfoRequest" value="Samples" />
+                <input type="checkbox" name="Info Request" value="Samples" />
                 Samples
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="InfoRequest" value="Engineering Solution" />
+                <input type="checkbox" name="Info Request" value="Engineering Solution" />
                 Engineering Solution
               </label>
             </div>
