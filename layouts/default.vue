@@ -20,6 +20,5 @@ export default {
 
 </script>
 <style lang="scss">
- $fa-font-path: "~font-awesome/fonts";
-@import '../node_modules/font-awesome/scss/font-awesome';
+
 </style>
