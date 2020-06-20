@@ -12,7 +12,7 @@
     height="auto"
   > -->
   <div><br/><br/><br/><br/>
-    <form netlify name="contact-form" class="form" method="POST" data-netlify-honeypot="bot-field">
+    <form action="/" netlify name="contact-form" class="form" method="POST" data-netlify-honeypot="bot-field">
       <input  name="form-name" value="contact-form" hidden/>
       <fieldset>
         <!-- Form Name -->
@@ -132,11 +132,11 @@
           <div class="field-body">
             <div class="control">
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business" value="Steel" />
+                <input type="checkbox" name="Area of Business1" value="Steel" />
                 Steel 
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business" value="Cement" />
+                <input type="checkbox" name="Area of Business2" value="Cement" />
                 Cement 
               </label>
               <label class="checkbox inline">
@@ -148,39 +148,39 @@
                 WasteWater Treatment 
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business" value="Chemical" />
+                <input type="checkbox" name="Area of Business3" value="Chemical" />
                 Chemical <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business" value="Grain" />
+                <input type="checkbox" name="Area of Business4" value="Grain" />
                 Grain <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business" value="Water Treatment" />
+                <input type="checkbox" name="Area of Business5" value="Water Treatment" />
                 Water Treatment <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business" value="Oil/Gas" />
+                <input type="checkbox" name="Area of Business6" value="Oil/Gas" />
                 Oil/Gas <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business" value="Asphalt" />
+                <input type="checkbox" name="Area of Business7" value="Asphalt" />
                  Asphalt <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business" value="Automotive" />
+                <input type="checkbox" name="Area of Busines8" value="Automotive" />
                 Automotive <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business" value="Builder" />
+                <input type="checkbox" name="Area of Business9" value="Builder" />
                 Builder <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business" value="Trailer" />
+                <input type="checkbox" name="Area of Business10" value="Trailer" />
                 Trailer <br/>
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Area of Business" value="Construction" />
+                <input type="checkbox" name="Area of Business11" value="Construction" />
                 Construction <br/>
               </label>
             </div>
@@ -194,27 +194,27 @@
           <div class="field-body">
             <div class="control">
               <label class="checkbox inline">
-                <input type="checkbox" name="Needs" value="Sheeting" />
+                <input type="checkbox" name="Need1" value="Sheeting" />
                 Sheeting
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Needs" value="Ceramic" />
+                <input type="checkbox" name="Need2" value="Ceramic" />
                 Ceramic
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Needs" value="Refractories" />
+                <input type="checkbox" name="Need3" value="Refractories" />
                 Refractories
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Needs" value="Coating" />
+                <input type="checkbox" name="Need4" value="Coating" />
                 Coating
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Needs" value="Lining" />
+                <input type="checkbox" name="Need5" value="Lining" />
                 Lining
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Needs" value="Engr Services" />
+                <input type="checkbox" name="Need6" value="Engr Services" />
                 Engr Services
               </label>
             </div>
@@ -241,27 +241,27 @@
           <div class="field-body">
             <div class="control">
               <label class="checkbox inline">
-                <input type="checkbox" name="Info Request" value="General Information" />
+                <input type="checkbox" name="Info Request1" value="General Information" />
                 General Information
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Info Request" value="Request ILB Visit" />
+                <input type="checkbox" name="Info Request2" value="Request ILB Visit" />
                 Request ILB Visit
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Info Request" value="Material Quote" />
+                <input type="checkbox" name="Info Request3" value="Material Quote" />
                 Material Quote
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Info Request" value="Phone Call Discussion" />
+                <input type="checkbox" name="Info Request4" value="Phone Call Discussion" />
                 Phone Call Discussion
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Info Request" value="Samples" />
+                <input type="checkbox" name="Info Request5" value="Samples" />
                 Samples
               </label>
               <label class="checkbox inline">
-                <input type="checkbox" name="Info Request" value="Engineering Solution" />
+                <input type="checkbox" name="Info Request6" value="Engineering Solution" />
                 Engineering Solution
               </label>
             </div>
