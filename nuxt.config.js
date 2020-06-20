@@ -22,6 +22,20 @@ export default {
   ** Global CSS
   */
  css: [{ src: '~/assets/main.scss', lang: 'scss' }],
+
+ 
+ fontawesome: {
+  imports: [
+    {
+      set: '@fortawesome/free-solid-svg-icons', // Solid icons
+      icons: ['faCookieBite', 'faCommentDots', 'faEnvelope', 'faGrinWink', 'faHeart']
+    },
+    {
+      set: '@fortawesome/free-brands-svg-icons', // Brand icons
+      icons: ['faDev', 'faFacebook', 'faTwitter', 'faInstagram', 'faYoutube', 'faGithub']
+    }
+  ]
+},
   /*
   ** Plugins to load before mounting the App
   */
@@ -43,7 +57,6 @@ export default {
     // '@nuxtjs/bulma',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/fontawesome'
   ],
   
   /*
