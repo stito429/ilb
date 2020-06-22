@@ -46,7 +46,7 @@
               </div>
               <div class="column is-6">
                 <ul class="fa-ul">
-                  <li v-for="quality in qualities1" :key="qualities1">
+                  <li v-for="quality in qualitie2" :key="qualities2">
                     <span class="icon is-size-7 logo-accent-color">
                       <i class="fa-li fas fa-circle"></i>
                     </span>
