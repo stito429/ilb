@@ -66,7 +66,16 @@
 </template>
 
 <script>
+
 export default {
+    methods:{
+    hide () {
+      this.$modal.hide('Contact');
+    }
+  },
+  mounted(){
+    this.hide()
+  },
   components: {},
   data: function() {
     return {
