@@ -476,7 +476,8 @@
       <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
       <p>Publish Date: March 2020--products and applications are copyright of ITC Coatings</p>
-    </div><contact-form-modal />
+    </div>
+    <contact-form-modal />
   </section>
 </template>
 

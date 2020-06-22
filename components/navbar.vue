@@ -69,7 +69,7 @@
               </a>
             </div>
             <div>              
-              <a @click="$modal.show('contact-form')"
+              <a @click="show"
                 class="navbar-item button classname has-text-weight-bold"
                 id="nav-button">
                 Contact
@@ -81,7 +81,9 @@
       </div>
     </div>
     <!--NavBar Items ends-->
-    <contact-form-modal />
+   
+    <contact-form-modal v-if="shown"/>
+   
   </nav>
   
   <!--NavBar ends-->
@@ -96,6 +98,7 @@ components: {
 },
   data() {
     return {
+      shown: false,
       active: false,
       companyLogo: companyLogo,
       navProductsDropdownMenu: "Products",
@@ -165,8 +168,10 @@ components: {
     };
   },
 methods: {
-  show () {
-    this.$modal.show('Contact');
+  show: function () {
+    this.shown = true;
+    this.$modal.show('contact-form');
+    
   },
   hide () {
     this.$modal.hide('Contact');
