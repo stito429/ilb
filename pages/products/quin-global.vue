@@ -1,5 +1,6 @@
 <template>
   <section>
+    <!-- <contact-form-modal /> -->
     <div class="hero hero-bg is-small">
       <br />
       <br />
@@ -66,17 +67,11 @@
 </template>
 
 <script>
-
+// import ContactFormModal from "@/components/Contact";
 export default {
-    methods:{
-    hide () {
-      this.$modal.hide('Contact');
-    }
+  components: {
+    // ContactFormModal
   },
-  mounted(){
-    this.hide()
-  },
-  components: {},
   data: function() {
     return {
       header: "Quin Global",

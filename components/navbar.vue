@@ -69,7 +69,7 @@
               </a>
             </div>
             <div>              
-              <a @click="show"
+              <a @click="$modal.show('contact-form')"
                 class="navbar-item button classname has-text-weight-bold"
                 id="nav-button">
                 Contact
@@ -81,15 +81,19 @@
       </div>
     </div>
     <!--NavBar Items ends-->
+    <contact-form-modal />
   </nav>
+  
   <!--NavBar ends-->
 </template>
 
 <script>
 import companyLogo from '~/assets/images/logos/ilblogo.png'
-import contact from '~/components/contact'
+import ContactFormModal from '~/components/contact'
 export default {
-
+components: {
+  ContactFormModal
+},
   data() {
     return {
       active: false,
@@ -160,14 +164,14 @@ export default {
       ]
     };
   },
-// methods: {
-//   show () {
-//     this.$modal.show('Contact');
-//   },
-//   hide () {
-//     this.$modal.hide('Contact');
-//   }
-// }
+methods: {
+  show () {
+    this.$modal.show('Contact');
+  },
+  hide () {
+    this.$modal.hide('Contact');
+  }
+}
 };
 </script>
 

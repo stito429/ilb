@@ -1,5 +1,6 @@
 <template>
   <section>
+    
     <!-- hero -->
     <section class="hero bg is-fullheight section">
       <div class="hero-body has-text-weight-bold shift-hero columns">
@@ -475,27 +476,30 @@
       <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
       <p>Publish Date: March 2020--products and applications are copyright of ITC Coatings</p>
-    </div>
+    </div><contact-form-modal />
   </section>
 </template>
 
 <script>
 import logo from "./../assets/images/logos/ilblogo.png";
-// import Contact from "./../components/Contact";
+import ContactFormModal from "./../components/Contact";
 export default {
-  // computed: {
-  //   getIcon(feature) {
-  //     return "./../assets/" + feature;
-  //   }
-  // },
-  //   methods: {
-  //   show () {
-  //     this.$modal.show('Contact');
-  //   },
-  //   hide () {
-  //     this.$modal.hide('Contact');
-  //   }
-  // },
+  components: {
+    ContactFormModal
+  },
+  computed: {
+    getIcon(feature) {
+      return "./../assets/" + feature;
+    }
+  },
+    methods: {
+    show () {
+      this.$modal.show('Contact');
+    },
+    hide () {
+      this.$modal.hide('Contact');
+    }
+  },
   data: function() {
     return {
       logo: logo,
