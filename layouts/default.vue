@@ -2,6 +2,7 @@
   <div id="app">
     <navbar />
     <contact-form-modal/>
+    <modals-container />
   <nuxt />
   </div>
 </template>

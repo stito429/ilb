@@ -62,17 +62,17 @@
             <div v-for="navbarRightItem in navbarRightItems" :key="navbarRightItem.route">
               <a
                 v-bind:href="navbarRightItem.route"
-                class="navbar-item button classname"
+                class="navbar-item button classname has-text-weight-bold"
                 id="nav-button"
               >
-                <div class="has-text-weight-bold">{{ navbarRightItem.item }}</div>
+                {{ navbarRightItem.item }}
               </a>
             </div>
             <div>              
               <a @click="show"
-                class="navbar-item button classname"
+                class="navbar-item button classname has-text-weight-bold"
                 id="nav-button">
-                <div class="has-text-weight-bold">Contact</div>
+                Contact
                 </a>
             </div>
           </div>
@@ -160,14 +160,14 @@ export default {
       ]
     };
   },
-methods: {
-  show () {
-    this.$modal.show('contact-form');
-  },
-  hide () {
-    this.$modal.hide('contact-form');
-  }
-}
+// methods: {
+//   show () {
+//     this.$modal.show('Contact');
+//   },
+//   hide () {
+//     this.$modal.hide('Contact');
+//   }
+// }
 };
 </script>
 
@@ -215,80 +215,103 @@ methods: {
     );
   }
 
-  #nav-button {
-  }
+  /* #nav-button {
+  } */
 }
 
 @media screen and (max-width: 1023px) {
   #button-container {
     flex-flow: column wrap;
   }
-  #nav-button {
-  }
+  /* #nav-button {
+  } */
 }
 
-@media screen and (min-width: 1023px) {
-  .classname {
-    -moz-box-shadow: inset 0px 1px 17px -3px #ad2424;
-    -webkit-box-shadow: inset 0px 1px 17px -3px #8c8c8c;
-    box-shadow: inset 0px 1px 17px -3px #8c8c8c;
-
-    background: -webkit-linear-gradient(
-      top,
-      #cdcdcd 0%,
-      #e6e4e4 21%,
-      #e7e7e7 50%,
-      #dddddd 80%,
-      #b3b3b3 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9c9c9', endColorstr='#f0f0f0');
-    background-color: #c9c9c9;
-    -webkit-border-top-left-radius: 4px;
-    -moz-border-radius-topleft: 4px;
-    border-top-left-radius: 4px;
-    -webkit-border-top-right-radius: 4px;
-    -moz-border-radius-topright: 4px;
-    border-top-right-radius: 4px;
-    -webkit-border-bottom-right-radius: 4px;
-    -moz-border-radius-bottomright: 4px;
-    border-bottom-right-radius: 4px;
-    -webkit-border-bottom-left-radius: 4px;
-    -moz-border-radius-bottomleft: 4px;
-    border-bottom-left-radius: 4px;
-    text-indent: 0;
-    border: 2px solid #cfcfcf;
-    display: inline-block;
-    color: #292929;
-    font-family: arial;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    height: 50px;
-    line-height: 34px;
-    width: 110px;
-    text-decoration: none;
-    text-align: center;
-    margin: 2px;
-
-    color: #333;
-    background-color: #666;
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); /* 50% white from bottom */
-  }
+/* @media screen and (min-width: 1023px) { */
+.classname {
+background: #F1F1F1;
+background-image: -webkit-linear-gradient(top, #F1F1F1, rgb(201, 201, 201));
+background-image: -moz-linear-gradient(top, #F1F1F1, #C7C7C7);
+background-image: -ms-linear-gradient(top, #F1F1F1, #C7C7C7);
+background-image: -o-linear-gradient(top, #F1F1F1, #C7C7C7);
+background-image: linear-gradient(to bottom, rgb(250, 250, 250), rgb(155, 155, 155));
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+color: #000000;
+font-family: Arial;
+font-size: 14px;  
+font-weight: 900;
+min-width: 100%;
+padding-right: 2%;
+padding-left: 2%;
+padding-top: 5%;
+box-shadow: 1px 1px 20px 0px #000000;
+-webkit-box-shadow: 1px 1px 20px 0px #000000;
+-moz-box-shadow: 1px 1px 20px 0px #000000;
+text-shadow: 0px 0px 27px #FFFFFF;
+border: inset #C7C7C7 2px;
+text-decoration: none;
+display: inline-block;
+cursor: pointer;
+text-align: center;
 }
+
 .classname:hover {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0.05, #f0f0f0),
-    color-stop(1, #c9c9c9)
-  );
-  background: -moz-linear-gradient(center top, #f0f0f0 5%, #c9c9c9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#c9c9c9');
-  background-color: #f0f0f0;
+background: #F1F1F1;
+background-image: -webkit-linear-gradient(top, #F1F1F1, rgb(201, 201, 201));
+background-image: -moz-linear-gradient(top, #F1F1F1, #C7C7C7);
+background-image: -ms-linear-gradient(top, #F1F1F1, #C7C7C7);
+background-image: -o-linear-gradient(top, #F1F1F1, #C7C7C7);
+background-image: linear-gradient(to bottom, rgb(250, 250, 250), rgb(155, 155, 155));
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+color: #000000;
+font-family: Arial;
+font-size: 14px;  
+font-weight: 900;
+min-width: 100%;
+padding-right: 2%;
+padding-left: 2%;
+padding-top: 5%;
+box-shadow: 1px 1px 20px 0px #000000;
+-webkit-box-shadow: 1px 1px 20px 0px #000000;
+-moz-box-shadow: 1px 1px 20px 0px #000000;
+text-shadow: 0px 0px 27px #FFFFFF;
+border: inset #C7C7C7 2px;
+text-decoration: none;
+display: inline-block;
+cursor: pointer;
+text-align: center;
 }
-.classname:active {
-  position: relative;
-  top: 1px;
+
+.classname:active{
+background: #F1F1F1;
+background-image: -webkit-linear-gradient(top, #F1F1F1, rgb(201, 201, 201));
+background-image: -moz-linear-gradient(top, #F1F1F1, #C7C7C7);
+background-image: -ms-linear-gradient(top, #F1F1F1, #C7C7C7);
+background-image: -o-linear-gradient(top, #F1F1F1, #C7C7C7);
+background-image: linear-gradient(to bottom, rgb(250, 250, 250), rgb(155, 155, 155));
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+color: #000000;
+font-family: Arial;
+font-size: 14px;  
+font-weight: 900;
+min-width: 100%;
+padding-right: 2%;
+padding-left: 2%;
+padding-top: 5%;
+box-shadow: 1px 1px 20px 0px #000000;
+-webkit-box-shadow: 1px 1px 20px 0px #000000;
+-moz-box-shadow: 1px 1px 20px 0px #000000;
+text-shadow: 0px 0px 27px #FFFFFF;
+border: inset #C7C7C7 2px;
+text-decoration: none;
+display: inline-block;
+cursor: pointer;
+text-align: center;
 }
 </style>
