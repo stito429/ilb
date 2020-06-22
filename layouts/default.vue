@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <navbar />
-    <!-- <contact-form-modal /> -->
+    
   <nuxt />
+  <contact-form-modal />
   </div>
 </template>
 
@@ -22,7 +23,7 @@ export default {
     }
   },
   mounted(){
-    this.hide()
+    // this.hide()
   },
 }
 
