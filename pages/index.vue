@@ -482,7 +482,7 @@
 
 <script>
 import logo from "./../assets/images/logos/ilblogo.png";
-import ContactFormModal from "./../components/Contact";
+import ContactFormModal from "./../components/contact";
 export default {
   components: {
     ContactFormModal
