@@ -2,7 +2,6 @@
   <div id="app">
     <navbar />
     <contact-form-modal/>
-    <modals-container />
   <nuxt />
   </div>
 </template>
@@ -16,7 +15,15 @@ export default {
   components: {
     navbar,
     ContactFormModal
-  }
+  },
+      methods:{
+    hide () {
+      this.$modal.hide('Contact');
+    }
+  },
+  mounted(){
+    this.hide()
+  },
 }
 
 </script>
