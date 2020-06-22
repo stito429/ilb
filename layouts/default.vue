@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <navbar />
-    <contact-form-modal/>
+    <!-- <contact-form-modal /> -->
   <nuxt />
   </div>
 </template>

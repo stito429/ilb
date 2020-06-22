@@ -6,8 +6,8 @@ import 'vue-js-modal/dist/styles.css';
 
 Vue.use(VModal, {
 	dialog: true,
-	dynamic: true,
-	injectModalsContainer: true,
+	// dynamic: true,
+	// injectModalsContainer: true,
 	dynamicDefaults: {
 		foo: 'foo'
 	}
