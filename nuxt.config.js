@@ -23,7 +23,7 @@ export default {
   */
  css: [{ src: '~/assets/main.scss', lang: 'scss' }],
 
-
+ 
  fontawesome: {
   imports: [
     {
@@ -40,7 +40,7 @@ export default {
   ** Plugins to load before mounting the App
   */
  plugins: [
-  '~plugins/vue-js-modal.js'
+  {src: '~plugins/vue-js-modal.js', mode: 'client'}
 ],
   /*
   ** Nuxt.js dev-modules
