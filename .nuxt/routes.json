@@ -3,98 +3,84 @@
     "name": "about",
     "path": "/about",
     "component": "/Users/christopherzientek/Coding/Git Hub/ilb-nuxt/pages/about/index.vue",
-    "chunkName": "pages/about/index",
-    "_name": "_06235f68"
+    "chunkName": "pages/about/index"
   },
   {
     "name": "tea",
     "path": "/tea",
     "component": "/Users/christopherzientek/Coding/Git Hub/ilb-nuxt/pages/tea.vue",
-    "chunkName": "pages/tea",
-    "_name": "_3b0ce8b0"
+    "chunkName": "pages/tea"
   },
   {
     "name": "products-itc-coatings",
     "path": "/products/itc-coatings",
     "component": "/Users/christopherzientek/Coding/Git Hub/ilb-nuxt/pages/products/itc-coatings.vue",
-    "chunkName": "pages/products/itc-coatings",
-    "_name": "_35662230"
+    "chunkName": "pages/products/itc-coatings"
   },
   {
     "name": "products-Products",
     "path": "/products/Products",
     "component": "/Users/christopherzientek/Coding/Git Hub/ilb-nuxt/pages/products/Products.vue",
-    "chunkName": "pages/products/Products",
-    "_name": "_c99dac32"
+    "chunkName": "pages/products/Products"
   },
   {
     "name": "products-quin-global",
     "path": "/products/quin-global",
     "component": "/Users/christopherzientek/Coding/Git Hub/ilb-nuxt/pages/products/quin-global.vue",
-    "chunkName": "pages/products/quin-global",
-    "_name": "_187f2314"
+    "chunkName": "pages/products/quin-global"
   },
   {
     "name": "products-sg-refractories",
     "path": "/products/sg-refractories",
     "component": "/Users/christopherzientek/Coding/Git Hub/ilb-nuxt/pages/products/sg-refractories.vue",
-    "chunkName": "pages/products/sg-refractories",
-    "_name": "_5b709e47"
+    "chunkName": "pages/products/sg-refractories"
   },
   {
     "name": "products-sg-spyrocor",
     "path": "/products/sg-spyrocor",
     "component": "/Users/christopherzientek/Coding/Git Hub/ilb-nuxt/pages/products/sg-spyrocor.vue",
-    "chunkName": "pages/products/sg-spyrocor",
-    "_name": "_c4d4c59a"
+    "chunkName": "pages/products/sg-spyrocor"
   },
   {
     "name": "products-sg-wrt",
     "path": "/products/sg-wrt",
     "component": "/Users/christopherzientek/Coding/Git Hub/ilb-nuxt/pages/products/sg-wrt.vue",
-    "chunkName": "pages/products/sg-wrt",
-    "_name": "_1b1c59ba"
+    "chunkName": "pages/products/sg-wrt"
   },
   {
     "name": "products-us-liner",
     "path": "/products/us-liner",
     "component": "/Users/christopherzientek/Coding/Git Hub/ilb-nuxt/pages/products/us-liner.vue",
-    "chunkName": "pages/products/us-liner",
-    "_name": "_41a6b9f2"
+    "chunkName": "pages/products/us-liner"
   },
   {
     "name": "services-inspection-scheduling-services",
     "path": "/services/inspection-scheduling-services",
     "component": "/Users/christopherzientek/Coding/Git Hub/ilb-nuxt/pages/services/inspection-scheduling-services.vue",
-    "chunkName": "pages/services/inspection-scheduling-services",
-    "_name": "_3143da87"
+    "chunkName": "pages/services/inspection-scheduling-services"
   },
   {
     "name": "services-orbital-engineering-support",
     "path": "/services/orbital-engineering-support",
     "component": "/Users/christopherzientek/Coding/Git Hub/ilb-nuxt/pages/services/orbital-engineering-support.vue",
-    "chunkName": "pages/services/orbital-engineering-support",
-    "_name": "_4e4450a4"
+    "chunkName": "pages/services/orbital-engineering-support"
   },
   {
     "name": "services-project-construction-mgmt",
     "path": "/services/project-construction-mgmt",
     "component": "/Users/christopherzientek/Coding/Git Hub/ilb-nuxt/pages/services/project-construction-mgmt.vue",
-    "chunkName": "pages/services/project-construction-mgmt",
-    "_name": "_843704a0"
+    "chunkName": "pages/services/project-construction-mgmt"
   },
   {
     "name": "services-sg-engineering-support",
     "path": "/services/sg-engineering-support",
     "component": "/Users/christopherzientek/Coding/Git Hub/ilb-nuxt/pages/services/sg-engineering-support.vue",
-    "chunkName": "pages/services/sg-engineering-support",
-    "_name": "_a39c4ff6"
+    "chunkName": "pages/services/sg-engineering-support"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/christopherzientek/Coding/Git Hub/ilb-nuxt/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_6ec8836a"
+    "chunkName": "pages/index"
   }
 ]

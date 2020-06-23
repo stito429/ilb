@@ -665,7 +665,7 @@ export default {
 };
 </script>
 
-<style>
+<style css-scoped>
 .hero.bg {
   background: linear-gradient(to right, #00000000, #ffffff00),
     url("../assets/images/img/hero-bg-with-logo.jpg") no-repeat center left fixed;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html {{ HTML_ATTRS }}>
   <head {{ HEAD_ATTRS }} >
-    <!-- {{ HEAD }} -->
+    {{ HEAD }}
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body {{ BODY_ATTRS }}>
@@ -264,8 +264,8 @@
 
     <div class="field is-grouped is-grouped-centered">
       <p class="control">
-        
-        <a class="button is-success" type="submit" form="contact-form" value="Submit">Submit</a>
+        <input type="submit"/>
+        <!-- <a class="button is-success" type="submit" form="contact-form" value="Submit">Submit</a> -->
       </p>
       <p class="control">
         <a class="button is-light" @click="$modal.hide('contact-form')">Cancel</a>
