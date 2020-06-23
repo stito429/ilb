@@ -41,7 +41,6 @@
           <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph2Header}}</h3>
           <div class="is-size-4">{{paragraph2}}</div>
 
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph3Header}}</h3>
           <div class="is-size-4">{{paragraph3}}</div>
           <br />
 
@@ -66,7 +65,7 @@
           <div class="is-size-4">{{paragraph4}}</div>
 
           <hr />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{photosHeader}}</h3>
+          <!-- <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{photosHeader}}</h3> -->
           <div class="columns is-centered">
             <div class="column is-two-third">
               <figure class="image">
@@ -90,6 +89,7 @@
     <footer class="footer hero-bg">
       <div class="content colummns">
         <div class="is-size-4 has-text-white column is-offset-1 is-6">{{contact}}</div>
+        <div class="is-size-4 has-text-white column is-offset-1 is-6">{{footer}}</div>
       </div>
     </footer>
   </section>
@@ -147,7 +147,9 @@ export default {
       paragraph4:
         "Based on these benefits and our marketing material details, which ILB can share with our customers, it makes sense to consider SpyroCor space from an operations payback standpoint.  We will work with your team to achieve your performance goals and maximize your cost savings.",
       contact:
-        "Please contact ILB by phone or e-mail if you have questions and to get further details on how we can help."
+        "Please contact ILB by phone or e-mail if you have questions and to get further details on how we can help.",
+        footer:
+        "Publish Date: March 2020--products and applications are copyright of Saint-Gobain"
     };
   }
 };

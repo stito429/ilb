@@ -171,12 +171,19 @@ methods: {
   show: function () {
     this.shown = true;
     this.$modal.show('contact-form');
-    
+    this.$modal.show('contact-form')
   },
   hide () {
     this.$modal.hide('Contact');
+  },
+      init(){
+this.shown =true;
+    }
+  },
+  mounted(){
+    this.init()
   }
-}
+
 };
 </script>
 

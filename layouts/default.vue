@@ -17,7 +17,7 @@ export default {
   },
       methods:{
     hide () {
-      this.$modal.hide('Contact');
+      this.$modal.hide('contact-form');
     }
   },
   mounted(){
