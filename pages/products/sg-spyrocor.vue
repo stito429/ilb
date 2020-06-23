@@ -77,9 +77,9 @@
               <figure class="image">
                 <img class="product-image" :src="require('../../assets/images/product-photos/sg-spyrocor4.png')" />
               </figure>
-                            <figure class="image">
+              <!-- <figure class="image">
                 <img class="product-image" :src="require('../../assets/images/product-photos/sg-spyrocor5.png')" />
-              </figure>
+              </figure> -->
             </div>
           </div>
         </div>
@@ -108,7 +108,7 @@
 //       paragraph3:
 //         " SpyroCor may be something your group might want to consider.  SpyroCor does have a proven track record of helping furnace performance for almost 15 plus years now.  Over the years here are some of the key benefits that have been experienced.",
 //       paragraph4:
-//         "If you look at these benefits above and our flyer details which ILB can share with its customers it makes a lot of sense to consider it from an operations payback standpoint.  It’s no problem—we can work with your team to maximize your savings.",
+//         "If you look at these benefits above and our flyer details which ILB can share with its customers it makes a lot of sense to consider  from an operations payback standpoint.  It’s no problem—we can work with your team to maximize your savings.",
 //       benefits: [
 //         "1) More uptime and more throughputs due to increased heat output",
 //         "2) Real energy savings with even heat distribution",
@@ -143,9 +143,9 @@ export default {
         "Increased radiant tube shell life",
         "Easy, do-it-yourself installation"
       ],
-    paragraph4Header:"Benefits",
+      paragraph4Header: "Benefits",
       paragraph4:
-        "Based on these benefits and our marketing material details, which ILB can share with our customers, it makes sense to consider SpyroCor from an operations payback standpoint.  We will work with your team to achieve your performance goals and maximize your cost savings.",
+        "Based on these benefits and our marketing material details, which ILB can share with our customers, it makes sense to consider SpyroCor space from an operations payback standpoint.  We will work with your team to achieve your performance goals and maximize your cost savings.",
       contact:
         "Please contact ILB by phone or e-mail if you have questions and to get further details on how we can help."
     };
@@ -163,7 +163,8 @@ export default {
       #ffffff8e 90%,
       #ffffff7b 100%
     ),
-    url("../../assets/images/backgrounds/gray.jpg") no-repeat center center fixed;
+    url("../../assets/images/backgrounds/gray.jpg") no-repeat center center
+      fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

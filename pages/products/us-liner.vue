@@ -36,21 +36,21 @@
             <div class="columns has-text-black">
               <div class="column is-6">
                 <ul class="fa-ul">
-                  <li v-for="quality in qualities1" :key="qualities1">
+                  <li v-for="quality1 in qualities1" :key="quality1">
                     <span class="icon is-size-7 logo-accent-color">
                       <i class="fa-li fas fa-circle"></i>
                     </span>
-                    <span class="is-size-4" v-bind:href="quality" v-html="quality"></span>
+                    <span class="is-size-4" v-bind:href="quality1" v-html="quality1"></span>
                   </li>
                 </ul>
               </div>
               <div class="column is-6">
                 <ul class="fa-ul">
-                  <li v-for="quality in qualitie2" :key="qualities2">
+                  <li v-for="quality2 in qualities2" :key="quality2">
                     <span class="icon is-size-7 logo-accent-color">
                       <i class="fa-li fas fa-circle"></i>
                     </span>
-                    <span class="is-size-4" v-bind:href="quality" v-html="quality"></span>
+                    <span class="is-size-4" v-bind:href="quality2" v-html="quality2"></span>
                   </li>
                 </ul>
               </div>
@@ -100,12 +100,12 @@
           <div class="columns is-centered">
             <div class="column is-two-third">
               <figure class="image">
-                <img class="product-image" :src="require('../../assets/images/product-photos/itc-1.jpg')" />
+                <img class="product-image" :src="require('../../assets/images/product-photos/us-conc1.jpg')" />
               </figure>
             </div>
             <div class="column is-two-third">
               <figure class="image">
-                <img class="product-image" :src="require('../../assets/images/product-photos/itc-2.jpg')" />
+                <img class="product-image" :src="require('../../assets/images/product-photos/us-conc3.jpg')" />
               </figure>
             </div>
           </div>
@@ -171,7 +171,7 @@ export default {
       header: "US Liner",
       paragraph1Header: "Background",
       paragraph1:
-        "Industrial Linerback & Services (ILB) represents US Liner by offering their unique line of sheeting products in a variety of industrial applications. US Liner manufactures three key products that ILB is introducing to the industries it serves: Versitex, Ecotex, and BXR sheets. ",
+        "Industrial Linerback & Services (ILB) represents US Liner by offering their unique line of sheeting products in a variety of industrial, commercial, and residential applications. US Liner manufactures three key products that ILB is introducing to the industries it serves: Versitex, Ecotex, and BXR sheets. ",
       paragraph2: "All three sheets offer the following qualities and traits:",
       qualities1: [
         "rot and mildew resistant",
@@ -218,7 +218,9 @@ export default {
       paragraph5:
         "A close review of these products and their many uses show that they have significant merit in protecting shed inner walls, any overhang or walkway, chicken coops, metal building roofs or side walls, and many other applications such as being used as a caisson or concrete form.If you have questions or would like to know more about US Liner products and their potential uses at your facility, please contact ILB by phone or e-mail to get further details on how we can assist with your current needs.",
       contact:
-        "If you have questions or would like to know more about US Liner products and their potential uses at your facility, please contact ILB by phone or e-mail to get further details on how we can assist with your current needs."
+        "If you have questions or would like to know more about US Liner products and their potential uses at your facility, please contact ILB by phone or e-mail to get further details on how we can assist with your current needs.",
+        footer:
+        "Publish Date: March 2020--products and applications are copyright of US Liner"
     };
   }
 };

@@ -32,7 +32,7 @@
               <figure class="image">
                 <img
                   class="product-image"
-                  :src="require('../../assets/images/product-photos/sg-refractories1.png')"
+                  :src="require('../../assets/images/img/furnace3-hd.jpg')"
                 />
               </figure>
             </div>

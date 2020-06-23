@@ -97,7 +97,9 @@
 
     <footer class="footer hero-bg">
       <div class="content colummns">
-        <div class="is-size-4 has-text-white column is-offset-1 is-6">{{contact}}</div>
+        <div class="is-size-4 has-text-white column is-offset-1 is-5">{{contact}}</div>
+        <div class="is-size-4 has-text-white column is-offset-1 is-5">{{footer}}</div>
+        
       </div>
     </footer>
   </section>
@@ -145,12 +147,14 @@ export default {
       ],
       paragraph3Header: "Superior Results",
       paragraph3:
-        "The above products play a significant role in securing the life of the refractory or metal by keeping oxygen away from the metal and keeping heat from penetrating behind any refractory product or fibrous material. For further information, please visit ITC’s website at itccoatings.com.",
+        "The above products play a significant role in securing the life of the refractory or metal by keeping oxygen away from the metal and keeping heat from penetrating behind any refractory product or fibrous material.",
       paragraph4:
         "The protection benefits of these products will deliver significant results from an operations payback standpoint.",
-      photosHeader: "Examples",
+      photosHeader: "Examples of Applications",
       contact:
-        "Please contact ILB by phone or e-mail if you have questions and to get further information on how we can help you with your furnace refractory life longevity."
+        "Please contact ILB by phone or e-mail if you have questions and to get further information on how we can help you with your furnace refractory life longevity.",
+      footer:
+        "Publish Date: March 2020--products and applications are copyright of ITC Coatings"
     };
   }
 };
@@ -177,7 +181,8 @@ export default {
       #ffffff8e 90%,
       #ffffff7b 100%
     ),
-    url("../../assets/images/backgrounds/gray.jpg") no-repeat center center fixed;
+    url("../../assets/images/backgrounds/gray.jpg") no-repeat center center
+      fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -202,18 +207,34 @@ export default {
   }
 }
 .hero-fade-effect {
-  display:block;
-    border:none;
-    color:white;
-    height:1px;
-    background:black;
-    background: -webkit-gradient(radial, 0% 2%, 0, 50% 50%, 553, from(#fff), to(rgb(13, 111, 60)));
+  display: block;
+  border: none;
+  color: white;
+  height: 1px;
+  background: black;
+  background: -webkit-gradient(
+    radial,
+    0% 2%,
+    0,
+    50% 50%,
+    553,
+    from(#fff),
+    to(rgb(13, 111, 60))
+  );
 }
 .heading-fade-effect {
-    display:block;
-    border:none;
-    height:1px;
-    background: -webkit-gradient(radial, 0% 20%, 0, 100% 10%, 555, from(rgb(13, 111, 60)), to(rgba(201, 201, 201, 0.756)));
+  display: block;
+  border: none;
+  height: 1px;
+  background: -webkit-gradient(
+    radial,
+    0% 20%,
+    0,
+    100% 10%,
+    555,
+    from(rgb(13, 111, 60)),
+    to(rgba(201, 201, 201, 0.756))
+  );
 }
 .engraved-text-hero {
   color: rgb(211, 211, 211);
@@ -277,7 +298,6 @@ hr {
   height: 100%;
   flex-direction: column;
   background-color: rgba(65, 124, 85, 0.084);
-  
 }
 
 .is-shady {

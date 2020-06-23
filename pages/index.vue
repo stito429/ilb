@@ -63,24 +63,24 @@
     </section>
     <!-- Logo Intro -->
     <section class="logo-background section">
-      <div class="columns is-centered is-vcentered">
-        <div class="column is-4">
+      <div class="columns is-centered is-vcentered is-mobile is-multiline">
+        <div class="column is-8-mobile is-4-widescreen is-5-desktop is-7-touch is-7-tablet">
           <figure class="image is-3-by-1">
             <img src="./../assets/images/logos/ilblogo.png" />
           </figure>
         </div>
 
-        <div class="column is-4">
-          <div class="columns">
-            <div class="column is-9">
-              <ul>
-                <li
+        <div class="column is-6-mobile is-4-widescreen is-4-desktop is-4-touch is-5-tablet">
+          <div class="columns ">
+            <div class="column is-12">
+              <div>
+                <div
                   v-for="benefit in benefits"
                   :key="benefit"
                   v-bind:href="benefit"
                   class="engraved-text is-size-4 has-text-weight-bold benefit-box"
-                >{{benefit}}</li>
-              </ul>
+                >{{benefit}}</div>
+              </div>
             </div>
           </div>
         </div>
@@ -114,36 +114,31 @@
 
       <p>.</p>
       <div class="columns is-multiline is-centered is-vcentered">
-        <div class="column is-5 has-text-centered" id="product-cats-box">
-          <div class="columns is-centered">
-            <ul class="column is-6">
-              <li class="has-text-left" v-for="productCat in productCats1" :key="productCat">
-                <span class="highlighted icon is-size-3 is-large">
-                  <i class="fas fa-check"></i>
-                </span>
-                <span
-                  class="has-text-weight-bold is-size-3 has-text-white"
-                  v-bind:href="productCat"
-                  v-html="productCat"
-                ></span>
-              </li>
-            </ul>
+        <div class="column is-5" id="product-cats-box">
 
-            <ul class="column is-6">
-              <li class="has-text-left" v-for="productCat in productCats2" :key="productCat">
-                <span class="highlighted icon is-size-3 is-large">
-                  <i class="fas fa-check fa"></i>
-                </span>
-                <span
-                  class="has-text-weight-bold is-size-3 has-text-white"
-                  v-bind:href="productCat"
-                  v-html="productCat"
-                ></span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
+            <div class="columns has-text-black" id="desktop-test">
+              <div class="column is-6 ">
+                <ul class="">
+                  <li v-for="productCat in productCats1" :key="productCat" id="product-cat-list" > 
+                    <span class="highlighted icon is-large" id="product-cat">
+                      <i class="fas fa-check fa"></i>
+                    </span>
+                    <span class="has-text-weight-bold has-text-white" id="product-cat" v-bind:href="productCat" v-html="productCat"></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="column is-6">
+                <ul class="">  
+                  <li v-for="productCat in productCats2" :key="productCat">
+                    <span class="highlighted icon is-large" id="product-cat">
+                      <i class="fas fa-check fa"></i>
+                    </span>
+                    <span class="has-text-weight-bold has-text-white" id="product-cat" v-bind:href="productCat" v-html="productCat"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
         <div class="column is-4">
           <h2 class="title highlighted has-text-centered">Several Solutions</h2>
           <div
@@ -475,18 +470,18 @@
       Icons made by
       <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-      <p>Publish Date: March 2020--products and applications are copyright of ITC Coatings</p>
+      <p>ILB Copyright and Issue Date: March 2020</p>
     </div>
-    <contact-form-modal />
+    <!-- <contact-form-modal /> -->
   </section>
 </template>
 
 <script>
 import logo from "./../assets/images/logos/ilblogo.png";
-import ContactFormModal from "./../components/contact";
+// import ContactFormModal from "./../components/contact";
 export default {
   components: {
-    ContactFormModal
+    // ContactFormModal
   },
   computed: {
     getIcon(feature) {
@@ -565,7 +560,7 @@ export default {
       productCats2: [
         "Coating",
         "Adhesives",
-        "Engineering &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp Services"
+        "Engineering <br/>Services"
       ],
       customers: [
         "Steel",
@@ -886,7 +881,7 @@ export default {
 
 #blurred-box {
   background: rgb(0, 0, 0); /* for IE */
-  background: rgba(31, 19, 0, 0.933);
+  background: rgba(31, 26, 17, 0.933);
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -904,7 +899,22 @@ export default {
 
   max-width: 5000px;
 
-  /* Set up proportionate scaling */
+}
+
+/* Small Screen  ----------- */
+@media only screen 
+and (max-width : 768px) {
+#desktop-test {
+  background:rgb(225, 25, 192)
+}
+ul li{
+  list-style-position: outside;
+  text-indent: 0em;
+  padding: 1px 10 3px 6px;
+}
+
+.several-solutions {
+  padding-left: em;
 }
 
 #product-cats-box {
@@ -919,6 +929,127 @@ export default {
   padding-bottom: 20px;
 }
 
+#product-cat {
+  font-size: 2em;
+  
+}
+}
+/*  */
+
+/* Tablets (portrait) ----------- */
+@media only screen 
+and (min-width : 769px) {
+#desktop-test {
+  background:rgb(8, 162, 8)
+}
+#product-cat {
+  font-size: 1em;
+}
+
+#product-cats-box {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.796),
+    rgba(0, 0, 0, 0.76)
+  );
+  border: 5px outset #a4a09e;
+  border-radius: 1px 1px 1px 1px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+ul li{
+  list-style-position: outside;
+  text-indent: -3em;
+  padding: 1px 10 3px 6px;
+}
+
+ul {
+  position: relative;
+  left: 2em;
+}
+}
+/*  */
+
+/* Desktop  ----------- */
+@media only screen 
+and (min-width : 1024px) 
+and (max-width: 1361px) {
+#desktop-test {
+  background:rgb(50, 62, 226)
+}
+ul li{
+  list-style-position: outside;
+  text-indent: -3em;
+  padding: 1px 10 3px 6px;
+}
+
+ul {
+  position: relative;
+  left: 3em;
+}
+
+.several-solutions {
+  padding-left: 1em;
+}
+
+#product-cats-box {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.796),
+    rgba(0, 0, 0, 0.76)
+  );
+  border: 5px outset #a4a09e;
+  border-radius: 1px 1px 1px 1px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#product-cat {
+  font-size: 1.3em;
+}
+}
+/*  */
+/* Widescreen  ----------- */
+@media only screen 
+and (min-width : 1362px) {
+#desktop-test {
+  background:rgb(253, 80, 0)
+}
+ul li{
+  list-style-position: outside;
+  text-indent: -3em;
+  padding: 1px 10 3px 6px;
+}
+ul {
+  position: relative;
+  left: 3em;
+}
+.several-solutions {
+  padding-left: 1em;
+}
+
+#product-cats-box {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.796),
+    rgba(0, 0, 0, 0.76)
+  );
+  border: 5px outset #a4a09e;
+  border-radius: 1px 1px 1px 1px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#product-cat {
+  font-size: 2em;
+}
+}
+/*  */
+
+
+
 #text-background {
   background: linear-gradient(
     to right,
@@ -926,6 +1057,9 @@ export default {
     rgba(0, 0, 0, 0.009)
   );
 }
+
+
+
 #product-companies {
   background: linear-gradient(
       to right,
@@ -967,9 +1101,6 @@ export default {
   padding-bottom: 0px;
 }
 
-.several-solutions {
-  padding-left: 10px;
-}
 
 .title {
   font-variant: small-caps;

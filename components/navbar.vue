@@ -62,7 +62,7 @@
             <div v-for="navbarRightItem in navbarRightItems" :key="navbarRightItem.route">
               <a
                 v-bind:href="navbarRightItem.route"
-                class="navbar-item button classname has-text-weight-bold"
+                class="navbar-item classname has-text-weight-bold"
                 id="nav-button"
               >
                 {{ navbarRightItem.item }}
@@ -70,7 +70,7 @@
             </div>
             <div>              
               <a @click="show"
-                class="navbar-item button classname has-text-weight-bold"
+                class="navbar-item classname has-text-weight-bold"
                 id="nav-button">
                 Contact
                 </a>
@@ -143,8 +143,8 @@ components: {
           route: "/services/project-construction-mgmt"
         },
         {
-          item: "Scheduling Services",
-          route: "/services/scheduling"
+          item: "Inspection and Scheduling Services",
+          route: "/services/inspection-scheduling-services"
         }
       ],
       navbarRightItems: [
@@ -250,7 +250,7 @@ border-radius: 5px;
 color: #000000;
 font-family: Arial;
 font-size: 14px;  
-font-weight: 900;
+font-weight: 700;
 min-width: 100%;
 padding-right: 2%;
 padding-left: 2%;
@@ -276,20 +276,20 @@ background-image: linear-gradient(to bottom, rgb(250, 250, 250), rgb(155, 155, 1
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 border-radius: 5px;
-color: #000000;
-font-family: Arial;
-font-size: 14px;  
-font-weight: 900;
-min-width: 100%;
-padding-right: 2%;
-padding-left: 2%;
-padding-top: 5%;
-box-shadow: 1px 1px 20px 0px #000000;
--webkit-box-shadow: 1px 1px 20px 0px #000000;
--moz-box-shadow: 1px 1px 20px 0px #000000;
+color: #000000 !important;
+font-family: Arial !important;
+font-size: 14px !important;  
+font-weight: 900 !important;
+min-width: 100% !important;
+padding-right: 2% !important;
+padding-left: 2% !important;
+padding-top: 5% !important;
+box-shadow: 1px 1px 20px 0px #a2a2a2;
+-webkit-box-shadow: 1px 1px 20px 0px #888888;
+-moz-box-shadow: 1px 1px 20px 0px #e6e6e6;
 text-shadow: 0px 0px 27px #FFFFFF;
 border: inset #C7C7C7 2px;
-text-decoration: none;
+
 display: inline-block;
 cursor: pointer;
 text-align: center;
@@ -313,8 +313,8 @@ min-width: 100%;
 padding-right: 2%;
 padding-left: 2%;
 padding-top: 5%;
-box-shadow: 1px 1px 20px 0px #000000;
--webkit-box-shadow: 1px 1px 20px 0px #000000;
+box-shadow: 1px 1px 20px 0px #ffffff;
+-webkit-box-shadow: 1px 1px 20px 0px #676767;
 -moz-box-shadow: 1px 1px 20px 0px #000000;
 text-shadow: 0px 0px 27px #FFFFFF;
 border: inset #C7C7C7 2px;

@@ -67,9 +67,9 @@
             </div>
           </div>
           <hr/>
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph4Header}}</h3>
+          <!-- <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph4Header}}</h3>
           <div class="is-size-4">{{paragraph4}}</div>
-          <hr/>
+          <hr/> -->
           <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph5Header}}</h3>
           <div class="is-size-4">{{paragraph5}}</div>
           <br />
@@ -79,12 +79,12 @@
           <div class="columns is-centered">
             <div class="column is-two-third">
               <figure class="image">
-                <img class="product-image" :src="require('../../assets/images/product-photos/sg-wrt3.jpg')" />
+                <img class="product-image" :src="require('../../assets/images/product-photos/sg-wrt4.png')" />
               </figure>
             </div>
             <div class="column is-two-third">
               <figure class="image">
-                <img class="product-image" :src="require('../../assets/images/product-photos/itc-2.jpg')" />
+                <img class="product-image" :src="require('../../assets/images/product-photos/sg-wrt5.png')" />
               </figure>
             </div>
           </div>
@@ -173,7 +173,7 @@ export default {
       paragraph5:
         "All of the benefits above, and project histories around the globe, our marketing material details will explain to end users that it makes a lot of sense to consider Saint-Gobain products to help improve your facility’s performance and equipment longevity.",
       paragraph6:
-        "All of the benefits above and our marketing material details, which ILB can share, illustrate why this product line is beneficial from anoperations payback standpoint.",
+        "All of the benefits above and our marketing material details, which ILB can share, illustrate why this product line is beneficial from and operations payback standpoint.",
       contact:
         "Please contact ILB by phone or e-mail if you have questions and to get further information on how we can help you with your wear challenges."
     };
