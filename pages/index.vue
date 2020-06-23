@@ -113,11 +113,11 @@
       </div>
 
       <p>.</p>
-      <div class="columns is-multiline is-centered is-vcentered">
-        <div class="column is-5" id="product-cats-box">
+      <div class="columns is-multiline is-centered is-vcentered" id="several-solutions">
+        <div class="column is-5-desktop is-11-mobile" id="product-cats-box">
 
-            <div class="columns has-text-black" id="desktop-test">
-              <div class="column is-6 ">
+            <div class="columns has-text-black is-mobile" id="desktop-test">
+              <div class="column is-6-desktop is-half-mobile">
                 <ul class="">
                   <li v-for="productCat in productCats1" :key="productCat" id="product-cat-list" > 
                     <span class="highlighted icon is-large" id="product-cat">
@@ -127,7 +127,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="column is-6">
+              <div class="column is-6-desktop is-half-mobile">
                 <ul class="">  
                   <li v-for="productCat in productCats2" :key="productCat">
                     <span class="highlighted icon is-large" id="product-cat">
@@ -139,7 +139,7 @@
               </div>
             </div>
             </div>
-        <div class="column is-4">
+        <div class="column is-4-desktop is-11-mobile">
           <h2 class="title highlighted has-text-centered">Several Solutions</h2>
           <div
             class="has-text-weight-semibold has-text-white is-size-5 several-solutions"
@@ -300,7 +300,7 @@
 
       <!-- Row 1 -->
       <div class="columns is-centered">
-        <div class="column is-6">
+        <div class="column is-6-desktop is-10-mobile">
           <div class="box company has-text-white">
             <article class="media">
               <div class="media-left">
@@ -323,7 +323,7 @@
             </article>
           </div>
         </div>
-        <div class="column is-6">
+        <div class="column is-6-desktop is-10-mobile">
           <div class="box company has-text-white">
             <article class="media">
               <div class="media-left">
@@ -909,12 +909,22 @@ and (max-width : 768px) {
 }
 ul li{
   list-style-position: outside;
-  text-indent: 0em;
+  text-indent: -3em;
   padding: 1px 10 3px 6px;
+}
+
+ul {
+  position: relative;
+  left: 3em;
 }
 
 .several-solutions {
   padding-left: em;
+}
+
+#several-solutions {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 #product-cats-box {
