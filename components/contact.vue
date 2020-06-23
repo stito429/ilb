@@ -13,7 +13,7 @@
   >
   <div>
     <form action="/" netlify name="contact-form" class="form" method="POST" data-netlify-honeypot="bot-field">
-      <input  name="contact-form" value="contact-form" hidden/>
+      <input  name="form-name" value="contact-form" hidden/>
       <fieldset>
         <!-- Form Name -->
         <legend class="title is-3 has-text-centered has-text-weight-bold">Contact Us</legend>
