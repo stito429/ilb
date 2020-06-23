@@ -915,7 +915,7 @@ ul li{
 
 ul {
   position: relative;
-  left: 3em;
+  left: 1.8em;
 }
 
 .several-solutions {
@@ -940,7 +940,7 @@ ul {
 }
 
 #product-cat {
-  font-size: 2em;
+  font-size: 1.1em;
   
 }
 }
@@ -953,7 +953,7 @@ and (min-width : 769px) {
   background:rgb(8, 162, 8)
 }
 #product-cat {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 #product-cats-box {
@@ -1017,7 +1017,7 @@ ul {
 }
 
 #product-cat {
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 }
 /*  */
