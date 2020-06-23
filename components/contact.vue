@@ -270,8 +270,9 @@
 
         <div class="field is-grouped is-grouped-centered">
           <p class="control">
+            <input type="submit"/>
             
-            <a class="button is-success" type="submit" form="contact-form" value="Submit">Submit</a>
+            <!-- <a class="button is-success" type="submit" form="contact-form" value="Submit">Submit</a> -->
           </p>
           <p class="control">
             <a class="button is-light" @click="$modal.hide('contact-form')">Cancel</a>
