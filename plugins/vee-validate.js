@@ -1,13 +1,25 @@
-// import Vue from 'vue'
-// import VeeValidate from 'vee-validate'
-// Vue.use(VeeValidate, {
-//     inject: true
-//   })
+import Vue from 'vue'
+import {
+  ValidationObserver,
+  ValidationProvider,
+  extend
+} from 'vee-validate'
 
-//   import { extend } from "vee-validate";
-//   import { required } from "vee-validate/dist/rules";
-//   extend("required", {
-//     ...required,
-//     message: "This field is required or your custom error message"
-//   });
-  
+import { required, alpha, email } from 'vee-validate/dist/rules'
+extend("required", {
+  ...required,
+  message: "This field is required"
+});
+
+extend("alpha", {
+  ...alpha,
+  message: "This field must only contain alphabetic characters"
+});
+
+extend("email", {
+    ...email,
+    message: "This field must be a valid email address"
+  });
+
+Vue.component('ValidationProvider', ValidationProvider)
+Vue.component('ValidationObserver', ValidationObserver) 

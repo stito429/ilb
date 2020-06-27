@@ -12,15 +12,16 @@
     height="auto"
   >
     <div>
-      <ValidationObserver v-slot="{invalid}">
+      <ValidationObserver v-slot="{ handleSubmit }">
         <form
           action="/"
           netlify
           name="contact-form"
           class="form"
           method="POST"
+          ref="contactForm"
           data-netlify-honeypot="bot-field"
-          
+          @submit.prevent="handleSubmit(submit)"
         >
           <input name="form-name" value="contact-form" type="hidden" />
           <fieldset>
@@ -146,21 +147,17 @@
               <div class="field-body">
                 <div class="field">
                   <p class="control is-expanded has-icons-left">
-                    
-                    
-                    <ValidationProvider v-slot="{ errors }">
-                    <input
-                      class="input"
-                      type="text"
-                      name="Name"
-                      placeholder="Name"
-                      v-model="value"
-                    />
-                    <span>{{ errors[0] }}</span>
+                    <ValidationProvider rules="required" v-slot="{ errors }">
+                      <input
+                        class="input"
+                        type="text"
+                        name="Name"
+                        placeholder="Name"
+                        v-validate="'required'"
+                        v-model="Name"
+                      />
+                      <span class="error-message">{{ errors[0] }} </span>
                     </ValidationProvider>
-
-
-
 
                     <span class="icon is-small is-left">
                       <i class="fas fa-user"></i>
@@ -190,18 +187,24 @@
                 </div>
                 <div class="field">
                   <p class="control is-expanded has-icons-left has-icons-right">
-                    <input
-                      class="input"
-                      type="email"
-                      name="Email Address"
-                      placeholder="Email Address" v-validate="'required|email'"
-                    />
+                    <ValidationProvider rules="required|email" v-slot="{ errors }">
+                      <input
+                        class="input"
+                        type="email"
+                        name="Email"
+                        placeholder="Email Address"
+                        v-validate="'required|email'"
+                        v-model="Email"
+                      />
+                      <span class="error-message">{{ errors[0] }} </span>
+                    </ValidationProvider>
+
                     <span class="icon is-small is-left">
                       <i class="fas fa-envelope"></i>
                     </span>
-                    <span class="icon is-small is-right">
+                    <!-- <span class="icon is-small is-right">
                       <i class="fas fa-check"></i>
-                    </span>
+                    </span> -->
                   </p>
                 </div>
               </div>
@@ -451,28 +454,36 @@ import companyLogo from "~/assets/images/logos/ilblogo.png";
 export default {
   name: "contact",
   components: {
-    ValidationObserver: ValidationObserver,
-    ValidationProvider: ValidationProvider
+    ValidationObserver,
+    ValidationProvider
   },
-  data () {
+  data() {
     return {
-      name: "",
-      email: "",
-      submitted: false
-    }
+      Name: "",
+      Email: ""
+    };
   },
   methods: {
     submit() {
+      this.$refs.contactForm.submit();
       return this.$router.push({ path: "/" });
-    },
-        handleSubmit(e) {
-      this.submitted = true;
-      this.$validator.validate().then(valid => {
-        if (valid) {
-          return this.$router.push({ path: "/" });
-        }
-      });
     }
+
+    // handleSubmit() {
+    //   this.submitted = true;
+
+    //   // this.$validator.validateAll.then(res => {
+    //   //   if (res) {
+    //   //     alert("Form successfully submitted!");
+    //   //   } else {
+    //   //     alert("Please correct all error!");
+    //   //   }
+    //   // });
+
+    //   this.$refs.contactForm.submit()
+    //   this.$router.push({ path: "/" });
+
+    // }
   }
 };
 </script>
@@ -498,5 +509,9 @@ export default {
   background-size: cover; */
   /* min-height: 100vh; */
 }
+.error-message {
+  color: red;
+}
+
 </style>
 
