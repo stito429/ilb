@@ -9,11 +9,16 @@
         <div class="columns is-vcentered">
           <div class="column is-2 is-offset-1">
             <figure class="image is-128x128">
-              <img src="../../assets/images/logos/quin.png" class="logo-image" />
+              <img
+                src="../../assets/images/logos/quin.png"
+                class="logo-image"
+              />
             </figure>
           </div>
           <div class="column is-8">
-            <h1 class="title is-1 has-text-weight-bold has-text-white">{{header}}</h1>
+            <h1 class="title is-1 has-text-weight-bold has-text-white">
+              {{ header }}
+            </h1>
           </div>
         </div>
       </div>
@@ -23,36 +28,52 @@
       <section class="has-text-black columns is-centered">
         <div class="column is-10">
           <br />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph1Header}}</h3>
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ paragraph1Header }}
+          </h3>
 
-          
-
-              <div class="is-size-5">{{paragraph1}}</div>
-
+          <div class="is-size-5">{{ paragraph1 }}</div>
 
           <hr />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph2Header}}</h3>
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ paragraph2Header }}
+          </h3>
 
+          <div class="columns is-mobile is-centered">
+            <div class="column is-size-5 is-9">
+              {{ paragraph2 }}
+            </div>
 
-          <div class="is-size-5"><figure class="image">
-            <img class="product-image" :src="require('../../assets/images/product-photos/quin1.jpg')"/> </figure>
-            {{paragraph2}} 
-              </div>
+            <div class="column">
+              <figure class="image">
+                <img
+                  class="product-image"
+                  :src="require('../../assets/images/product-photos/quin1.jpg')"
+                />
+              </figure>
+            </div>
+          </div>
           <br />
           <hr />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph3Header}}</h3>
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ paragraph3Header }}
+          </h3>
 
-          <div class="is-size-5">{{paragraph3}}</div>
+          <div class="is-size-5">{{ paragraph3 }}</div>
           <br />
           <hr />
-                    <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph4Header}}</h3>
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ paragraph4Header }}
+          </h3>
 
-          <div class="is-size-5">{{paragraph4}}</div>
+          <div class="is-size-5">{{ paragraph4 }}</div>
           <br />
           <hr />
-                    <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph5Header}}</h3>
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ paragraph5Header }}
+          </h3>
 
-          <div class="is-size-5">{{paragraph5}}</div>
+          <div class="is-size-5">{{ paragraph5 }}</div>
           <br />
           <br />
         </div>
@@ -60,7 +81,9 @@
     </div>
     <footer class="footer hero-bg">
       <div class="content colummns">
-        <div class="is-size-4 has-text-white column is-offset-1 is-6">{{contact}}</div>
+        <div class="is-size-4 has-text-white column is-offset-1 is-6">
+          {{ contact }}
+        </div>
       </div>
     </footer>
   </section>
@@ -78,9 +101,9 @@ export default {
       paragraph1Header: "Background",
       paragraph1:
         "Industrial Linerback and Services (ILB) is a support partner of Quin Global. ILB acts as their USA distributor throughout North America serving the industries ILB serves. ILB and Quin together have agreed to enter into many different industries including: steel, cement, automotive, waste energy, asphalt, energy and the flooring industry. With Quin Global being a worldwide supplier of adhesive and sanitization products we are looking to raise the bar by providing unique and superior products for your needs.",
-      paragraph2Header: "Linerbacker Adhesive",
+      paragraph2Header: "Linebacker Adhesive",
       paragraph2:
-        "ILB has its own adhesive for Industrial use. This adhesive is backed by Quin Global for any industrial, commercial or residential use. This product comes in a spray can and is called Linebacker Adhesive. This product was pulled together and formulated for the tough industrial world as it came out of the aerospace industry to laminate two surfaces together--the same or different. Here is why our Linerbacker Adhesive spray is unique: it has a breakaway strength of 16-18 psi and sets-up in 15 minutes. It’s a contact to contact application where you spray both mating surfaces and just stick them together. For a quick repair in the field—nothing can compare. Epoxy would but it takes a minimum of 8 hrs to cure.",
+        "ILB has its own adhesive for Industrial use. This adhesive is backed by Quin Global for any industrial, commercial or residential use. This product comes in a spray can and is called Linebacker Adhesive. This product was pulled together and formulated for the tough industrial world as it came out of the aerospace industry to laminate two surfaces together--the same or different. Here is why our Linebacker Adhesive spray is unique: it has a breakaway strength of 16-18 psi and sets-up in 15 minutes. It’s a contact to contact application where you spray both mating surfaces and just stick them together. For a quick repair in the field—nothing can compare. Epoxy would but it takes a minimum of 8 hrs to cure.",
       paragraph3Header: "Floor Adhesive",
       paragraph3:
         "Quin Global has a special, recently new product just for flooring which has been approved by the building industry. This product also has a quick drying time and a high break away strength where any flooring product can be installed very quickly, plus any wall tile. This floor adhesive has been gaining attention in the marketplace as being an installation material of choice. It is their product called TensorgripG67 which comes in a 50 lbs canister and is sprayed on.",
@@ -156,8 +179,8 @@ hr {
 }
 
 .product-image {
-  max-width: 150px;
+  max-width: 200px;
   margin-right: 10px;
-  float: left;
+  float: right;
 }
 </style>

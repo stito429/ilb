@@ -14,7 +14,9 @@
           </div>
           <div class="column is-8">
             <br />
-            <h1 class="title is-1 has-text-weight-bold has-text-white">{{header}}</h1>
+            <h1 class="title is-1 has-text-weight-bold has-text-white">
+              {{ header }}
+            </h1>
             <br />
           </div>
         </div>
@@ -25,30 +27,46 @@
       <section class="has-text-black columns is-centered">
         <div class="column is-10 padding">
           <br />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph1Header}}</h3>
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ paragraph1Header }}
+          </h3>
           <div class="columns">
             <div class="column is-6">
-              <div class="is-size-4">{{paragraph1}}</div>
+              <div class="is-size-4">{{ paragraph1 }}</div>
             </div>
             <div class="column is-6">
               <figure class="image">
-                <img :src="require('../../assets/images/product-photos/sg-wrt1.png')" />
+                <img
+                  :src="
+                    require('../../assets/images/product-photos/sg-wrt1.png')
+                  "
+                />
               </figure>
             </div>
           </div>
 
           <hr />
 
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph2Header}}</h3>
-          <div class="is-size-4">{{paragraph2}}</div>
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ paragraph2Header }}
+          </h3>
+          <div class="columns">
+            <div class="column is-size-4">{{ paragraph2 }}</div>
+            <div class="column">
               <figure class="image">
                 <img
                   class="product-image"
-                  :src="require('../../assets/images/product-photos/sg-wrt2.png')"
+                  :src="
+                    require('../../assets/images/product-photos/sg-wrt5.png')
+                  "
                 />
               </figure>
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph3Header}}</h3>
-          <div class="is-size-4">{{paragraph3}}</div>
+            </div>
+          </div>
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ paragraph3Header }}
+          </h3>
+          <div class="is-size-4">{{ paragraph3 }}</div>
           <br />
 
           <div class="columns is-vcentered">
@@ -56,35 +74,57 @@
               <figure class="image">
                 <img
                   class="product-image"
-                  :src="require('../../assets/images/product-photos/sg-wrt-industries.jpg')"
+                  :src="
+                    require('../../assets/images/product-photos/sg-wrt-industries.jpg')
+                  "
                 />
               </figure>
             </div>
             <div class="column is-6 is-offset-1">
               <ol>
-                <li class="is-size-4" v-for="application in applications" :key="application">{{application}}</li>
+                <li
+                  class="is-size-4"
+                  v-for="application in applications"
+                  :key="application"
+                >
+                  {{ application }}
+                </li>
               </ol>
             </div>
           </div>
-          <hr/>
+          <hr />
           <!-- <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph4Header}}</h3>
           <div class="is-size-4">{{paragraph4}}</div>
           <hr/> -->
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph5Header}}</h3>
-          <div class="is-size-4">{{paragraph5}}</div>
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ paragraph5Header }}
+          </h3>
+          <div class="is-size-4">{{ paragraph5 }}</div>
           <br />
-          <div class="is-size-4">{{paragraph6}}</div>
+          <div class="is-size-4">{{ paragraph6 }}</div>
           <hr />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{photosHeader}}</h3>
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ photosHeader }}
+          </h3>
           <div class="columns is-centered">
             <div class="column is-two-third">
               <figure class="image">
-                <img class="product-image" :src="require('../../assets/images/product-photos/sg-wrt4.png')" />
+                <img
+                  class="product-image"
+                  :src="
+                    require('../../assets/images/product-photos/sg-wrt4.png')
+                  "
+                />
               </figure>
             </div>
             <div class="column is-two-third">
               <figure class="image">
-                <img class="product-image" :src="require('../../assets/images/product-photos/sg-wrt5.png')" />
+                <img
+                  class="product-image"
+                  :src="
+                    require('../../assets/images/product-photos/sg-wrt2.png')
+                  "
+                />
               </figure>
             </div>
           </div>
@@ -95,7 +135,9 @@
 
     <footer class="footer hero-bg">
       <div class="content colummns">
-        <div class="is-size-4 has-text-white column is-offset-1 is-6">{{contact}}</div>
+        <div class="is-size-4 has-text-white column is-offset-1 is-6">
+          {{ contact }}
+        </div>
       </div>
     </footer>
   </section>
@@ -169,7 +211,7 @@ export default {
       paragraph4Header: "More Info",
       paragraph4:
         "For additional details on Saint-Gobain’s WRT product line, please visit their website at: wrt.saint-gobain.com.",
-      paragraph5Header:"Benefits",
+      paragraph5Header: "Benefits",
       paragraph5:
         "All of the benefits above, and project histories around the globe, our marketing material details will explain to end users that it makes a lot of sense to consider Saint-Gobain products to help improve your facility’s performance and equipment longevity.",
       paragraph6:
@@ -219,7 +261,8 @@ export default {
       #ffffff8e 90%,
       #ffffff7b 100%
     ),
-    url("../../assets/images/backgrounds/gray.jpg") no-repeat center center fixed;
+    url("../../assets/images/backgrounds/gray.jpg") no-repeat center center
+      fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -8,7 +8,7 @@ export default {
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
@@ -22,27 +22,28 @@ export default {
   /*
   ** Global CSS
   */
- css: [{ src: '~/assets/main.scss', lang: 'scss' }],
+  css: [{ src: '~/assets/main.scss', lang: 'scss' }],
 
- 
- fontawesome: {
-  imports: [
-    {
-      set: '@fortawesome/free-solid-svg-icons', // Solid icons
-      icons: ['faCookieBite', 'faCommentDots', 'faEnvelope', 'faGrinWink', 'faHeart']
-    },
-    {
-      set: '@fortawesome/free-brands-svg-icons', // Brand icons
-      icons: ['faDev', 'faFacebook', 'faTwitter', 'faInstagram', 'faYoutube', 'faGithub']
-    }
-  ]
-},
+
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons', // Solid icons
+        icons: ['faCookieBite', 'faCommentDots', 'faEnvelope', 'faGrinWink', 'faHeart']
+      },
+      {
+        set: '@fortawesome/free-brands-svg-icons', // Brand icons
+        icons: ['faDev', 'faFacebook', 'faTwitter', 'faInstagram', 'faYoutube', 'faGithub']
+      }
+    ]
+  },
   /*
   ** Plugins to load before mounting the App
   */
- plugins: [
-  {src: '~plugins/vue-js-modal.js', mode: 'client'}
-],
+  plugins: [
+    { src: '~plugins/vue-js-modal.js', mode: 'client' },
+    {src: '~/plugins/vee-validate.js', ssr: true}
+  ],
   /*
   ** Nuxt.js dev-modules
   */
@@ -59,7 +60,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
   ],
-  
+
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
@@ -80,7 +81,14 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    transpile: [
+      "vee-validate/dist/rules"
+    ],
+    /*
+    ** You can extend webpack config here
+    */
+    extend(config, ctx) {
     }
-  }
+  },
+
 }

@@ -1,76 +1,86 @@
 <template>
   <section>
-    
     <!-- hero -->
     <section class="hero bg is-fullheight section">
       <div class="hero-body has-text-weight-bold shift-hero columns">
-        <div class="column is-5" id="blurred-box">
+        <div class="column is-4" id="blurred-box">
           <div class>
             <div class="title is-2 has-text-white has-text-centered">
               Engineered Solutions
               <br />with a
               <div class="title is-1 has-text-weight-bold highlighted">
-                {{heroTItle2}}
-                <br />
+                {{ heroTItle2 }}
+                <br /> 
               </div>
+            </div>
+            <!-- <div class="columns is-centered"> -->
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-9 highlighted is-size-5 shift-hero-phrases">
+                  <div class="highlighted is-size-4">
+                  {{heroProductsLeft}}</div>
+                  <div class="has-text-white is-size-6">
+                    {{heroProductsRight}}</div>
+                </div>
+              </div>
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-9 highlighted is-size-5">
+                  <div class="highlighted is-size-4">
+                  {{heroDesignLeft}}</div>
+                  <div class="has-text-white is-size-6">
+                    {{heroDesignRight}}</div>
+                </div> </div>
+                <div class="columns is-centered has-text-centered">
+                <div class="column is-9 highlighted is-size-5">
+                  <div class="highlighted is-size-4">
+                  {{heroServicesLeft}}</div>
+                  <div class="has-text-white is-size-6">
+                    {{heroServicesRight}}</div>
+                </div>
+                </div>
+              
+            <!-- </div> -->
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-11 has-text-centered">
+              <div class="has-text-centered">
+                <button id="hero-button" class="is-size-4">
+                  <a @click="$modal.show('contact-form')">
+                    Click Here and Share Your Needs With Us</a
+                  >
+                </button>
+              </div>
+            </div>
             </div>
             <div class="columns is-centered">
-              <div class="column is-4 has-text-centered">
-                <span class="highlighted is-size-4">
-                  {{heroProductsLeft}}
-                  <br />
-                </span>
-                <span class="has-text-white">{{heroProductsRight}}</span>
+            <div class="column is-11 has-text-centered" id>
+              <span class="has-text-white">
+                {{ heroResidentialLeft }}
+                <div class="highlighted">{{ heroresidentialRight }}</div>
+              </span>
+              <div class="has-text-centered" id="residential-button">
+                <router-link to="/products/us-liner" tag="button">Click Here</router-link>
+                <br/>
               </div>
-
-              <div class="column is-4 has-text-centered">
-                <span class="highlighted is-size-4">
-                  {{heroDesignLeft}}
-                  <br />
-                </span>
-                <span class="has-text-white">{{heroDesignRight}}</span>
               </div>
-
-              <div class="column is-4 has-text-centered">
-                <span class="highlighted is-size-4">
-                  {{heroServicesLeft}}
-                  <br />
-                </span>
-                <span class="has-text-white">{{heroServicesRight}}</span>
-              </div>
-            </div>
-            <div class="has-text-centered">
-              <button id="hero-button" class="is-size-4"><a @click="$modal.show('contact-form')"
-                >
-                
-                Click Here and Share Your Needs With Us</a></button>
-              <div>-</div>
-            </div>
-          </div>
-          <div class="has-text-centered" id>
-            <span class="has-text-white">
-              {{heroResidentialLeft}}
-              <div class="highlighted">{{heroresidentialRight}}</div>
-            </span>
-            <div class="has-text-centered">
-              <button>Click Here</button>
-              <div>-</div>
             </div>
           </div>
         </div>
-
       </div>
     </section>
     <!-- Logo Intro -->
     <section class="logo-background section">
       <div class="columns is-centered is-vcentered is-mobile is-multiline">
-        <div class="column is-8-mobile is-4-widescreen is-5-desktop is-7-touch is-7-tablet">
+        <div
+          class="column is-8-mobile is-4-widescreen is-5-desktop is-7-touch is-7-tablet"
+        >
           <figure class="image is-3-by-1">
             <img src="./../assets/images/logos/ilblogo.png" />
           </figure>
         </div>
 
-        <div class="column is-6-mobile is-4-widescreen is-4-desktop is-4-touch is-5-tablet">
+        <div
+          class="column is-6-mobile is-4-widescreen is-4-desktop is-4-touch is-5-tablet"
+        >
           <div class="columns ">
             <div class="column is-12">
               <div>
@@ -79,7 +89,9 @@
                   :key="benefit"
                   v-bind:href="benefit"
                   class="engraved-text is-size-4 has-text-weight-bold benefit-box"
-                >{{benefit}}</div>
+                >
+                  {{ benefit }}
+                </div>
               </div>
             </div>
           </div>
@@ -91,17 +103,27 @@
     <section class="container section" id="product-cats">
       <div class="columns is-centered">
         <div class="column is-12">
-          <h2 class="title is-2 highlighted has-text-centered shadowed">Why is ILB Different?</h2>
+          <h2 class="title is-2 highlighted has-text-centered shadowed">
+            Why is ILB Different?
+          </h2>
         </div>
       </div>
       <div class="columns is-4 is-multiline is-vcentered is-centered">
         <div class="column is-4" id->
           <div class="">
-            <h2 class="title is- shadowed highlighted has-text-centered">One Point of Contact</h2>
+            <h2 class="title is- shadowed highlighted has-text-centered">
+              One Point of Contact
+            </h2>
             <div
               class="has-text-weight-semibold has-text-white is-size-5"
               id="text-background"
-            >Industrial Linerback & Services is your one-stop-shop for all of your industrial, commerical, and residential needs. There's no need to coordinate with multiple companies for your next project. Let ILB combine and match products and services for all of your applications.</div>
+            >
+              Industrial Linerback & Services is your one-stop-shop for all of
+              your industrial, commerical, and residential needs. There's no
+              need to coordinate with multiple companies for your next project.
+              Let ILB combine and match products and services for all of your
+              applications.
+            </div>
           </div>
         </div>
 
@@ -113,37 +135,58 @@
       </div>
 
       <p>.</p>
-      <div class="columns is-multiline is-centered is-vcentered" id="several-solutions">
+      <div
+        class="columns is-multiline is-centered is-vcentered"
+        id="several-solutions"
+      >
         <div class="column is-5-desktop is-11-mobile" id="product-cats-box">
-
-            <div class="columns has-text-black is-mobile" id="desktop-test">
-              <div class="column is-6-desktop is-half-mobile">
-                <ul class="">
-                  <li v-for="productCat in productCats1" :key="productCat" id="product-cat-list" > 
-                    <span class="highlighted icon is-large" id="product-cat">
-                      <i class="fas fa-check fa"></i>
-                    </span>
-                    <span class="has-text-weight-bold has-text-white" id="product-cat" v-bind:href="productCat" v-html="productCat"></span>
-                  </li>
-                </ul>
-              </div>
-              <div class="column is-6-desktop is-half-mobile">
-                <ul class="">  
-                  <li v-for="productCat in productCats2" :key="productCat">
-                    <span class="highlighted icon is-large" id="product-cat">
-                      <i class="fas fa-check fa"></i>
-                    </span>
-                    <span class="has-text-weight-bold has-text-white" id="product-cat" v-bind:href="productCat" v-html="productCat"></span>
-                  </li>
-                </ul>
-              </div>
+          <div class="columns has-text-black is-mobile" id="desktop-test">
+            <div class="column is-6-desktop is-half-mobile">
+              <ul class="">
+                <li
+                  v-for="productCat in productCats1"
+                  :key="productCat"
+                  id="product-cat-list"
+                >
+                  <span class="highlighted icon is-large" id="product-cat">
+                    <i class="fas fa-check fa"></i>
+                  </span>
+                  <span
+                    class="has-text-weight-bold has-text-white"
+                    id="product-cat"
+                    v-bind:href="productCat"
+                    v-html="productCat"
+                  ></span>
+                </li>
+              </ul>
             </div>
+            <div class="column is-6-desktop is-half-mobile">
+              <ul class="">
+                <li v-for="productCat in productCats2" :key="productCat">
+                  <span class="highlighted icon is-large" id="product-cat">
+                    <i class="fas fa-check fa"></i>
+                  </span>
+                  <span
+                    class="has-text-weight-bold has-text-white"
+                    id="product-cat"
+                    v-bind:href="productCat"
+                    v-html="productCat"
+                  ></span>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
         <div class="column is-4-desktop is-11-mobile">
           <h2 class="title highlighted has-text-centered">Several Solutions</h2>
           <div
             class="has-text-weight-semibold has-text-white is-size-5 several-solutions"
-          >We offer a variety of products that will cover all of your needs. This allows us to design each product with your application in mind. We back up each of our products by offering several engineering support services.</div>
+          >
+            We offer a variety of products that will cover all of your needs.
+            This allows us to design each product with your application in mind.
+            We back up each of our products by offering several engineering
+            support services.
+          </div>
         </div>
       </div>
       <!-- <div class="column is-2">
@@ -184,9 +227,9 @@
     <!-- Qualities HardCoded-->
     <section class="logo-background section">
       <div>
-        <h1
-          class="title is-1 has-text-centered engraved-text"
-        >Industrial Linerback Services & LLC.</h1>
+        <h1 class="title is-1 has-text-centered engraved-text">
+          Industrial Linerback Services & LLC.
+        </h1>
         <br />
       </div>
       <div class="columns is-variable is-multiline is-centered">
@@ -194,15 +237,21 @@
           <div class="card is-shady card-background">
             <div class="card-header">
               <div class="card-header-title">
-                <div class="has-text-centered is-size-4 has-text-weight-bold">Diversity</div>
+                <div class="has-text-centered is-size-4 has-text-weight-bold">
+                  Diversity
+                </div>
               </div>
-              <img class="image is-64x64" src="./../assets/images/icons/icon-diversity.png" />
+              <img
+                class="image is-64x64"
+                src="./../assets/images/icons/icon-diversity.png"
+              />
             </div>
             <div class="card-content">
               <div class="content">
-                <p
-                  class="is-size-5 has-text-black"
-                >ILB offers many top-grade, QUALITY products and services to meet the needs of many different types of customers.</p>
+                <p class="is-size-5 has-text-black">
+                  ILB offers many top-grade, QUALITY products and services to
+                  meet the needs of many different types of customers.
+                </p>
               </div>
             </div>
           </div>
@@ -212,15 +261,21 @@
           <div class="card is-shady card-background">
             <div class="card-header">
               <div class="card-header-title">
-                <div class="has-text-centered is-size-4 has-text-bold">Proficiency</div>
+                <div class="has-text-centered is-size-4 has-text-bold">
+                  Proficiency
+                </div>
               </div>
-              <img class="image is-64x64" src="./../assets/images/icons/icon-proficiency.png" />
+              <img
+                class="image is-64x64"
+                src="./../assets/images/icons/icon-proficiency.png"
+              />
             </div>
             <div class="card-content">
               <div class="content">
-                <p
-                  class="is-size-5 has-text-black"
-                >Together, our highest levels of EXPERTISE and EXPERIENCE in choosing the right products and services for each unique job.</p>
+                <p class="is-size-5 has-text-black">
+                  Together, our highest levels of EXPERTISE and EXPERIENCE in
+                  choosing the right products and services for each unique job.
+                </p>
               </div>
             </div>
           </div>
@@ -230,15 +285,22 @@
           <div class="card is-shady card-background">
             <div class="card-header">
               <div class="card-header-title">
-                <div class="has-text-centered is-size-4 has-text-bold">Dedication</div>
+                <div class="has-text-centered is-size-4 has-text-bold">
+                  Dedication
+                </div>
               </div>
-              <img class="image is-64x64" src="./../assets/images/icons/icon-dedication.png" />
+              <img
+                class="image is-64x64"
+                src="./../assets/images/icons/icon-dedication.png"
+              />
             </div>
             <div class="card-content">
               <div class="content">
-                <p
-                  class="is-size-5 has-text-black"
-                >ILB takes the extra steps to identify, develop, and implement VALUE-ADDED engineering solutions that apply to your specific line of business.</p>
+                <p class="is-size-5 has-text-black">
+                  ILB takes the extra steps to identify, develop, and implement
+                  VALUE-ADDED engineering solutions that apply to your specific
+                  line of business.
+                </p>
               </div>
             </div>
           </div>
@@ -249,15 +311,22 @@
           <div class="card is-shady card-background">
             <div class="card-header">
               <div class="card-header-title">
-                <div class="has-text-centered is-size-4 has-text-bold">Personalization</div>
+                <div class="has-text-centered is-size-4 has-text-bold">
+                  Personalization
+                </div>
               </div>
-              <img class="image is-64x64" src="./../assets/images/icons/icon-personalization.png" />
+              <img
+                class="image is-64x64"
+                src="./../assets/images/icons/icon-personalization.png"
+              />
             </div>
             <div class="card-content">
               <div class="content">
-                <p
-                  class="is-size-5 has-text-black"
-                >Whatever your needs are we listen, learn, and with your approval, will implement the best solution moving forward to achieve YOUR highest expectations.</p>
+                <p class="is-size-5 has-text-black">
+                  Whatever your needs are we listen, learn, and with your
+                  approval, will implement the best solution moving forward to
+                  achieve YOUR highest expectations.
+                </p>
               </div>
             </div>
           </div>
@@ -267,15 +336,22 @@
           <div class="card is-shady card-background">
             <div class="card-header">
               <div class="card-header-title">
-                <div class="has-text-centered is-size-4 has-text-bold">Clients</div>
+                <div class="has-text-centered is-size-4 has-text-bold">
+                  Clients
+                </div>
               </div>
-              <img class="image is-64x64" src="./../assets/images/icons/icon-clients.png" />
+              <img
+                class="image is-64x64"
+                src="./../assets/images/icons/icon-clients.png"
+              />
             </div>
             <div class="card-content">
               <div class="content">
-                <p
-                  class="is-size-5 has-text-black"
-                >Our mission is to complete each customer request with the highest level of professionalism and INTEGRITY while keeping your expectations in mind.</p>
+                <p class="is-size-5 has-text-black">
+                  Our mission is to complete each customer request with the
+                  highest level of professionalism and INTEGRITY while keeping
+                  your expectations in mind.
+                </p>
               </div>
             </div>
             <div class="is-divider" data-content="OR"></div>
@@ -311,12 +387,19 @@
               <div class="media-content">
                 <div class="content">
                   <p class="is-size-5">
-                    <strong class="title is-4 highlighted">Saint-Gobain WRT</strong>
+                    <strong class="title is-4 highlighted"
+                      >Saint-Gobain WRT</strong
+                    >
                     <br />
                     <small>Latrobe,PA</small>
-                    <br />The WRT group is most recognized for its manufacture of pre-engineered and standard ceramic tile shapes, as well as casted
-                    shapes for industrial applications. When it comes to protecting a surface from any sliding abrasion issues, their Durafrax ceramic material is an
-                    industry leader in performance. WRT also offers other products such as epoxies, trial-able wear products, silicone caulks, and silicon carbide bricks.
+                    <br />The WRT group is most recognized for its manufacture
+                    of pre-engineered and standard ceramic tile shapes, as well
+                    as casted shapes for industrial applications. When it comes
+                    to protecting a surface from any sliding abrasion issues,
+                    their Durafrax ceramic material is an industry leader in
+                    performance. WRT also offers other products such as epoxies,
+                    trial-able wear products, silicone caulks, and silicon
+                    carbide bricks.
                   </p>
                 </div>
               </div>
@@ -334,14 +417,16 @@
               <div class="media-content">
                 <div class="content">
                   <p class="is-size-5">
-                    <strong
-                      class="title is-4 highlighted"
-                    >Saint-Gobain Refractories and Lining Group</strong>
+                    <strong class="title is-4 highlighted"
+                      >Saint-Gobain Refractories and Lining Group</strong
+                    >
                     <br />
                     <small>Brazil & the UK</small>
-                    <br />Saint-Gobain Refractories and Lining Group manufactures various refractories such as tap-hole clays,
-                    shotcrete repair products, castables, cement free sol-gel/colloidal silica bonded materials, SiC shapes, various furnace lining materials, and carbon
-                    blocks.
+                    <br />Saint-Gobain Refractories and Lining Group
+                    manufactures various refractories such as tap-hole clays,
+                    shotcrete repair products, castables, cement free
+                    sol-gel/colloidal silica bonded materials, SiC shapes,
+                    various furnace lining materials, and carbon blocks.
                   </p>
                 </div>
               </div>
@@ -362,44 +447,57 @@
               <div class="media-content">
                 <div class="content">
                   <p class="is-size-5">
-                    <strong class="title is-4 highlighted">Saint-Gobain SpyroCor</strong>
+                    <strong class="title is-4 highlighted"
+                      >Saint-Gobain SpyroCor</strong
+                    >
                     <br />
                     <small>Worcester, MA</small>
-                    <br />The Saint-Gobain SpyroCor Group, offers a series of silicon carbide products for the galvanizing, annealing, and
-                    reheat furnace areas. Their proprietary SpyroCor and HeatCor products are constructed from a 3D manufacturing process that utilizes silicon
-                    carbide to increase the performance of any furnace radiant tube (e.g., straight tube, u-tube, tri-tube, w-tube, double-p tube.
+                    <br />The Saint-Gobain SpyroCor Group, offers a series of
+                    silicon carbide products for the galvanizing, annealing, and
+                    reheat furnace areas. Their proprietary SpyroCor and HeatCor
+                    products are constructed from a 3D manufacturing process
+                    that utilizes silicon carbide to increase the performance of
+                    any furnace radiant tube (e.g., straight tube, u-tube,
+                    tri-tube, w-tube, double-p tube.
                   </p>
                 </div>
               </div>
             </article>
           </div>
         </div>
-      
 
-      <div class="column is-6">
-        <div class="box company has-text-white">
-          <article class="media">
-            <div class="media-left">
-              <figure class="image is-128x128">
-                <img src="./../assets/images/logos/us-liner.png" />
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p class="is-size-5">
-                  <strong class="title is-4 highlighted">US Liner Company</strong>
-                  <br />
-                  <small>Cranberry Township, PA</small>
-                  <br />US Liner Company manufactures several different advanced thermoplastic composite sheeting products that are rot, mildew and acid resistant. The
-                  three key products ILB promotes for different industrial and commercial applications are Versitex, Ecotex, and BXR, all manufactured at the
-                  company’s headquarters in Cranberry Township. When looking for a light-weight sheeting product to apply for a given application, nothing
-                  compares to US Liner’s quality and durability.
-                </p>
+        <div class="column is-6">
+          <div class="box company has-text-white">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-128x128">
+                  <img src="./../assets/images/logos/us-liner.png" />
+                </figure>
               </div>
-            </div>
-          </article>
+              <div class="media-content">
+                <div class="content">
+                  <p class="is-size-5">
+                    <strong class="title is-4 highlighted"
+                      >US Liner Company</strong
+                    >
+                    <br />
+                    <small>Harmony, PA</small>
+                    <br />US Liner Company manufactures several different
+                    advanced thermoplastic composite sheeting products that are
+                    rot, mildew and acid resistant. The three key products ILB
+                    promotes for different industrial and commercial
+                    applications are Versitex, Ecotex, and BXR, all manufactured
+                    at the company’s headquarters in Harmony. When
+                    looking for a light-weight sheeting product to apply for a
+                    given application, nothing compares to US Liner’s quality
+                    and durability.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
-      </div></div>
+      </div>
       <!-- Row 3 -->
       <div class="columns is-centered">
         <div class="column is-6">
@@ -416,8 +514,10 @@
                     <strong class="title is-4 highlighted">Quin Global</strong>
                     <br />
                     <small>Omaha, Nebraska</small>
-                    <br />Promotes adhesives capable of setting in 15 minutes or less and can be used in two
-                    specific applications: flooring and general construction, where two surfaces get laminated together.
+                    <br />Promotes adhesives capable of setting in 15 minutes or
+                    less and can be used in two specific applications: flooring
+                    and general construction, where two surfaces get laminated
+                    together.
                   </p>
                 </div>
               </div>
@@ -438,9 +538,13 @@
                     <strong class="title is-4 highlighted">ITC Coatings</strong>
                     <br />
                     <small>Fortworth, TX</small>
-                    <br />Coatings—With its offering of five unique water-based ceramic coating products, ITC caters to many applications. ITC
-                    has products that go on mills thick and cover metal surfaces, ceramic brick, IFB fire brick, fibrous insulation, or any general exterior refractory layer.
-                    Their coatings products basically reradiate or reflect heat back into the product heat source.
+                    <br />Coatings—With its offering of five unique water-based
+                    ceramic coating products, ITC caters to many applications.
+                    ITC has products that go on mills thick and cover metal
+                    surfaces, ceramic brick, IFB fire brick, fibrous insulation,
+                    or any general exterior refractory layer. Their coatings
+                    products basically reradiate or reflect heat back into the
+                    product heat source.
                   </p>
                 </div>
               </div>
@@ -452,10 +556,12 @@
 
     <!-- Services -->
     <section class="logo-background section">
-      <h1 class="title is-2 has-text-centered engraved-text">Additional Value-Added Services</h1>
+      <h1 class="title is-2 has-text-centered engraved-text">
+        Additional Value-Added Services
+      </h1>
       <div class="columns is-centered">
         <div class="column is-5">
-          <p class="is-size-4">{{additionalServices.description}}</p>
+          <p class="is-size-4">{{ additionalServices.description }}</p>
         </div>
 
         <div class="column is-3">
@@ -468,7 +574,10 @@
     <!-- Props -->
     <div>
       Icons made by
-      <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from
+      <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp"
+        >Eucalyp</a
+      >
+      from
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
       <p>ILB Copyright and Issue Date: March 2020</p>
     </div>
@@ -488,12 +597,12 @@ export default {
       return "./../assets/" + feature;
     }
   },
-    methods: {
-    show () {
-      this.$modal.show('Contact');
+  methods: {
+    show() {
+      this.$modal.show("Contact");
     },
-    hide () {
-      this.$modal.hide('Contact');
+    hide() {
+      this.$modal.hide("Contact");
     }
   },
   data: function() {
@@ -557,11 +666,7 @@ export default {
         }
       ],
       productCats1: ["Ceramics", "Sheeting", "Refractories"],
-      productCats2: [
-        "Coating",
-        "Adhesives",
-        "Engineering <br/>Services"
-      ],
+      productCats2: ["Coating", "Adhesives", "Engineering <br/>Services"],
       customers: [
         "Steel",
         "Cement",
@@ -632,7 +737,7 @@ export default {
       },
       additionalServices: {
         description:
-          "ILB offers a variety of specialized services in support of its product sales, along with some standalone services, including engineering design, project and construction management, inspection, and scheduling individually or in conjunction with the Saint-Gobain or Orbital Engineering teams."
+          "ILB offers a variety of specialized services in support of its product sales, along with some standalone services, including engineering design, project and construction management, inspection, and scheduling.  All are offered individually or in conjunction with the Saint-Gobain or Orbital Engineering teams."
       },
       genServices: {
         heading: "Services",
@@ -658,7 +763,7 @@ export default {
               "If a plant has an immediate need for any additional inspection or scheduling services, the ILB team can step in and help.",
             route: "/services/scheduling"
           }
-        ] 
+        ]
       }
     };
   }
@@ -668,7 +773,8 @@ export default {
 <style css-scoped>
 .hero.bg {
   background: linear-gradient(to right, #00000000, #ffffff00),
-    url("../assets/images/img/hero-bg-with-logo.jpg") no-repeat center left fixed;
+    url("../assets/images/img/hero-bg-with-logo.jpg") no-repeat center left
+      fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -684,7 +790,10 @@ export default {
 }
 .shift-hero {
   position: relative;
-  
+}
+
+#residential-button {
+  padding-bottom: 5px;
 }
 .shift-hero-logo {
   position: relative;
@@ -693,6 +802,10 @@ export default {
 }
 .highlighted {
   color: #eda70f;
+}
+.shift-hero-phrases {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .hero-subtitle-head {
   border-bottom: rgb(0, 0, 0);
@@ -719,7 +832,7 @@ export default {
 }
 
 .is-shady {
-  animation: flyintoright .9s backwards;
+  animation: flyintoright 0.9s backwards;
   /* background: #fff; */
   box-shadow: 0 10px 16px rgba(92, 84, 79, 0.5), 0 6px 6px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
@@ -792,7 +905,8 @@ export default {
       rgba(0, 0, 0, 0.351),
       rgba(0, 0, 0, 0.098)
     ),
-    url("../assets/images/img/factory1-original.jpg") no-repeat center center fixed;
+    url("../assets/images/img/factory1-original.jpg") no-repeat center center
+      fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -898,167 +1012,157 @@ export default {
   background-size: cover;
 
   max-width: 5000px;
-
 }
 
 /* Small Screen  ----------- */
-@media only screen 
-and (max-width : 768px) {
-#desktop-test {
-  background:rgb(225, 25, 192)
-}
-ul li{
-  list-style-position: outside;
-  text-indent: -3em;
-  padding: 1px 10 3px 6px;
-}
+@media only screen and (max-width: 768px) {
+  #desktop-test {
+    background: rgb(225, 25, 192);
+  }
+  ul li {
+    list-style-position: outside;
+    text-indent: -3em;
+    padding: 1px 10 3px 6px;
+  }
 
-ul {
-  position: relative;
-  left: 1.8em;
-}
+  ul {
+    position: relative;
+    left: 1.8em;
+  }
 
-.several-solutions {
-  padding-left: em;
-}
+  .several-solutions {
+    padding-left: em;
+  }
 
-#several-solutions {
-  display: flex;
-  flex-direction: column-reverse;
-}
+  #several-solutions {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-#product-cats-box {
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.796),
-    rgba(0, 0, 0, 0.76)
-  );
-  border: 5px outset #a4a09e;
-  border-radius: 1px 1px 1px 1px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+  #product-cats-box {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.796),
+      rgba(0, 0, 0, 0.76)
+    );
+    border: 5px outset #a4a09e;
+    border-radius: 1px 1px 1px 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-#product-cat {
-  font-size: 1.1em;
-  
-}
+  #product-cat {
+    font-size: 1.1em;
+  }
 }
 /*  */
 
 /* Tablets (portrait) ----------- */
-@media only screen 
-and (min-width : 769px) {
-#desktop-test {
-  background:rgb(8, 162, 8)
-}
-#product-cat {
-  font-size: 1.5em;
-}
+@media only screen and (min-width: 769px) {
+  #desktop-test {
+    background: rgb(8, 162, 8);
+  }
+  #product-cat {
+    font-size: 1.5em;
+  }
 
-#product-cats-box {
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.796),
-    rgba(0, 0, 0, 0.76)
-  );
-  border: 5px outset #a4a09e;
-  border-radius: 1px 1px 1px 1px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  #product-cats-box {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.796),
+      rgba(0, 0, 0, 0.76)
+    );
+    border: 5px outset #a4a09e;
+    border-radius: 1px 1px 1px 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-}
+  ul li {
+    list-style-position: outside;
+    text-indent: -3em;
+    padding: 1px 10 3px 6px;
+  }
 
-ul li{
-  list-style-position: outside;
-  text-indent: -3em;
-  padding: 1px 10 3px 6px;
-}
-
-ul {
-  position: relative;
-  left: 2em;
-}
+  ul {
+    position: relative;
+    left: 2em;
+  }
 }
 /*  */
 
 /* Desktop  ----------- */
-@media only screen 
-and (min-width : 1024px) 
-and (max-width: 1361px) {
-#desktop-test {
-  background:rgb(50, 62, 226)
-}
-ul li{
-  list-style-position: outside;
-  text-indent: -3em;
-  padding: 1px 10 3px 6px;
-}
+@media only screen and (min-width: 1024px) and (max-width: 1361px) {
+  #desktop-test {
+    background: rgb(50, 62, 226);
+  }
+  ul li {
+    list-style-position: outside;
+    text-indent: -3em;
+    padding: 1px 10 3px 6px;
+  }
 
-ul {
-  position: relative;
-  left: 3em;
-}
+  ul {
+    position: relative;
+    left: 3em;
+  }
 
-.several-solutions {
-  padding-left: 1em;
-}
+  .several-solutions {
+    padding-left: 1em;
+  }
 
-#product-cats-box {
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.796),
-    rgba(0, 0, 0, 0.76)
-  );
-  border: 5px outset #a4a09e;
-  border-radius: 1px 1px 1px 1px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+  #product-cats-box {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.796),
+      rgba(0, 0, 0, 0.76)
+    );
+    border: 5px outset #a4a09e;
+    border-radius: 1px 1px 1px 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-#product-cat {
-  font-size: 1.4em;
-}
+  #product-cat {
+    font-size: 1.5em;
+  }
 }
 /*  */
 /* Widescreen  ----------- */
-@media only screen 
-and (min-width : 1362px) {
-#desktop-test {
-  background:rgb(253, 80, 0)
-}
-ul li{
-  list-style-position: outside;
-  text-indent: -3em;
-  padding: 1px 10 3px 6px;
-}
-ul {
-  position: relative;
-  left: 3em;
-}
-.several-solutions {
-  padding-left: 1em;
-}
+@media only screen and (min-width: 1362px) {
+  #desktop-test {
+    background: rgb(253, 80, 0);
+  }
+  ul li {
+    list-style-position: outside;
+    text-indent: -3em;
+    padding: 1px 10 3px 6px;
+  }
+  ul {
+    position: relative;
+    left: 3em;
+  }
+  .several-solutions {
+    padding-left: 1em;
+  }
 
-#product-cats-box {
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.796),
-    rgba(0, 0, 0, 0.76)
-  );
-  border: 5px outset #a4a09e;
-  border-radius: 1px 1px 1px 1px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+  #product-cats-box {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.796),
+      rgba(0, 0, 0, 0.76)
+    );
+    border: 5px outset #a4a09e;
+    border-radius: 1px 1px 1px 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-#product-cat {
-  font-size: 2em;
-}
+  #product-cat {
+    font-size: 2em;
+  }
 }
 /*  */
-
-
 
 #text-background {
   background: linear-gradient(
@@ -1068,15 +1172,14 @@ ul {
   );
 }
 
-
-
 #product-companies {
   background: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.721),
       rgba(0, 0, 0, 0.74)
     ),
-    url("../assets/images/img/factory1-original.jpg") no-repeat center center fixed;
+    url("../assets/images/img/factory1-original.jpg") no-repeat center center
+      fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1110,7 +1213,6 @@ ul {
   border-radius: 3px;
   padding-bottom: 0px;
 }
-
 
 .title {
   font-variant: small-caps;

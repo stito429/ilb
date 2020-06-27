@@ -122,7 +122,7 @@ export default {
 }
 
 .hero-bg {
-  background: rgb(174, 174, 174);
+  background: rgb(204, 91, 16);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -174,11 +174,11 @@ export default {
 }
 
 .engraved-text-header {
-  color: rgb(0, 0, 0);
+  color: rgb(204, 91, 16);
   text-shadow: 1px 0px rgb(191, 191, 191), 0px -1px rgb(67, 67, 67);
 }
 hr {
-  border: 1px solid rgb(19, 42, 94);
+  border: 1px solid rgb(204, 91, 16);
   border-radius: 2px;
 }
 .logo-color {

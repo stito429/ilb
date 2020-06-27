@@ -11,9 +11,9 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_a14b3a44 from 'nuxt_plugin_plugin_a14b3a44' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_axios_03c36af4 from 'nuxt_plugin_axios_03c36af4' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_vuejsmodal_0719e4a0 from 'nuxt_plugin_vuejsmodal_0719e4a0' // Source: ../plugins/vue-js-modal.js (mode: 'client')
+import nuxt_plugin_veevalidate_1a0c1998 from 'nuxt_plugin_veevalidate_1a0c1998' // Source: ../plugins/vee-validate.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -44,7 +44,7 @@ Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n
 
 const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
-async function createApp(ssrContext, config = {}) {
+async function createApp (ssrContext) {
   const router = await createRouter(ssrContext)
 
   // Create Root instance
@@ -120,7 +120,7 @@ async function createApp(ssrContext, config = {}) {
     ssrContext
   })
 
-  function inject(key, value) {
+  const inject = function (key, value) {
     if (!key) {
       throw new Error('inject(key, value) has no key provided')
     }
@@ -131,10 +131,6 @@ async function createApp(ssrContext, config = {}) {
     key = '$' + key
     // Add into app
     app[key] = value
-    // Add into context
-    if (!app.context[key]) {
-      app.context[key] = value
-    }
 
     // Check if plugin not already installed
     const installKey = '__nuxt_' + key + '_installed__'
@@ -154,21 +150,7 @@ async function createApp(ssrContext, config = {}) {
     })
   }
 
-  // Inject runtime config as $config
-  inject('config', config)
-
-  // Add enablePreview(previewData = {}) in context for plugins
-  if (process.static && process.client) {
-    app.context.enablePreview = function (previewData = {}) {
-      app.previewData = Object.assign({}, previewData)
-      inject('preview', previewData)
-    }
-  }
   // Plugin execution
-
-  if (typeof nuxt_plugin_plugin_a14b3a44 === 'function') {
-    await nuxt_plugin_plugin_a14b3a44(app.context, inject)
-  }
 
   if (typeof nuxt_plugin_axios_03c36af4 === 'function') {
     await nuxt_plugin_axios_03c36af4(app.context, inject)
@@ -178,11 +160,8 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_vuejsmodal_0719e4a0(app.context, inject)
   }
 
-  // Lock enablePreview in context
-  if (process.static && process.client) {
-    app.context.enablePreview = function () {
-      console.warn('You cannot call enablePreview() outside a plugin.')
-    }
+  if (typeof nuxt_plugin_veevalidate_1a0c1998 === 'function') {
+    await nuxt_plugin_veevalidate_1a0c1998(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

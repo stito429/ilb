@@ -43,9 +43,6 @@
           <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph2Header}}</h3>
           <div class="is-size-4">{{paragraph2}}</div>
           <hr />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph3Header}}</h3>
-          <div class="is-size-4">{{paragraph3}}</div>
-          <hr />
           <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph4Header}}</h3>
 
           <div class="is-size-4">{{paragraph4}}</div>

@@ -167,7 +167,7 @@ components: {
       ]
     };
   },
-methods: {
+methods: {  
   show: function () {
     this.shown = true;
     this.$modal.show('contact-form');
