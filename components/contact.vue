@@ -27,8 +27,8 @@
           <fieldset>
             <div class="level">
               <div class="level-left">
-                <figure class="level-item image is-128x128">
-                  <img
+                <figure class="level-item image is-128x128 ">
+                  <img class="logo-image"
                     v-bind:src="require('~/assets/images/logos/ilblogo.png')"
                     alt="Industrial Linerback Services LLC"
                   />
@@ -431,7 +431,7 @@
 
             <div class="field is-grouped is-grouped-centered">
               <p class="control">
-                <input type="submit" />
+                <input type="submit" class="button is-success" />
 
                 <!-- <a class="button is-success" type="submit" form="contact-form" value="Submit">Submit</a> -->
               </p>
@@ -452,6 +452,7 @@
 import { ValidationObserver, ValidationProvider } from "vee-validate";
 import companyLogo from "~/assets/images/logos/ilblogo.png";
 export default {
+
   name: "contact",
   components: {
     ValidationObserver,
@@ -513,5 +514,12 @@ export default {
   color: red;
 }
 
-</style>
+.level {
+  margin-bottom: 0px;
+}
+
+.logo-image {
+  max-width: 200px;
+}
+</style> 
 

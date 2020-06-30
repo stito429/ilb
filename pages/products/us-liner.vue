@@ -1,169 +1,188 @@
 <template>
   <section>
-    <div class="hero-padding hero-bg">
-      <div class="level">
-        <div class="level-left">
-          <div class="level-item">
-            <figure class="image is-128x128">
-              <img src="../../assets/images/logos/us-liner.png" class="logo-image" />
+    <div class="hero hero-bg is-small">
+      <div class="hero-body">
+        <div class="columns is-centered">
+          <div class="column is-2">
+            <figure class="image ">
+              <img
+                src="../../assets/images/logos/us-liner.png"
+                class="logo-image"
+              />
             </figure>
           </div>
-
-          <div class="level-item">
-            <div class="title is-1 has-text-weight-bold has-text-white">{{header}}</div>
+          <div class="column is-8">
+            <h1 class="title is-1 has-text-weight-bold engraved-text-hero">
+              {{ header }}
+            </h1>
+            <span class="hero-fade-effect"></span>
+            <br />
           </div>
         </div>
       </div>
     </div>
 
     <div class="component">
-      <section class="has-text-black columns is-centered">
-        <div class="column is-10 padding">
+      <section class="has-text-black columns is-centered layout">
+        <div class="column is-10">
           <br />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph1Header}}</h3>
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
+            {{ paragraph1Header }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
+          <div class="is-size-4">{{ paragraph1 }}</div>
           <div class="columns is-centered">
-            <div class="column is-7">
-              <div class="is-size-4">{{paragraph1}}</div>         
+            <div class="column is-two-third">
+              <br />
+              <figure class="image">
+                <img
+                  class="product-image"
+                  :src="
+                    require('../../assets/images/product-photos/us-conc2.jpg')
+                  "
+                />
+              </figure>
             </div>
-            <div class="column is-75">
-              <figure class="image" >
-                <img :src="require('../../assets/images/product-photos/us-conc2.jpg')" id="product-image-background" />
+            <div class="column is-two-third">
+              <br />
+              <figure class="image">
+                <img
+                  class="product-image"
+                  :src="
+                    require('../../assets/images/product-photos/us-cover.jpg')
+                  "
+                />
               </figure>
             </div>
           </div>
-           <div class="is-size-4">{{paragraph2}}</div>   
-          <div class="column is-10 is-offset-1">
-            <div class="columns has-text-black">
-              <div class="column is-6">
-                <ul class="fa-ul">
-                  <li v-for="quality1 in qualities1" :key="quality1">
-                    <span class="icon is-size-7 logo-accent-color">
-                      <i class="fa-li fas fa-circle"></i>
-                    </span>
-                    <span class="is-size-4" v-bind:href="quality1" v-html="quality1"></span>
-                  </li>
-                </ul>
-              </div>
-              <div class="column is-6">
-                <ul class="fa-ul">
-                  <li v-for="quality2 in qualities2" :key="quality2">
-                    <span class="icon is-size-7 logo-accent-color">
-                      <i class="fa-li fas fa-circle"></i>
-                    </span>
-                    <span class="is-size-4" v-bind:href="quality2" v-html="quality2"></span>
-                  </li>
-                </ul>
-              </div>
+          <div class="is-size-4">{{ paragraph2 }}</div>
+          <div class="columns is-centered">
+            <div class="column is-two-third">
+              <ul class="fa-ul">
+                <li v-for="quality1 in qualities1" :key="quality1">
+                  <span class="icon is-size-7 logo-color">
+                    <i class="fa-li fas fa-circle"></i>
+                  </span>
+                  <span
+                    class="is-size-4"
+                    v-bind:href="quality1"
+                    v-html="quality1"
+                  ></span>
+                </li>
+              </ul>
+            </div>
+            <div class="column is-two-third">
+              <ul class="fa-ul">
+                <li v-for="quality2 in qualities2" :key="quality2">
+                  <span class="icon is-size-7 logo-color">
+                    <i class="fa-li fas fa-circle"></i>
+                  </span>
+                  <span
+                    class="is-size-4"
+                    v-bind:href="quality2"
+                    v-html="quality2"
+                  ></span>
+                </li>
+              </ul>
             </div>
           </div>
+
           <hr />
 
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph4Header}}</h3>
-          <div class="is-size-4">{{paragraph4}}</div>
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ paragraph4Header }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
+          <div class="is-size-4">{{ paragraph4 }}</div>
           <br />
           <div class="columns" v-for="product in products" :key="product.name">
             <div class="column is-2">
-              <div class="title is-4 logo-accent-color">{{product.name}}</div>
+              <div class="title is-4 logo-accent-color">{{ product.name }}</div>
             </div>
             <div class="column is-10 product-description">
-              <div class="is-size-4">{{product.description}}</div>
+              <div class="is-size-4">{{ product.description }}</div>
             </div>
           </div>
 
-          <!-- <div class="columns is-multiline is-centered">
-            <div v-for="product in products" :key="product.name" class="column is-4">
-              <div class="card is-shady">
-              <div class="card-header hero-bg">
-                <div class="card-header-title">
-                  <div class="has-text-centered is-size-4 has-text-white">{{ product.name}}</div>
-                </div>
-              </div>
-              <div class="card-content">
-                <div class="content is-size-5 has-text-black">
-                  <p>{{product.description}}</p>
-                </div>
-              </div>
-            </div>
-          </div></div>-->
+          <hr />
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ paragraph3Header }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
+          <div class="is-size-4">{{ paragraph3 }}</div>
 
           <hr />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph3Header}}</h3>
-          <div class="is-size-4">{{paragraph3}}</div>
-
-          <hr />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph5Header}}</h3>
-          <div class="is-size-4">{{paragraph5}}</div>
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ paragraph5Header }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
+          <div class="is-size-4">{{ paragraph5 }}</div>
           <br />
 
           <hr />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{photosHeader}}</h3>
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ photosHeader }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
           <div class="columns is-centered">
             <div class="column is-two-third">
               <figure class="image">
-                <img class="product-image" :src="require('../../assets/images/product-photos/us-conc1.jpg')" />
+                <img
+                  class="product-image"
+                  :src="
+                    require('../../assets/images/product-photos/us-caisson.jpg')
+                  "
+                />
               </figure>
             </div>
             <div class="column is-two-third">
               <figure class="image">
-                <img class="product-image" :src="require('../../assets/images/product-photos/us-conc3.jpg')" />
+                <img
+                  class="product-image"
+                  :src="
+                    require('../../assets/images/product-photos/us-conc3.jpg')
+                  "
+                />
               </figure>
             </div>
           </div>
+          <hr />
+          <!-- CONTACT SECTION -->
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
+            {{ contactHeader }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
+          <div class="is-size-4">{{ contact }}</div>
+          <br />
+          <div class="columns is-centered is-vcentered">
+            <div class="column is-4 has-text-centered">
+              <a class="contact-button" href="tel:(724)825-1474">
+                Call<br />724-825-1474</a
+              >
+            </div>
+            <div class="column is-4 has-text-centered">
+              <a class="contact-button" @click="$modal.show('contact-form')"
+                >Email<br />
+                verbanicilb@gmail.com</a
+              >
+            </div>
+          </div>
+          <!-- END CONTACT SECTION -->
         </div>
       </section>
       <br />
     </div>
-
-    <footer class="footer hero-bg">
-      <div class="content colummns">
-        <div class="is-size-4 has-text-white column is-offset-1 is-6">{{contact}}</div>
+    <footer class="hero-bg">
+      <div class="content colummns is-centered">
+        <div class="is-size-6 has-text-white column is-8">
+          {{ footer }}
+        </div>
       </div>
     </footer>
   </section>
 </template>
 
 <script>
-// import logo from "../../assets/images/logos/ilblogo.png";
-// export default {
-//   components: {},
-//   data: function() {
-//     return {
-//       name: "US Liner",
-//       website: {
-//         site: "USLCO.com",
-//         url: "https://www.uslco.com"
-//       },
-//       paragraph1:
-//         "Industrial Linerback and Services (ILB)represent’s US Liner in offering their sheeting products in a variety of Industrial applications. US Liner manufactures three key products that ILB is introducing to the Industries it serves….they are: <b>Versitex, Ecotex, and BXR </b> sheets. <p>All of these three product sheets offer the following quality and traits. </p>They are: Rot and mildew resistant, moisture resistant, light weight (20% lighter than aluminum thickness equivalent), acid resistant, corrosion resistant, white in color (Typical) or can come in any other color (min 600 linear ft run needed), cleans very easily with soap and water, either flexible or rigid, recyclable , pretty much non-stick (after water freezes it slides off and  spray foam insulation will not stick to it), very puncture resistant (hot patch method available if it does get punctured), nice smooth top finish and a textured finish on the back for an adhesive to be used to stick product to wood or steel, can include a UV protection layer on the top surface plus they have a farmable use.",
-//       paragraph2:
-//         "US Liner's unique products are currently changing several industries--one in particular being the tractor trailer industry. The others being the RV industry, the railroad, and the US Military.  For more details please visit their website at ",
-//       paragraph3:
-//         "Overall these materials can come in various thicknesses up to almost a quarter of an inch thick. US Liner’s thinner sheet sizes of Versitex are typically made in 8 ft wide rolls (optional 102&quot; wide rolls) and can come in lengths up to 600 linear feet. The other option is that their Versitex and Ecotex board can be processed in 4 x 8 ft panel sheets and then stacked on pallets for shipment. BXR is their translucent panel and it typically comes in 2 ft by 8 ft panels. Here are some further details on the products.",
-//       products: [
-//         {
-//           name: "Versitex",
-//           description:
-//             "Their highly used advanced thermoplastic composite sheet product that is made from continuous glass strands. It is their only product that carries the FDA stamp as it is used to assemble refrigerated truck panels as it has a back scrim surface for adhesion to other products such as insulation. These high resistant impact resistant panels are comprised of Polypropylene resin reinforced with continuous bi-directional glass strands. It comes in approximately 6 different thicknesses and named accordingly…….. VR1 (.04”) , VR2 (.06”) , VR3 (.08”),VR5(.125”) ,VR8 (.175”) and VR10 (.215”). The Versitex VR sheeting product provides significant energy absorption over traditional FRP panels and exhibit thermal expansion similar to aluminum but far less than steel."
-//         },
-//         {
-//           name: "Ecotex",
-//           description:
-//             "Made from their own recycled materials and comes in one thickness---3/16” thick. It has a reinforced sandwich construction by laminating Versitex skins onto a chopped long fiber polypropylene and glass core. This low cost material is geared to the environmental conscious seeking value with ultimate strength capabilities."
-//         },
-//         {
-//           name: "BXR",
-//           description:
-//             "US Liners translucent sheet product that is used in tractor trailer roofs. It has over 5 times the tear resistance of the Best fiberglass roof currently in the market place. . It is super bright and has unsurpassed UV protection to deter cracking due to the sun. Its five layer construction makes it very durable by letting light to be transmitted through the product layers and having outstanding durability and strength.  This sheet typically comes in 2 ft x 8 ft panel sizes but can be supplied in 4 ft 8ft sheets."
-//         }
-//       ],
-//       paragraph4:
-//         "Overall, if you look at these products and their uses they have a lot of merit in protecting shed inner walls, any overhang or walkway, chicken coop, metal building roof or side wall, plus may other different applications such as being used as a caisson or concrete form. ",
-//       paragraph5:
-//         "If you would like to know more about the product and its potential uses please contact ILB either by phone or by e-mail to get further details on where we can possibly help."
-//     };
-//   }
-// };
-
 export default {
   components: {},
   data: function() {
@@ -217,9 +236,10 @@ export default {
       paragraph5Header: "More Info",
       paragraph5:
         "A close review of these products and their many uses show that they have significant merit in protecting shed inner walls, any overhang or walkway, chicken coops, metal building roofs or side walls, and many other applications such as being used as a caisson or concrete form.If you have questions or would like to know more about US Liner products and their potential uses at your facility, please contact ILB by phone or e-mail to get further details on how we can assist with your current needs.",
+      photosHeader: "Sample Applications",
       contact:
         "If you have questions or would like to know more about US Liner products and their potential uses at your facility, please contact ILB by phone or e-mail to get further details on how we can assist with your current needs.",
-        footer:
+      footer:
         "Publish Date: March 2020--products and applications are copyright of US Liner"
     };
   }
@@ -227,30 +247,27 @@ export default {
 </script>
 
 <style scoped>
+/* Standard classes across all products pages; only needing product specific colors*/
+
 .component {
   background: linear-gradient(
       to right,
-      #ffffff80 0%,
-      #ffffffa8 10%,
-      #ffffffc4 50%,
-      #ffffff9a 90%,
-      #ffffff87 100%
+      #ffffff68 0%,
+      #ffffffb8 10%,
+      #ffffffaa 50%,
+      #ffffff8e 90%,
+      #ffffff7b 100%
     ),
-    url("../../assets/images/backgrounds/gray.jpg") no-repeat center center fixed;
+    url("../../assets/images/backgrounds/gray.jpg") no-repeat center center
+      fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   /* min-height: 100vh; */
 }
-.hero-padding {
-  padding-top: 75px;
-  padding-bottom: 25px;
-  padding-left: 8.33%;
-  padding-right: 8.33%;
-}
 .hero-bg {
-  background: rgb(72, 148, 84);
+  background: rgba(72, 148, 84);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -260,36 +277,100 @@ export default {
   background-position: left;
   background-repeat: no-repeat;
 }
-@media only screen and (max-width: 600px) {
-  .padding {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+
+.hero-fade-effect {
+  display: block;
+  border: none;
+  color: rgb(199, 199, 199);
+  height: 1px;
+  background: black;
+  background: -webkit-gradient(
+    radial,
+    10% 90%,
+    50,
+    10% 90%,
+    553,
+    from(rgb(193, 193, 193)),
+    to(rgb(72, 148, 84))
+  );
+}
+.heading-fade-effect {
+  display: block;
+  border: none;
+  height: 1px;
+  background: -webkit-gradient(
+    radial,
+    0% 20%,
+    0,
+    100% 10%,
+    555,
+    from(rgb(72, 148, 84)),
+    to(rgba(201, 201, 201, 0.756))
+  );
+}
+.engraved-text-hero {
+  color: rgb(211, 211, 211);
+  text-shadow: 1px 1px rgb(72, 148, 84), -1px -1px rgb(36, 63, 47);
+}
+
+.engraved-text-header {
+  color: rgb(31, 80, 43);
+  text-shadow: 1px 0px rgb(191, 191, 191), 0px -1px rgb(67, 67, 67);
 }
 
 hr {
-  border: 1px solid rgb(78, 172, 65);
-  border-radius: 2px;
+  border: 2px solid rgb(72, 148, 84);
+  border-radius: 4px;
 }
 .logo-color {
-  color: rgb(54, 147, 41);
-}
-.logo-accent-color {
-  color: rgb(213, 107, 26);
+  color: rgb(72, 148, 84);
 }
 
 .logo-image {
   border-radius: 3px;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
 }
 
+.layout {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact-button {
+  border: none;
+  background: rgba(72, 148, 84);
+  color: #e9e9e9 !important;
+  font-weight: 900;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  min-width: 80%;
+  max-width: 100%;
+}
+
+.contact-button:hover {
+  color: rgba(72, 148, 84) !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px;
+  background: rgb(230, 230, 230);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.2s ease 0s;
+}
+/* Classes specific to US Liner  */
+
 .product-image {
-  min-width: 100%;
+  /* width: 100%; */
+  max-width: 350px;
   padding: 10px;
-  /* position: relative; */
+  /* float: right; */
+}
+
+.logo-accent-color {
+  color: rgb(213, 107, 26);
 }
 
 #product-image-background {
@@ -299,8 +380,6 @@ hr {
   min-height: 200px;
 }
 
-#product-image3 {
-}
 .product-description {
   padding-left: 0px;
 }

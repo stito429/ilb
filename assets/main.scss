@@ -7,6 +7,7 @@
 // Colours
 $primary: #e25e2a;
 $secondary: #d0e0ee;
+$navbar-height: 4.3rem;
 
 // Breakpoints
 // $tablet: 724px;
@@ -26,3 +27,21 @@ $secondary: #d0e0ee;
 @import "~bulma/sass/components/navbar.sass";
 @import "~bulma/sass/layout/hero.sass";
 @import "~bulma/sass/layout/section.sass";
+
+
+.bounce-enter-active {
+    animation: bounce-in .2s;
+  }
+  .bounce-leave-active {
+    animation: bounce-out .5s;
+  }
+  @keyframes bounce-in {
+    0% { transform: scale(0) }
+    50% { transform: scale(1.5) }
+    100% { transform: scale(1) }
+  }
+  @keyframes bounce-out {
+    0% { transform: scale(1) }
+    50% { transform: scale(1.5) }
+    100% { transform: scale(0) }
+  }

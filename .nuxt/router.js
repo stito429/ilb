@@ -4,9 +4,9 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _06235f68 = () => interopDefault(import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */))
+const _323b0a7f = () => interopDefault(import('../pages/products/index.vue' /* webpackChunkName: "pages/products/index" */))
 const _3b0ce8b0 = () => interopDefault(import('../pages/tea.vue' /* webpackChunkName: "pages/tea" */))
 const _35662230 = () => interopDefault(import('../pages/products/itc-coatings.vue' /* webpackChunkName: "pages/products/itc-coatings" */))
-const _c99dac32 = () => interopDefault(import('../pages/products/Products.vue' /* webpackChunkName: "pages/products/Products" */))
 const _187f2314 = () => interopDefault(import('../pages/products/quin-global.vue' /* webpackChunkName: "pages/products/quin-global" */))
 const _5b709e47 = () => interopDefault(import('../pages/products/sg-refractories.vue' /* webpackChunkName: "pages/products/sg-refractories" */))
 const _c4d4c59a = () => interopDefault(import('../pages/products/sg-spyrocor.vue' /* webpackChunkName: "pages/products/sg-spyrocor" */))
@@ -39,6 +39,10 @@ export const routerOptions = {
     component: _06235f68,
     name: "about"
   }, {
+    path: "/products",
+    component: _323b0a7f,
+    name: "products"
+  }, {
     path: "/tea",
     component: _3b0ce8b0,
     name: "tea"
@@ -46,10 +50,6 @@ export const routerOptions = {
     path: "/products/itc-coatings",
     component: _35662230,
     name: "products-itc-coatings"
-  }, {
-    path: "/products/Products",
-    component: _c99dac32,
-    name: "products-Products"
   }, {
     path: "/products/quin-global",
     component: _187f2314,

@@ -572,7 +572,7 @@
       </div>
     </section>
     <!-- Props -->
-    <div>
+    <footer id="landing-footer">
       Icons made by
       <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp"
         >Eucalyp</a
@@ -580,15 +580,15 @@
       from
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
       <p>ILB Copyright and Issue Date: March 2020</p>
-    </div>
-    <!-- <contact-form-modal /> -->
+    </footer>
+
   </section>
 </template>
 
 <script>
 import logo from "./../assets/images/logos/ilblogo.png";
-// import ContactFormModal from "./../components/contact";
 export default {
+  transition: 'bounce',
   components: {
     // ContactFormModal
   },
@@ -781,7 +781,7 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
 
-  background-position: left;
+  background-position: center center ;
   background-repeat: no-repeat;
 }
 
@@ -790,16 +790,13 @@ export default {
 }
 .shift-hero {
   position: relative;
+  top: -8vh;
 }
 
 #residential-button {
   padding-bottom: 5px;
 }
-.shift-hero-logo {
-  position: relative;
-  top: 20px;
-  left: 150px;
-}
+
 .highlighted {
   color: #eda70f;
 }
@@ -1257,5 +1254,17 @@ i.fa::before {
 
 .shadowed {
   text-shadow: -10px -10px 10px #000000;
+}
+
+#landing-footer {
+  background: -webkit-linear-gradient(
+    top,
+    #f7f7f7 0%,
+    #e6e6e6 21%,
+    #f0f0f0 50%,
+    #c5c5c5 80%,
+    #c0c0c0 100%
+  );
+  padding: 20px;
 }
 </style>

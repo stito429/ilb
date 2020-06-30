@@ -1,19 +1,19 @@
 <template>
   <section>
     <div class="hero hero-bg is-small">
-      <br />
-      <br />
-      <br />
       <div class="hero-body">
-        <div class="columns is-vcentered">
-          <div class="column is-2 is-offset-1">
+        <div class="columns is-vcentered is-centered">
+          <div class="column is-2">
             <figure class="image is-128x128">
               <img src="../../assets/images/logos/sg.png" class="logo-image" />
             </figure>
           </div>
           <div class="column is-8">
             <br />
-            <h1 class="title is-1 has-text-weight-bold has-text-white">{{header}}</h1>
+            <h1 class="title is-1 has-text-weight-bold engraved-text-hero">
+              {{ header }}
+            </h1>
+            <span class="hero-fade-effect"></span>
             <br />
           </div>
         </div>
@@ -21,27 +21,38 @@
     </div>
 
     <div class="component">
-      <section class="has-text-black columns is-centered">
-        <div class="column is-10 padding">
+      <section class="has-text-black columns is-centered layout">
+        <div class="column is-10">
           <br />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph1Header}}</h3>
-          <div class="columns is-vcentered">
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
+            {{ paragraph1Header }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
+          <div class="columns is-centered">
             <div class="column is-8">
-              <div class="is-size-4">{{paragraph1}}</div>
+              <div class="is-size-4">{{ paragraph1 }}</div>
             </div>
             <div class="column is-4">
-              <figure class="image">
-                <img :src="require('../../assets/images/product-photos/sg-spyrocor1.png')" />
+              <figure class="image product-image">
+                <img
+                  :src="
+                    require('../../assets/images/product-photos/sg-spyrocor1.png')
+                  "
+                />
               </figure>
             </div>
           </div>
 
           <hr />
 
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph2Header}}</h3>
-          <div class="is-size-4">{{paragraph2}}</div>
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
+            {{ paragraph2Header }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
+          <div class="is-size-4">{{ paragraph2 }}</div>
+          <br />
 
-          <div class="is-size-4">{{paragraph3}}</div>
+          <div class="is-size-4">{{ paragraph3 }}</div>
           <br />
 
           <div class="columns is-vcentered">
@@ -49,78 +60,97 @@
               <figure class="image">
                 <img
                   class="product-image"
-                  :src="require('../../assets/images/product-photos/sg-spyrocor2.png')"
+                  :src="
+                    require('../../assets/images/product-photos/sg-spyrocor2.png')
+                  "
                 />
-              </figure></div>
-              <div class="column is-7 is-offset-1">
+              </figure>
+            </div>
+            <div class="column is-7 is-offset-1">
               <ol>
-                <li class="is-size-4" v-for="benefit in benefits" :key="benefit">{{benefit}}</li>
+                <li
+                  class="is-size-4"
+                  v-for="benefit in benefits"
+                  :key="benefit"
+                >
+                  {{ benefit }}
+                </li>
               </ol>
-              </div>
-            
-          
+            </div>
           </div>
-          <hr/>
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph4Header}}</h3>
-          <div class="is-size-4">{{paragraph4}}</div>
-
           <hr />
-          <!-- <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{photosHeader}}</h3> -->
+
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
+            {{ paragraph4Header }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
+          <div class="is-size-4">{{ paragraph4 }}</div>
+          <br />
+          <hr />
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">{{photosHeader}}</h3>
+          <span class="heading-fade-effect"></span><br />
           <div class="columns is-centered">
             <div class="column is-two-third">
               <figure class="image">
-                <img class="product-image" :src="require('../../assets/images/product-photos/sg-spyrocor3.png')" />
+                <img
+                  class="product-image" id="vert-insert"
+                  :src="
+                    require('../../assets/images/product-photos/sg-spyrocor3.png')
+                  "
+                />
               </figure>
             </div>
             <div class="column is-two-third">
               <figure class="image">
-                <img class="product-image" :src="require('../../assets/images/product-photos/sg-spyrocor4.png')" />
+                <img
+                  class="product-image"
+                  :src="
+                    require('../../assets/images/product-photos/sg-spyrocor4.png')
+                  "
+                />
               </figure>
-              <!-- <figure class="image">
-                <img class="product-image" :src="require('../../assets/images/product-photos/sg-spyrocor5.png')" />
-              </figure> -->
+
             </div>
           </div>
+
+          <hr />
+          <!-- CONTACT SECTION -->
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
+            {{ contactHeader }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
+          <div class="is-size-4">{{ contact }}</div>
+          <br />
+          <div class="columns is-centered is-vcentered">
+            <div class="column is-4 has-text-centered">
+              <a class="contact-button" href="tel:(724)825-1474">
+                Call<br />724-825-1474</a
+              >
+            </div>
+            <div class="column is-4 has-text-centered">
+              <a class="contact-button" @click="$modal.show('contact-form')"
+                >Email<br />
+                verbanicilb@gmail.com</a
+              >
+            </div>
+          </div>
+          <!-- END CONTACT SECTION -->
         </div>
       </section>
       <br />
     </div>
 
-    <footer class="footer hero-bg">
-      <div class="content colummns">
-        <div class="is-size-4 has-text-white column is-offset-1 is-6">{{contact}}</div>
-        <div class="is-size-4 has-text-white column is-offset-1 is-6">{{footer}}</div>
+    <footer class="hero-bg">
+      <div class="content colummns is-centered">
+        <div class="is-size-6 has-text-white column is-8">
+          {{ footer }}
+        </div>
       </div>
     </footer>
   </section>
 </template>
 
 <script>
-// export default {
-//   components: {},
-//   data: function() {
-//     return {
-//       name: "Saint-Gobain SpyroCor",
-//       paragraph1:
-//         "Industrial Linerback and Services (ILB) represents the Saint-Gobain SpyroCor Group where they have a radiant tube insert product that goes into either Galvanizing, Annealing and Reheat Furnaces. The SpyroCor product is made up of a series of Silicon Carbide flute blocks that are installed onto a rod then inserted in the furnaces radiant tube exit side. SpyroCor is proven to be a product that all furnace builders and users take a look at to see if it has benefit for them.",
-//       paragraph2:
-//         "Over the years SpyroCor has been used in a variety of Industries. This product can be installed in either straight tubes, U-tubes, Tri and W-tubes and most recently tried in Double P Tubes.",
-//       paragraph3:
-//         " SpyroCor may be something your group might want to consider.  SpyroCor does have a proven track record of helping furnace performance for almost 15 plus years now.  Over the years here are some of the key benefits that have been experienced.",
-//       paragraph4:
-//         "If you look at these benefits above and our flyer details which ILB can share with its customers it makes a lot of sense to consider  from an operations payback standpoint.  It’s no problem—we can work with your team to maximize your savings.",
-//       benefits: [
-//         "1) More uptime and more throughputs due to increased heat output",
-//         "2) Real energy savings with even heat distribution",
-//         "3) Sustained product emissions reducing CO2 and NOx",
-//         "4) High performance and low maintenance",
-//         "5) Contributes to increasing your radiant tube shell life",
-//         "6) Easy; Do-it-yourself installation"
-//       ]
-//     };
-//   }
-// };
-
 export default {
   components: {},
   data: function() {
@@ -146,9 +176,11 @@ export default {
       paragraph4Header: "Benefits",
       paragraph4:
         "Based on these benefits and our marketing material details, which ILB can share with our customers, it makes sense to consider SpyroCor space from an operations payback standpoint.  We will work with your team to achieve your performance goals and maximize your cost savings.",
+      photosHeader: "Tube Inserts",
+      contactHeader: "Contact Us",
       contact:
         "Please contact ILB by phone or e-mail if you have questions and to get further details on how we can help.",
-        footer:
+      footer:
         "Publish Date: March 2020--products and applications are copyright of Saint-Gobain"
     };
   }
@@ -156,6 +188,8 @@ export default {
 </script>
 
 <style scoped>
+/* Standard classes across all products pages; only needing product specific colors*/
+
 .component {
   background: linear-gradient(
       to right,
@@ -174,7 +208,7 @@ export default {
   /* min-height: 100vh; */
 }
 .hero-bg {
-  background: rgb(191, 38, 4);
+  background: rgba(191, 38, 4);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -184,16 +218,50 @@ export default {
   background-position: left;
   background-repeat: no-repeat;
 }
-@media only screen and (max-width: 600px) {
-  .padding {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+
+.hero-fade-effect {
+  display: block;
+  border: none;
+  color: rgb(199, 199, 199);
+  height: 1px;
+  background: black;
+  background: -webkit-gradient(
+    radial,
+    10% 90%,
+    50,
+    10% 90%,
+    553,
+    from(rgb(193, 193, 193)),
+    to(rgb(191, 38, 4))
+  );
+}
+.heading-fade-effect {
+  display: block;
+  border: none;
+  height: 1px;
+  background: -webkit-gradient(
+    radial,
+    0% 20%,
+    0,
+    100% 10%,
+    555,
+    from(rgb(191, 38, 4)),
+    to(rgba(201, 201, 201, 0.756))
+  );
+}
+.engraved-text-hero {
+  color: rgb(211, 211, 211);
+  text-shadow: 1px 1px rgb(132, 165, 148), -1px -1px rgb(36, 63, 47);
+}
+
+.engraved-text-header {
+  color: rgb(191, 38, 4);
+  text-shadow: 1px 0px rgb(191, 191, 191), 0px -1px rgb(67, 67, 67);
 }
 
 hr {
-  border: 1px solid rgb(206, 53, 19);
-  border-radius: 2px;
+  border: 2px solid rgb(191, 38, 4);
+  border-radius: 4px;
 }
 .logo-color {
   color: rgb(206, 53, 19);
@@ -204,7 +272,45 @@ hr {
   position: absolute;
 }
 
-.product-image {
+.layout {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact-button {
+  border: none;
+  background: rgba(191, 38, 4);
+  color: #e9e9e9 !important;
+  font-weight: 900;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  min-width: 80%;
+  max-width: 100%;
+}
+
+.contact-button:hover {
+  color: rgba(191, 38, 4) !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px;
+  background: rgb(230, 230, 230);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.2s ease 0s;
+}
+
+
+
+/*  PRODUCT SPECIFIC */
+
+#vert-insert {
+  max-height: 500px
+}
+
+/* .product-image {
   max-width: 100%;
   padding: 10px;
   position: relative;
@@ -217,43 +323,7 @@ hr {
 }
 .product-description {
   padding-left: 0px;
-}
-
-/* .layout {
-  padding-left: 50px;
-  padding-right: 50px;
 } */
 
-.card-content {
-  padding: 0px;
-  margin-bottom: 0px;
-}
-.card-content .content {
-  margin: 1rem 1rem;
-  padding: 0px;
-}
 
-.card-header {
-  padding-top: 0px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-.card {
-  width: 400px;
-  display: flex;
-  min-height: 400px;
-  flex-direction: column;
-  background-color: rgba(65, 124, 85, 0.084);
-}
-
-.is-shady {
-  animation: flyintoright 0.9s backwards;
-  /* background: #fff; */
-  box-shadow: 0 10px 16px rgba(92, 84, 79, 0.5), 0 6px 6px rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  display: inline-block;
-  margin: 10px;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-}
 </style>

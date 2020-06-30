@@ -1,19 +1,18 @@
 <template>
   <section>
     <div class="hero hero-bg is-small">
-      <br />
-      <br />
-      <br />
       <div class="hero-body">
-        <div class="columns is-vcentered">
-          <div class="column is-2 is-offset-1">
+        <div class="columns is-vcentered is-centered">
+          <div class="column is-2">
             <figure class="image is-128x128">
               <img src="../../assets/images/logos/itc.png" class="logo-image" />
             </figure>
           </div>
           <div class="column is-8">
             <br />
-            <h1 class="title is-1 has-text-weight-bold engraved-text-hero">{{header}}</h1>
+            <h1 class="title is-1 has-text-weight-bold engraved-text-hero">
+              {{ header }}
+            </h1>
             <span class="hero-fade-effect"></span>
             <br />
           </div>
@@ -22,48 +21,52 @@
     </div>
 
     <div class="component">
-      <section class="has-text-black columns is-centered">
-        <div class="column is-10 padding">
+      <section class="has-text-black columns is-centered layout">
+        <div class="column is-10">
           <br />
-          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">{{paragraph1Header}}</h3>
-          <span class="heading-fade-effect"></span><br/>
-          <div class="columns is-vcentered">
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
+            {{ paragraph1Header }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
+          <div class="columns is-centered">
             <div class="column is-8">
-              <div class="is-size-4">{{paragraph1}}</div>
+              <div class="is-size-4">{{ paragraph1 }}</div>
             </div>
             <div class="column is-4">
-              <figure class="image">
-                <img :src="require('../../assets/images/product-photos/itc-3.jpg')" />
+              <figure class="image product-image">
+                <img
+                  :src="require('../../assets/images/product-photos/itc-3.jpg')"
+                />
               </figure>
             </div>
           </div>
 
           <hr />
 
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph2Header}}</h3>
-          <div class="is-size-4">{{paragraph2}}</div>
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
+            {{ paragraph2Header }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
+          <div class="is-size-4">{{ paragraph2 }}</div>
           <br />
 
-          <!-- <div class="columns" v-for="product in products" :key="product.name">
-            <div class="column is-3">
-              <div class="title is-4">{{product.name}}</div>
-            </div>
-            <div class="column is-7 product-description">
-              <div class="is-size-4">{{product.description}}</div>
-            </div>
-          </div>-->
-
           <div class="columns is-multiline is-centered">
-            <div v-for="product in products" :key="product.name" class="column is-4">
+            <div
+              v-for="product in products"
+              :key="product.name"
+              class="column is-4"
+            >
               <div class="card is-shady">
                 <div class="card-header hero-bg">
                   <div class="card-header-title">
-                    <div class="has-text-centered is-size-4 has-text-white">{{ product.name}}</div>
+                    <div class="has-text-centered is-size-4 has-text-white">
+                      {{ product.name }}
+                    </div>
                   </div>
                 </div>
                 <div class="card-content">
                   <div class="content is-size-5 has-text-black">
-                    <p>{{product.description}}</p>
+                    <p>{{ product.description }}</p>
                   </div>
                 </div>
               </div>
@@ -71,43 +74,79 @@
           </div>
 
           <hr />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{paragraph3Header}}</h3>
-          <div class="is-size-4">{{paragraph3}}</div>
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
+            {{ paragraph3Header }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
+          <div class="is-size-4">{{ paragraph3 }}</div>
           <br />
-          <div class="is-size-4">{{paragraph4}}</div>
+          <div class="is-size-4">{{ paragraph4 }}</div>
 
           <hr />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">{{photosHeader}}</h3>
+          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+            {{ photosHeader }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
           <div class="columns is-centered">
             <div class="column is-two-third">
               <figure class="image">
-                <img class="product-image" :src="require('../../assets/images/product-photos/itc-1.jpg')" />
+                <img
+                  class="product-image"
+                  :src="require('../../assets/images/product-photos/itc-1.jpg')"
+                />
               </figure>
             </div>
             <div class="column is-two-third">
               <figure class="image">
-                <img class="product-image" :src="require('../../assets/images/product-photos/itc-2.jpg')" />
+                <img
+                  class="product-image"
+                  :src="require('../../assets/images/product-photos/itc-2.jpg')"
+                />
               </figure>
             </div>
           </div>
+
+          <hr />
+          <!-- CONTACT SECTION -->
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
+            {{ contactHeader }}
+          </h3>
+          <span class="heading-fade-effect"></span><br />
+          <div class="is-size-4">{{ contact }}</div>
+          <br />
+          <div class="columns is-centered is-vcentered">
+            <div class="column is-4 has-text-centered">
+              <a class="contact-button" href="tel:(724)825-1474">
+                Call<br />724-825-1474</a
+              >
+            </div>
+            <div class="column is-4 has-text-centered">
+              <a class="contact-button" @click="$modal.show('contact-form')"
+                >Email<br />
+                verbanicilb@gmail.com</a
+              >
+            </div>
+          </div>
+          <!-- END CONTACT SECTION -->
         </div>
       </section>
       <br />
     </div>
 
-    <footer class="footer hero-bg">
-      <div class="content colummns">
-        <div class="is-size-4 has-text-white column is-offset-1 is-5">{{contact}}</div>
-        <div class="is-size-4 has-text-white column is-offset-1 is-5">{{footer}}</div>
-        
+    <footer class="hero-bg">
+      <div class="content colummns is-centered">
+        <div class="is-size-6 has-text-white column is-8"><i class="fa fa-copyright" aria-hidden="true"></i>
+          {{ footer }}
+        </div>
       </div>
     </footer>
   </section>
 </template>
 
 <script>
-import photo1 from "../../assets/images/product-photos/itc-1.jpg";
 export default {
+  layout: "productLayout",
+  transition: 'page',
   components: {},
   data: function() {
     return {
@@ -151,6 +190,7 @@ export default {
       paragraph4:
         "The protection benefits of these products will deliver significant results from an operations payback standpoint.",
       photosHeader: "Examples of Applications",
+      contactHeader: "Contact Us",
       contact:
         "Please contact ILB by phone or e-mail if you have questions and to get further information on how we can help you with your furnace refractory life longevity.",
       footer:
@@ -161,16 +201,7 @@ export default {
 </script>
 
 <style scoped>
-/* .component {
-  background: linear-gradient(rgba(255, 255, 255), rgba(255, 255, 255)),
-    url("../../assets/images/backgrounds/clay-background.jpg") no-repeat center center
-      fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-} */
+/* Standard classes across all products pages; only needing product specific colors*/
 
 .component {
   background: linear-gradient(
@@ -200,26 +231,21 @@ export default {
   background-position: left;
   background-repeat: no-repeat;
 }
-@media only screen and (max-width: 600px) {
-  .padding {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
+
 .hero-fade-effect {
   display: block;
   border: none;
-  color: white;
+  color: rgb(199, 199, 199);
   height: 1px;
   background: black;
   background: -webkit-gradient(
     radial,
-    0% 2%,
-    0,
-    50% 50%,
+    10% 90%,
+    50,
+    10% 90%,
     553,
-    from(#fff),
-    to(rgb(13, 111, 60))
+    from(rgb(193, 193, 193)),
+    to(rgb(15, 131, 87))
   );
 }
 .heading-fade-effect {
@@ -245,9 +271,10 @@ export default {
   color: rgb(31, 80, 43);
   text-shadow: 1px 0px rgb(191, 191, 191), 0px -1px rgb(67, 67, 67);
 }
+
 hr {
-  border: 1px solid rgb(35, 91, 27);
-  border-radius: 2px;
+  border: 2px solid rgb(35, 91, 27);
+  border-radius: 4px;
 }
 .logo-color {
   color: rgb(35, 91, 27);
@@ -258,10 +285,41 @@ hr {
   position: absolute;
 }
 
+.layout {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact-button {
+  border: none;
+  background: rgba(15, 131, 87);
+  color: #e9e9e9 !important;
+  font-weight: 900;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  min-width: 80%;
+  max-width: 100%;
+}
+
+.contact-button:hover {
+  color: rgba(15, 131, 87) !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px;
+  background: rgb(230, 230, 230);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.2s ease 0s;
+}
+/* Classes specific to ITC  */
 .product-image {
+  /* width: 100%; */
   max-width: 100%;
   padding: 10px;
-  position: relative;
+  position: right;
 }
 
 #product-image3 {
@@ -269,14 +327,6 @@ hr {
   margin: 0 15px 0 0;
   max-width: 30%;
 }
-.product-description {
-  padding-left: 0px;
-}
-
-/* .layout {
-  padding-left: 50px;
-  padding-right: 50px;
-} */
 
 .card-content {
   padding: 0px;

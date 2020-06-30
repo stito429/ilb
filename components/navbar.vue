@@ -3,12 +3,24 @@
     <!--Company Logo & Website-->
     <div class="navbar-brand">
       <nuxt-link to="/" class="navbar-item">
-        <img v-bind:src="companyLogo" alt="Industrial Linerback Services LLC" id="navbar-logo-fix" />
+        <img
+          v-bind:src="companyLogo"
+          alt="Industrial Linerback Services LLC"
+          id="navbar-logo-fix"
+        />
       </nuxt-link>
       <!--workflow on the burger menu when clicked-->
+      <div class="navbar-item has-text-weight-bold is-hidden-desktop" id="navbar-phone">
+        <div class="phone cta ">
+          <span class="icon is-large">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </span>
+        </div>
+        <a class="phone number" href="tel:(724)825-1474">724-825-1474</a>
+      </div>
       <div
         v-on:click="active = !active"
-        v-bind:class="{'is-active': active }"
+        v-bind:class="{ 'is-active': active }"
         class="navbar-burger burger"
         data-target="mynavbar"
       >
@@ -19,12 +31,14 @@
     </div>
 
     <!--Navbar Options-->
-    <div v-bind:class="{'is-active': active }" class="navbar-menu">
+    <div v-bind:class="{ 'is-active': active }" class="navbar-menu">
       <!--Left Navbar list-->
       <div class="navbar-start">
         <!--Products DropDown Navbar Items-->
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link has-text-weight-bold">{{ navProductsDropdownMenu }}</a>
+          <a class="navbar-link has-text-weight-bold">{{
+            navProductsDropdownMenu
+          }}</a>
           <div class="navbar-dropdown is-boxed" id="dropdown-background">
             <a
               v-for="navDropdownItem in navProductsDropdownItems"
@@ -39,7 +53,9 @@
 
         <!--Services DropDown Navbar Items-->
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link has-text-weight-bold">{{ navServicesDropdownMenu }}</a>
+          <a class="navbar-link has-text-weight-bold">{{
+            navServicesDropdownMenu
+          }}</a>
           <div class="navbar-dropdown is-boxed" id="dropdown-background">
             <a
               v-for="navDropdownItem in navServicesDropdownItems"
@@ -52,14 +68,16 @@
           </div>
         </div>
       </div>
-
       <!--Left NavBar ends-->
 
       <!--NavBar items on the right-->
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="field is-grouped" id="button-container">
-            <div v-for="navbarRightItem in navbarRightItems" :key="navbarRightItem.route">
+            <div
+              v-for="navbarRightItem in navbarRightItems"
+              :key="navbarRightItem.route"
+            >
               <a
                 v-bind:href="navbarRightItem.route"
                 class="navbar-item classname has-text-weight-bold"
@@ -68,12 +86,14 @@
                 {{ navbarRightItem.item }}
               </a>
             </div>
-            <div>              
-              <a @click="show"
+            <div>
+              <a
+                @click="show"
                 class="navbar-item classname has-text-weight-bold"
-                id="nav-button">
+                id="nav-button"
+              >
                 Contact
-                </a>
+              </a>
             </div>
           </div>
         </div>
@@ -81,21 +101,20 @@
       </div>
     </div>
     <!--NavBar Items ends-->
-   
-    <contact-form-modal v-if="shown"/>
-   
+
+    <contact-form-modal v-if="shown" />
   </nav>
-  
+
   <!--NavBar ends-->
 </template>
 
 <script>
-import companyLogo from '~/assets/images/logos/ilblogo.png'
-import ContactFormModal from '~/components/contact'
+import companyLogo from "~/assets/images/logos/ilblogo.png";
+import ContactFormModal from "~/components/contact";
 export default {
-components: {
-  ContactFormModal
-},
+  components: {
+    ContactFormModal
+  },
   data() {
     return {
       shown: false,
@@ -167,23 +186,22 @@ components: {
       ]
     };
   },
-methods: {  
-  show: function () {
-    this.shown = true;
-    this.$modal.show('contact-form');
-    this.$modal.show('contact-form')
-  },
-  hide () {
-    this.$modal.hide('Contact');
-  },
-      init(){
-this.shown =true;
+  methods: {
+    show: function() {
+      this.shown = true;
+      this.$modal.show("contact-form");
+      this.$modal.show("contact-form");
+    },
+    hide() {
+      this.$modal.hide("Contact");
+    },
+    init() {
+      this.shown = true;
     }
   },
-  mounted(){
-    this.init()
+  mounted() {
+    this.init();
   }
-
 };
 </script>
 
@@ -245,89 +263,159 @@ this.shown =true;
 
 /* @media screen and (min-width: 1023px) { */
 .classname {
-background: #F1F1F1;
-background-image: -webkit-linear-gradient(top, #F1F1F1, rgb(201, 201, 201));
-background-image: -moz-linear-gradient(top, #F1F1F1, #C7C7C7);
-background-image: -ms-linear-gradient(top, #F1F1F1, #C7C7C7);
-background-image: -o-linear-gradient(top, #F1F1F1, #C7C7C7);
-background-image: linear-gradient(to bottom, rgb(250, 250, 250), rgb(155, 155, 155));
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-color: #000000;
-font-family: Arial;
-font-size: 14px;  
-font-weight: 700;
-min-width: 100%;
-padding-right: 2%;
-padding-left: 2%;
-padding-top: 5%;
-box-shadow: 1px 1px 20px 0px #000000;
+  background: #f1f1f1;
+  background-image: -webkit-linear-gradient(top, #f1f1f1, rgb(201, 201, 201));
+  background-image: -moz-linear-gradient(top, #f1f1f1, #c7c7c7);
+  background-image: -ms-linear-gradient(top, #f1f1f1, #c7c7c7);
+  background-image: -o-linear-gradient(top, #f1f1f1, #c7c7c7);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(250, 250, 250),
+    rgb(155, 155, 155)
+  );
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #000000;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 100%;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-top: 5%;
+  /* box-shadow: 1px 1px 20px 0px #000000;
 -webkit-box-shadow: 1px 1px 20px 0px #000000;
--moz-box-shadow: 1px 1px 20px 0px #000000;
-text-shadow: 0px 0px 27px #FFFFFF;
-border: inset #C7C7C7 2px;
-text-decoration: none;
-display: inline-block;
-cursor: pointer;
-text-align: center;
+-moz-box-shadow: 1px 1px 20px 0px #000000; */
+  text-shadow: 0px 0px 27px #ffffff;
+  /* border: inset #C7C7C7 2px; */
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
 }
 
 .classname:hover {
-background: #F1F1F1;
-background-image: -webkit-linear-gradient(top, #F1F1F1, rgb(201, 201, 201));
-background-image: -moz-linear-gradient(top, #F1F1F1, #C7C7C7);
-background-image: -ms-linear-gradient(top, #F1F1F1, #C7C7C7);
-background-image: -o-linear-gradient(top, #F1F1F1, #C7C7C7);
-background-image: linear-gradient(to bottom, rgb(250, 250, 250), rgb(155, 155, 155));
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-color: #000000 !important;
-font-family: Arial !important;
-font-size: 14px !important;  
-font-weight: 900 !important;
-min-width: 100% !important;
-padding-right: 2% !important;
-padding-left: 2% !important;
-padding-top: 5% !important;
-box-shadow: 1px 1px 20px 0px #a2a2a2;
--webkit-box-shadow: 1px 1px 20px 0px #888888;
--moz-box-shadow: 1px 1px 20px 0px #e6e6e6;
-text-shadow: 0px 0px 27px #FFFFFF;
-border: inset #C7C7C7 2px;
+  background: #f1f1f1;
+  background-image: -webkit-linear-gradient(top, #f1f1f1, rgb(201, 201, 201));
+  background-image: -moz-linear-gradient(top, #f1f1f1, #c7c7c7);
+  background-image: -ms-linear-gradient(top, #f1f1f1, #c7c7c7);
+  background-image: -o-linear-gradient(top, #f1f1f1, #c7c7c7);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(250, 250, 250),
+    rgb(155, 155, 155)
+  );
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #000000 !important;
+  font-family: Arial !important;
+  font-size: 14px !important;
+  font-weight: 900 !important;
+  min-width: 100% !important;
+  padding-right: 2% !important;
+  padding-left: 2% !important;
+  padding-top: 5% !important;
+  box-shadow: 1px 1px 20px 0px #a2a2a2;
+  -webkit-box-shadow: 1px 1px 20px 0px #888888;
+  -moz-box-shadow: 1px 1px 20px 0px #e6e6e6;
+  text-shadow: 0px 0px 27px #ffffff;
+  border: inset #c7c7c7 2px;
 
-display: inline-block;
-cursor: pointer;
-text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
 }
 
-.classname:active{
-background: #F1F1F1;
-background-image: -webkit-linear-gradient(top, #F1F1F1, rgb(201, 201, 201));
-background-image: -moz-linear-gradient(top, #F1F1F1, #C7C7C7);
-background-image: -ms-linear-gradient(top, #F1F1F1, #C7C7C7);
-background-image: -o-linear-gradient(top, #F1F1F1, #C7C7C7);
-background-image: linear-gradient(to bottom, rgb(250, 250, 250), rgb(155, 155, 155));
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-color: #000000;
-font-family: Arial;
-font-size: 14px;  
-font-weight: 900;
-min-width: 100%;
-padding-right: 2%;
-padding-left: 2%;
-padding-top: 5%;
-box-shadow: 1px 1px 20px 0px #ffffff;
--webkit-box-shadow: 1px 1px 20px 0px #676767;
--moz-box-shadow: 1px 1px 20px 0px #000000;
-text-shadow: 0px 0px 27px #FFFFFF;
-border: inset #C7C7C7 2px;
-text-decoration: none;
-display: inline-block;
-cursor: pointer;
-text-align: center;
+.classname:active {
+  background: #f1f1f1;
+  background-image: -webkit-linear-gradient(top, #f1f1f1, rgb(201, 201, 201));
+  background-image: -moz-linear-gradient(top, #f1f1f1, #c7c7c7);
+  background-image: -ms-linear-gradient(top, #f1f1f1, #c7c7c7);
+  background-image: -o-linear-gradient(top, #f1f1f1, #c7c7c7);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(250, 250, 250),
+    rgb(155, 155, 155)
+  );
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #000000;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 900;
+  min-width: 100%;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-top: 5%;
+  box-shadow: 1px 1px 20px 0px #ffffff;
+  -webkit-box-shadow: 1px 1px 20px 0px #676767;
+  -moz-box-shadow: 1px 1px 20px 0px #000000;
+  text-shadow: 0px 0px 27px #ffffff;
+  border: inset #c7c7c7 2px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.phone {
+  background: #f1f1f1;
+  background-image: -webkit-linear-gradient(top, #f1f1f1, rgb(201, 201, 201));
+  background-image: -moz-linear-gradient(top, #f1f1f1, #c7c7c7);
+  background-image: -ms-linear-gradient(top, #f1f1f1, #c7c7c7);
+  background-image: -o-linear-gradient(top, #f1f1f1, #c7c7c7);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(250, 250, 250),
+    rgb(155, 155, 155)
+  );
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #000000;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 100%;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  position: absolute;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta {
+  height: 80%;
+  min-width: 100px;
+  color: black;
+  z-index: 1;
+  transition: 1.2s;
+}
+
+.number {
+  height: 80%;
+  min-width: 100px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  color: white;
+  box-shadow: 3px 3px 30px #aaa;
+  text-decoration: none;
+}
+
+.cta:hover {
+  transform: translateX(-98%);
+  transition: 1.2s;
+}
+
+#navbar-phone {
+  padding-left: 10%;
 }
 </style>

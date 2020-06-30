@@ -1,11 +1,19 @@
 <template>
   <section>
     <!-- hero -->
-    <section class="hero hero-bg is-small section shift-hero">
+    <section class="hero hero-bg section ">
       <div class="hero-body"></div>
     </section>
 
     <section class="component section">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
+            {{ hero1 }}
+          </h3>
+        </div>
+        <span class="heading-fade-effect"></span><br />
+      </div>
       <div class="columns is-centered">
         <div class="column is-8">
           <div class="card is-shady card-background">
@@ -53,13 +61,42 @@
         </div>
       </div>
 
-      <section class="has-text-black columns is-centered">
-      </section>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="card is-shady card-background">
+            <div class="card-header">
+              <div class="card-header-title">
+                <h3
+                  class="subtitle is-2 has-text-weight-bold engraved-text-header"
+                >
+                  {{ paragraph3Header }}
+                </h3>
+                <div
+                  class="has-text-centered is-size-4 has-text-weight-bold"
+                ></div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <div class="is-size-4 mission ">{{ paragraph3 }}</div>
+                <br />
+                <div class="is-size-4 mission ">{{ paragraph4 }}</div>
+                <br />
+                <div class="is-size-4 mission ">{{ paragraph5 }}</div>
+                <br />
+                <div class="is-size-4 mission ">{{ paragraph6 }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="has-text-black columns is-centered"></section>
     </section>
-    <footer class="footer hero-bg">
-      <div class="content colummns">
-        <div class="is-size-4 has-text-white column is-offset-1 is-6">
-          {{ contact }}
+    <footer id="about-footer">
+      <div class="content colummns is-centered">
+        <div class="is-size-6 has-text-black column is-12 has-text-right">
+          {{ footer }}
         </div>
       </div>
     </footer>
@@ -89,6 +126,8 @@ export default {
         "When it comes to making the right choice with our customers, we are committed to providing the best horsepower possible selecting the right materials to do the job right the first time.",
       paragraph6:
         "ILB welcomes the opportunity to discuss any issue or challenge you may be facing that requires technical or commercial support, or materials and services. For a personal consultation, please contact:",
+      footer:
+        "Publish Date: March 2020--service applications offered are the copyright of ILB and its support group",
       contactInfo: [
         { name: "George Verbanic" },
         {
@@ -122,7 +161,7 @@ export default {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .hero-bg {
@@ -136,11 +175,12 @@ export default {
 
   background-position: center bottom;
   background-repeat: no-repeat;
+  height: 70vh;
 }
 .engraved-text-header {
-  color: #a07314;
-  /* font-weight: 600; */
-  text-shadow: 1px 1px rgb(165, 132, 21), -1px -1px rgb(163, 135, 22);
+  color: #9c7828;
+  font-weight: 500;
+  text-shadow: 0px 0px rgb(165, 132, 21), -1px -1px rgb(163, 135, 22);
 }
 
 #mission {
@@ -161,13 +201,25 @@ export default {
   font-style: oblique;
 }
 .is-shady {
-    animation: flyintoright 0.9s backwards;
+  animation: flyintoright 0.9s backwards;
   /* background: #fff; */
-  box-shadow: 0 10px 16px rgba(167, 125, 17, 0.372), 0 6px 6px rgba(85, 63, 6, 0.5);
+  box-shadow: 0 10px 16px rgba(163, 128, 39, 0.372),
+    0 6px 6px rgba(99, 81, 37, 0.5);
   border-radius: 4px;
   display: inline-block;
   margin: 10px;
   position: relative;
   transition: all 1s ease-in-out;
+}
+#about-footer {
+  background: -webkit-linear-gradient(
+    top,
+    #dfdfdf 0%,
+    #d8d8d8 21%,
+    #f0f0f0 50%,
+    #dbdbdb 80%,
+    #dddddd 100%
+  );
+  padding: 20px;
 }
 </style>
