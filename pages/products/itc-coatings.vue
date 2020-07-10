@@ -212,7 +212,7 @@ export default {
       #ffffff8e 90%,
       #ffffff7b 100%
     ),
-    url("../../assets/images/backgrounds/gray.jpg") no-repeat center center
+    url("../../assets/images/backgrounds/gray-1200.jpg") no-repeat center center
       fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
