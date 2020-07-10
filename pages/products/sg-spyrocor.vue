@@ -36,7 +36,7 @@
               <figure class="image product-image">
                 <img
                   :src="
-                    require('../../assets/images/product-photos/sg-spyrocor1.png')
+                    require('../../assets/images/product-photos/sg-spyrocor1.jpg')
                   "
                 />
               </figure>
@@ -61,7 +61,7 @@
                 <img
                   class="product-image"
                   :src="
-                    require('../../assets/images/product-photos/sg-spyrocor2.png')
+                    require('../../assets/images/product-photos/sg-spyrocor2.jpg')
                   "
                 />
               </figure>
@@ -95,7 +95,7 @@
                 <img
                   class="product-image" id="vert-insert"
                   :src="
-                    require('../../assets/images/product-photos/sg-spyrocor3.png')
+                    require('../../assets/images/product-photos/sg-spyrocor3.jpg')
                   "
                 />
               </figure>
@@ -105,7 +105,7 @@
                 <img
                   class="product-image"
                   :src="
-                    require('../../assets/images/product-photos/sg-spyrocor4.png')
+                    require('../../assets/images/product-photos/sg-spyrocor4.jpg')
                   "
                 />
               </figure>
