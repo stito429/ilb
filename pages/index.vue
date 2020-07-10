@@ -773,7 +773,7 @@ export default {
 <style css-scoped>
 .hero.bg {
   background: linear-gradient(to right, #00000000, #ffffff00),
-    url("../assets/images/img/hero-bg-with-logo.jpg") no-repeat center left
+    url("../assets/images/img/hero-bg-with-logo-2048.jpg") no-repeat center left
       fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
