@@ -15,6 +15,7 @@ import { createStore } from './store.js'
 import nuxt_plugin_axios_03c36af4 from 'nuxt_plugin_axios_03c36af4' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_vuejsmodal_0719e4a0 from 'nuxt_plugin_vuejsmodal_0719e4a0' // Source: ../plugins/vue-js-modal.js (mode: 'client')
 import nuxt_plugin_veevalidate_1a0c1998 from 'nuxt_plugin_veevalidate_1a0c1998' // Source: ../plugins/vee-validate.js (mode: 'client')
+import nuxt_plugin_aos_caeae0de from 'nuxt_plugin_aos_caeae0de' // Source: ../plugins/aos (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -186,6 +187,10 @@ async function createApp (ssrContext) {
 
   if (process.client && typeof nuxt_plugin_veevalidate_1a0c1998 === 'function') {
     await nuxt_plugin_veevalidate_1a0c1998(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_aos_caeae0de === 'function') {
+    await nuxt_plugin_aos_caeae0de(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

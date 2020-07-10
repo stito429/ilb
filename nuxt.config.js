@@ -42,7 +42,8 @@ export default {
   */
   plugins: [
     { src: '~plugins/vue-js-modal.js', mode: 'client' },
-    {src: '~/plugins/vee-validate.js', ssr: false}
+    {src: '~/plugins/vee-validate.js', ssr: false},
+    { src: "@/plugins/aos", ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules

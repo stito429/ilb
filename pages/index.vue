@@ -73,7 +73,7 @@
         <div
           class="column is-8-mobile is-4-widescreen is-5-desktop is-7-touch is-7-tablet"
         >
-          <figure class="image is-3-by-1">
+          <figure class="image is-3-by-1" data-aos="fade-down-right" data-aos-duration="2000">
             <img src="./../assets/images/logos/ilblogo.png" />
           </figure>
         </div>
@@ -82,7 +82,7 @@
           class="column is-6-mobile is-4-widescreen is-4-desktop is-4-touch is-5-tablet"
         >
           <div class="columns ">
-            <div class="column is-12">
+            <div class="column is-12" data-aos="fade-up-left" data-aos-duration="2000">
               <div>
                 <div
                   v-for="benefit in benefits"
@@ -103,7 +103,7 @@
     <section class="container section" id="product-cats">
       <div class="columns is-centered">
         <div class="column is-12">
-          <h2 class="title is-2 highlighted has-text-centered shadowed">
+          <h2 class="title is-2 highlighted has-text-centered shadowed" data-aos="zoom-in-up" data-aos-anchor-placement="top-center" data-aos-duration="10000">
             Why is ILB Different?
           </h2>
         </div>
