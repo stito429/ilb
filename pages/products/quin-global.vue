@@ -101,8 +101,8 @@
     </div>
 
     <footer class="hero-bg">
-      <div class="content colummns is-centered">
-        <div class="is-size-6 has-text-white column is-8">
+      <div class="content colummns">
+        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
           {{ footer }}
         </div>
       </div>
@@ -118,17 +118,17 @@ export default {
       header: "Quin Global",
       paragraph1Header: "Background",
       paragraph1:
-        "Industrial Linerback and Services (ILB) is a support partner of Quin Global. ILB acts as their USA distributor throughout North America serving the industries ILB serves. ILB and Quin together have agreed to enter into many different industries including: steel, cement, automotive, waste energy, asphalt, energy and the flooring industry. With Quin Global being a worldwide supplier of adhesive and sanitization products we are looking to raise the bar by providing unique and superior products for your needs.",
+        "Industrial Linerback & Services (ILB) is a support partner of Quin Global. ILB acts as their USA distributor throughout North America serving the industries ILB serves. ILB and Quin together have agreed to enter many different industries including: steel, cement, automotive, waste energy, asphalt, energy, and flooring. With Quin Global being a worldwide supplier of adhesive and sanitization products, we are looking to raise the bar by providing unique and superior products for your needs.",
       paragraph2Header: "Linebacker Adhesive",
       paragraph2:
-        "ILB has its own adhesive for Industrial use. This adhesive is backed by Quin Global for any industrial, commercial or residential use. This product comes in a spray can and is called Linebacker Adhesive. This product was pulled together and formulated for the tough industrial world as it came out of the aerospace industry to laminate two surfaces together--the same or different. Here is why our Linebacker Adhesive spray is unique: it has a breakaway strength of 16-18 psi and sets-up in 15 minutes. It’s a contact to contact application where you spray both mating surfaces and just stick them together. For a quick repair in the field—nothing can compare. Epoxy would but it takes a minimum of 8 hrs to cure.",
+        "ILB has its own adhesive for Industrial use. This adhesive is backed by Quin Global for most industrial, commercial or residential use. This product comes in a spray can and is called Linebacker Adhesive. This product was formulated for the tough industrial world as it came out of the aerospace industry to laminate two surfaces together--the same or different. Here is why our Linebacker Adhesive spray is unique: it has a breakaway strength of 16-18 psi and sets up in 15 minutes, and it’s a contact-to-contact application where you spray both mating surfaces and just stick them together. For a quick repair in the field, nothing can compare. In comparison, epoxy would but it takes a minimum of 8 hrs to cure.  ",
       paragraph3Header: "Floor Adhesive",
       paragraph3:
-        "Quin Global has a special, recently new product just for flooring which has been approved by the building industry. This product also has a quick drying time and a high break away strength where any flooring product can be installed very quickly, plus any wall tile. This floor adhesive has been gaining attention in the marketplace as being an installation material of choice. It is their product called TensorgripG67 which comes in a 50 lbs canister and is sprayed on.",
+        "Quin Global has a special, new product just for flooring, called TensorgripG67, which has been approved by the building industry. This product also has a quick drying time and a high breakaway strength where any flooring product can be installed very quickly, plus any wall tile. This floor adhesive has been gaining attention in the marketplace as an installation material of choice. TensorgripG67 comes in a 50 lb canister and is sprayed on.",
 
       paragraph4Header: "Sanitization Spray",
       paragraph4:
-        "Quin Global just got this sanitary spray approved this year to address the spread of Sars and Covid-19 –it’s called RS1. This product comes in a 50 lb canister where it can be sprayed throughout an office, airport or any industrial building including any factory to kill the virus. ",
+        "Quin Global just got their RS1 sanitization spray approved this year to address the spread of Sars and Covid-19. This product comes in a 50 lb canister and can be sprayed throughout an office, airport or any industrial building, including any factory to kill the virus.  Now our sanitization product is a cutting edge product that can help us all be safe from any covid virus.",
       products: [
         {
           name: "",
@@ -141,10 +141,10 @@ export default {
       ],
       paragraph5Header: "Efficiency",
       paragraph5:
-        "These adhesive products shared above can overall speed up your installation time and take care of monotonous maintenance nightmares that get put off because of the set-up time. Now our sanitization product is a cutting edge product that can help us all be safe from any covid virus. ",
+        "The products shared above can speed up your installation time and take care of monotonous maintenance nightmares that get put off because of the set-up time. ",
       contactHeader: "Contact Us",
       contact:
-        "Please contact ILB either by phone or by e-mail to get further details on any of the adhesives or sanitization products shared above.",
+        "Please contact ILB by phone or e-mail to get further details on any of the adhesives or sanitization products shared above.",
         footer: "Publish Date: March 2020--products and applications are copyright of Quin Global"
     };
   }

@@ -63,8 +63,8 @@
     </div>
 
     <footer class="hero-bg">
-      <div class="content colummns is-centered">
-        <div class="is-size-6 has-text-white column is-8">
+      <div class="content colummns">
+        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
           {{ footer }}
         </div>
       </div>
@@ -80,7 +80,7 @@ export default {
       header: "Project and Construction Management",
       paragraph1Header: "Service Overview",
       paragraph1:
-        "ILB has 34 years in the steel Industry where George Verbanic has lead the furnace plant  groups in designing, building , installing, scheduling and training plant personnel on their new equipment. When it comes to getting the job done right ILB has a proven track record in the industry to get the job done on budget, on time, train everyone and complete the job on or under budget.  Over the years George has been a key leader in installing all of the North American Blast Furnace charging systems while working for Paul Wurth. George has also supported the Industry independently, including companies such as Precision Machine Control,  ArcelorMittal and US Steel.",
+        "ILB is backed by 34 years in the steel Industry where George Verbanic has led the furnace plant groups in designing, building , installing, scheduling and training plant personnel on their new equipment. To get the job done on time and on or under budget, and train staff and team members. When it comes to getting the job done right, ILB has a proven track record in the industry to get the job done on budget, on time, train everyone and complete the job on or under budget.  Over the years, George has been a key leader in installing all of the North American blast furnace charging systems while working for Paul Wurth. He has also supported the Industry independently, including companies such as Precision Machine Control, ArcelorMittal, and US Steel.",
       contactHeader: "Contact Us",
       contact:
         "Please contact ILB by phone or e-mail if you have questions and to get further information.",

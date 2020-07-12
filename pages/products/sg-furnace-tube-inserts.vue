@@ -141,8 +141,8 @@
     </div>
 
     <footer class="hero-bg">
-      <div class="content colummns is-centered">
-        <div class="is-size-6 has-text-white column is-8">
+      <div class="content colummns">
+        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
           {{ footer }}
         </div>
       </div>
@@ -155,7 +155,7 @@ export default {
   components: {},
   data: function() {
     return {
-      header: "Saint-Gobain SpyroCor",
+      header: "Saint-Gobain Furnace Tube Inserts",
       paragraph1Header: "Industry Innovation",
       paragraph1:
         "Industrial Linerback & Services (ILB) is a representative of the Saint-Gobain SpyroCor Group which has a radiant tube insert product that goes into galvanizing, annealing, and reheat furnaces. The tube insert is comprised of a series of silicon carbide flute blocks that are installed onto a rod and then inserted into the furnace’s radiant tube exit side. SpyroCor also has a HeatCor product that goes into the entry side of the tube next to the burner to increase the efficiency of the flame.",
@@ -163,7 +163,7 @@ export default {
       paragraph2:
         "Over the years, SpyroCor has been used in a variety of industries; it can be installed in straight tubes, U-tubes, Tri and W-tubes, and has recently been tried in Double P-tubes.",
       paragraph3:
-        "SpyroCor has a proven track record of helping furnace performance for almost 15 plus years.  Some of the key benefits that have been achieved include:",
+        "SpyroCor has a proven track record of helping furnace performance for 15 plus years, and our HeatCor insert has proven to improve burner performance.  Some of the key benefits that have been achieved include:",
 
       benefits: [
         "More uptime and throughputs due to increased heat output",
@@ -175,11 +175,11 @@ export default {
       ],
       paragraph4Header: "Benefits",
       paragraph4:
-        "Based on these benefits and our marketing material details, which ILB can share with our customers, it makes sense to consider SpyroCor space from an operations payback standpoint.  We will work with your team to achieve your performance goals and maximize your cost savings.",
+        "Based on these benefits and our marketing material details, which ILB can share with our customers, it makes sense to consider SpyroCor from an operations payback standpoint.  We will work with your team to achieve your performance goals and maximize your cost savings.",
       photosHeader: "Tube Inserts",
       contactHeader: "Contact Us",
       contact:
-        "Please contact ILB by phone or e-mail if you have questions and to get further details on how we can help.",
+        "Please contact ILB by phone or e-mail us to get further details on how we can help solve your furnace burner operation issues and challenges",
       footer:
         "Publish Date: March 2020--products and applications are copyright of Saint-Gobain"
     };

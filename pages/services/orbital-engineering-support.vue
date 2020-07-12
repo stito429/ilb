@@ -69,8 +69,8 @@
     </div>
 
     <footer class="hero-bg">
-      <div class="content colummns is-centered">
-        <div class="is-size-6 has-text-white column is-8">
+      <div class="content colummns">
+        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
           {{ footer }}
         </div>
       </div>
@@ -90,7 +90,7 @@ export default {
         "Industrial Linerback & Services (ILB) is a support partner of Orbital Engineering, acting as their sole regional sales representative in North America. Not only does ILB represent Orbital’s services, but they also represent Saint-Gobain and several of their refractory and ceramic product lines in different engineered solutions, utilizing Orbital Engineering if needed.  ILB and Oribital, an engineering support service company headquartered in Pittsburgh, PA, are working together with customers to develop and offer engineered solutions for just about any need within a plant. Orbital Engineering is a 50-year-old, veteran-owned company with six office locations throughout the US:  Pittsburgh, Philadelphia, Chicago, Detroit, St. Louis, and Houston.",
       paragraph2Header: "Service Details",
       paragraph2:
-        "Orbital is a recognized full-service engineering company that offers not only a vast spectrum of the major engineering support services, but also offers state-of-the-art supplemental services to include drone survey inspections; and 3D scanning and modeling; along with construction site support, retrofit engineering, and site scheduling services.",
+        "Orbital is a recognized full-service engineering company that offers not only a vast spectrum of the major engineering support services, but also state-of-the-art supplemental services to include drone survey inspections; 3D scanning and modeling; and construction site support, retrofit engineering, and site scheduling services.",
       paragraph3:
         "ILB is excited to collaborate with Orbital to solve some of the most challenging issues that plants encounter. In this respect, we can explore the use of ILB’s product applications utilizing the various Saint-Gobain refractory and ceramics products from a wear and/or performance standpoint.",
       paragraph4:
@@ -99,7 +99,7 @@ export default {
       contact:
         "Please contact ILB by phone or e-mail if you have questions and to get further information on how we can help you with your engineering and operational challenges.",
       paragraph5:
-        "For any engineering support you may need, ILB and Orbital Engineering will jointly figure it out.",
+        "For any engineering support you may need, the ILB and Orbital Engineering team will figure it out.",
       footer:
         "Publish Date: March 2020--service applications offered are the copyright of Orbital Engineering and ILB"
     };

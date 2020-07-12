@@ -2,42 +2,66 @@
   <section>
     <!-- hero -->
     <section class="hero bg is-fullheight section">
-      <div class="hero-body has-text-weight-bold shift-hero columns">
-        <div class="column is-4" id="blurred-box">
+      <div class="hero-body has-text-weight-bold shift-hero columns ">
+        <div
+          class="column is-4-fullhd is-4-widescreen is-6-desktop is-7-tablet"
+          id="blurred-box"
+          data-aos="slide-right"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in"
+          data-aos-once="true"
+          data-aos-offset="400"
+          data-aos-delay="0"
+        >
           <div class>
             <div class="title is-2 has-text-white has-text-centered">
               Engineered Solutions
               <br />with a
-              <div class="title is-1 has-text-weight-bold highlighted">
-                {{ heroTItle2 }}
-                <br /> 
+              <div
+                class="title is-1 has-text-weight-bold highlighted underlined"
+                data-aos="fade-in"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in"
+                data-aos-once="true"
+                data-aos-offset="400"
+                data-aos-delay="1500"
+              >
+                Global Reach
+                <br />
               </div>
             </div>
             <!-- <div class="columns is-centered"> -->
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-9 highlighted is-size-5 shift-hero-phrases">
-                  <div class="highlighted is-size-4">
-                  {{heroProductsLeft}}</div>
-                  <div class="has-text-white is-size-6">
-                    {{heroProductsRight}}</div>
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-9 highlighted is-size-5 shift-hero-phrases">
+                <div class="highlighted is-size-4">
+                  {{ heroProductsLeft }}
+                </div>
+                <div class="has-text-white is-size-6">
+                  {{ heroProductsRight }}
                 </div>
               </div>
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-9 highlighted is-size-5">
-                  <div class="highlighted is-size-4">
-                  {{heroDesignLeft}}</div>
-                  <div class="has-text-white is-size-6">
-                    {{heroDesignRight}}</div>
-                </div> </div>
-                <div class="columns is-centered has-text-centered">
-                <div class="column is-9 highlighted is-size-5">
-                  <div class="highlighted is-size-4">
-                  {{heroServicesLeft}}</div>
-                  <div class="has-text-white is-size-6">
-                    {{heroServicesRight}}</div>
+            </div>
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-9 highlighted is-size-5">
+                <div class="highlighted is-size-4">
+                  {{ heroDesignLeft }}
                 </div>
+                <div class="has-text-white is-size-6">
+                  {{ heroDesignRight }}
                 </div>
-              
+              </div>
+            </div>
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-9 highlighted is-size-5">
+                <div class="highlighted is-size-4">
+                  {{ heroServicesLeft }}
+                </div>
+                <div class="has-text-white is-size-6">
+                  {{ heroServicesRight }}
+                </div>
+              </div>
+            </div>
+
             <!-- </div> -->
           </div>
           <div class="columns is-centered">
@@ -50,17 +74,18 @@
                 </button>
               </div>
             </div>
-            </div>
-            <div class="columns is-centered">
+          </div>
+          <div class="columns is-centered">
             <div class="column is-11 has-text-centered" id>
               <span class="has-text-white">
                 {{ heroResidentialLeft }}
                 <div class="highlighted">{{ heroresidentialRight }}</div>
               </span>
               <div class="has-text-centered" id="residential-button">
-                <router-link to="/products/us-liner" tag="button">Click Here</router-link>
-                <br/>
-              </div>
+                <router-link to="/products/us-liner" tag="button"
+                  >Click Here</router-link
+                >
+                <br />
               </div>
             </div>
           </div>
@@ -69,29 +94,38 @@
     </section>
     <!-- Logo Intro -->
     <section class="logo-background section">
-      <div class="columns is-centered is-vcentered is-mobile is-multiline">
+      <div class="columns is-centered is-vcentered is-multiline">
         <div
-          class="column is-8-mobile is-4-widescreen is-5-desktop is-7-touch is-7-tablet"
+          class="column is-10-mobile is-offset-1-mobile is-4-widescreen is-5-desktop is-10-tablet"
         >
-          <figure class="image is-3-by-1" data-aos="fade-down-right" data-aos-duration="2000">
+          <figure
+            class="image is-3-by-1"
+            data-aos="zoom-out"
+            data-aos-duration="750"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+          >
             <img src="./../assets/images/logos/ilblogo.png" />
           </figure>
         </div>
 
         <div
-          class="column is-6-mobile is-4-widescreen is-4-desktop is-4-touch is-5-tablet"
+          class="column is-10-mobile is-offset-1-mobile is-4-widescreen is-5-desktop is-10-tablet"
         >
           <div class="columns ">
-            <div class="column is-12" data-aos="fade-up-left" data-aos-duration="2000">
-              <div>
-                <div
-                  v-for="benefit in benefits"
-                  :key="benefit"
-                  v-bind:href="benefit"
-                  class="engraved-text is-size-4 has-text-weight-bold benefit-box"
-                >
-                  {{ benefit }}
-                </div>
+            <div class="column is-12-mobile">
+              <div
+                v-for="benefit in benefits"
+                :key="benefit"
+                v-bind:href="benefit"
+                class="engraved-text is-size-4 has-text-weight-bold benefit-box has-text-centered-touch"
+                data-aos="fade-up-left"
+                data-aos-duration="1000"
+                data-aos-offset="400"
+                data-aos-once="true"
+              >
+                {{ benefit }}
               </div>
             </div>
           </div>
@@ -103,14 +137,27 @@
     <section class="container section" id="product-cats">
       <div class="columns is-centered">
         <div class="column is-12">
-          <h2 class="title is-2 highlighted has-text-centered shadowed" data-aos="zoom-in-up" data-aos-anchor-placement="top-center" data-aos-duration="10000">
+          <h2
+            class="title is-2 highlighted has-text-centered shadowed"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            data-aos-offset="400"
+          >
             Why is ILB Different?
           </h2>
         </div>
       </div>
-      <div class="columns is-4 is-multiline is-vcentered is-centered">
-        <div class="column is-4" id->
-          <div class="">
+
+      <div class="columns is-multiline is-vcentered is-centered">
+        <div class="column is-5-desktop is-11-mobile" id->
+          <div
+            class=""
+            data-aos="slide-right"
+            data-aos-duration="1500"
+            data-aos-once="true"
+            data-aos-offset="500"
+          >
             <h2 class="title is- shadowed highlighted has-text-centered">
               One Point of Contact
             </h2>
@@ -127,19 +174,33 @@
           </div>
         </div>
 
-        <div class="column is-5">
-          <figure class="image">
+        <div class="column is-5-desktop is-11-mobile">
+          <figure
+            class="image"
+            data-aos="flip-right"
+            data-aos-delay="1000"
+            data-aos-offset="480"
+            data-aos-duration="1500"
+            data-aos-once="true"
+          >
             <img src="./../assets/images/img/contact.jpg" id="contact-photo" />
           </figure>
         </div>
       </div>
 
-      <p>.</p>
       <div
         class="columns is-multiline is-centered is-vcentered"
         id="several-solutions"
       >
-        <div class="column is-5-desktop is-11-mobile" id="product-cats-box">
+        <div
+          class="column is-5-desktop is-11-mobile"
+          id="product-cats-box"
+          data-aos="flip-left"
+          data-aos-delay="1000"
+          data-aos-duration="1500"
+          data-aos-offset="250"
+          data-aos-once="true"
+        >
           <div class="columns has-text-black is-mobile" id="desktop-test">
             <div class="column is-6-desktop is-half-mobile">
               <ul class="">
@@ -160,7 +221,7 @@
                 </li>
               </ul>
             </div>
-            <div class="column is-6-desktop is-half-mobile">
+            <div class="column is-5-desktop is-half-mobile">
               <ul class="">
                 <li v-for="productCat in productCats2" :key="productCat">
                   <span class="highlighted icon is-large" id="product-cat">
@@ -177,7 +238,13 @@
             </div>
           </div>
         </div>
-        <div class="column is-4-desktop is-11-mobile">
+        <div
+          class="column is-5-desktop is-11-mobile"
+          data-aos="slide-left"
+          data-aos-offset="200"
+          data-aos-duration="1500"
+          data-aos-once="true"
+        >
           <h2 class="title highlighted has-text-centered">Several Solutions</h2>
           <div
             class="has-text-weight-semibold has-text-white is-size-5 several-solutions"
@@ -227,14 +294,28 @@
     <!-- Qualities HardCoded-->
     <section class="logo-background section">
       <div>
-        <h1 class="title is-1 has-text-centered engraved-text">
+        <h1
+          class="title is-1 has-text-centered engraved-text"
+          data-aos="fade-up"
+          data-aos-once="false"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="2500"
+        >
           Industrial Linerback Services & LLC.
         </h1>
         <br />
       </div>
       <div class="columns is-variable is-multiline is-centered">
-        <div class="column is-3">
-          <div class="card is-shady card-background">
+        <div class="column is-3-widescreen is-half-tablet">
+          <div
+            class="card is-shady card-background"
+            data-aos="flip-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-out"
+            data-aos-delay="1000"
+            data-aos-duration="200"
+            data-aos-once="true"
+          >
             <div class="card-header">
               <div class="card-header-title">
                 <div class="has-text-centered is-size-4 has-text-weight-bold">
@@ -257,8 +338,16 @@
           </div>
         </div>
 
-        <div class="column is-3">
-          <div class="card is-shady card-background">
+        <div class="column is-3-widescreen is-half-tablet">
+          <div
+            class="card is-shady card-background"
+            data-aos="flip-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-out"
+            data-aos-delay="1500"
+            data-aos-duration="200"
+            data-aos-once="true"
+          >
             <div class="card-header">
               <div class="card-header-title">
                 <div class="has-text-centered is-size-4 has-text-bold">
@@ -281,8 +370,16 @@
           </div>
         </div>
 
-        <div class="column is-3">
-          <div class="card is-shady card-background">
+        <div class="column is-3-widescreen is-half-tablet">
+          <div
+            class="card is-shady card-background"
+            data-aos="flip-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-out"
+            data-aos-delay="2000"
+            data-aos-duration="200"
+            data-aos-once="true"
+          >
             <div class="card-header">
               <div class="card-header-title">
                 <div class="has-text-centered is-size-4 has-text-bold">
@@ -307,8 +404,16 @@
         </div>
       </div>
       <div class="columns is-variableis-multiline is-centered">
-        <div class="column is-3">
-          <div class="card is-shady card-background">
+        <div class="column is-3-widescreen">
+          <div
+            class="card is-shady card-background"
+            data-aos="flip-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in"
+            data-aos-delay="2000"
+            data-aos-duration="200"
+            data-aos-once="true"
+          >
             <div class="card-header">
               <div class="card-header-title">
                 <div class="has-text-centered is-size-4 has-text-bold">
@@ -332,8 +437,16 @@
           </div>
         </div>
 
-        <div class="column is-3">
-          <div class="card is-shady card-background">
+        <div class="column is-3-widescreen">
+          <div
+            class="card is-shady card-background"
+            data-aos="flip-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in"
+            data-aos-delay="2500"
+            data-aos-duration="200"
+            data-aos-once="true"
+          >
             <div class="card-header">
               <div class="card-header-title">
                 <div class="has-text-centered is-size-4 has-text-bold">
@@ -363,10 +476,18 @@
       </div>
     </section>
     <!-- Products -->
+    <!-- Products --><!-- Products --><!-- Products --><!-- Products --><!-- Products --><!-- Products -->
     <section class="container section" id="product-companies">
       <div class="columns">
         <div class="column">
-          <h1 class="title is-2 has-text-centered highlighted">
+          <h1
+            class="title is-2 has-text-centered highlighted"
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-anchor-placement=""
+            data-aos-duration="2000"
+            data-aos-once="true"
+          >
             Diverse Products
             <br />From Industry Leaders
             <br />
@@ -375,181 +496,236 @@
       </div>
 
       <!-- Row 1 -->
-      <div class="columns is-centered">
-        <div class="column is-6-desktop is-10-mobile">
-          <div class="box company has-text-white">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-128x128">
-                  <img src="./../assets/images/logos/sg.png" />
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p class="is-size-5">
-                    <strong class="title is-4 highlighted"
-                      >Saint-Gobain WRT</strong
-                    >
-                    <br />
-                    <small>Latrobe,PA</small>
-                    <br />The WRT group is most recognized for its manufacture
-                    of pre-engineered and standard ceramic tile shapes, as well
-                    as casted shapes for industrial applications. When it comes
-                    to protecting a surface from any sliding abrasion issues,
-                    their Durafrax ceramic material is an industry leader in
-                    performance. WRT also offers other products such as epoxies,
-                    trial-able wear products, silicone caulks, and silicon
-                    carbide bricks.
-                  </p>
+      <div class="columns is-centered is-multiline">
+        <div class="column is-6-desktop is-12-mobile is-12-tablet">
+          <nuxt-link to="/products/sg-wrt">
+            <div
+              class="box company has-text-white"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+              data-aos-offset="300"
+              data-aos-once="true"
+            >
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-128x128 is-hidden-touch">
+                    <img src="./../assets/images/logos/sg.png" />
+                  </figure>
                 </div>
-              </div>
-            </article>
-          </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p class="is-size-5">
+                      <strong class="title is-4 highlighted"
+                        >Saint-Gobain WRT</strong
+                      >
+                      <br />
+                      <small>Latrobe, PA</small>
+                      <br />The WRT group is most recognized for its manufacture
+                      of pre-engineered and standard ceramic tile shapes, as
+                      well as casted shapes for industrial applications. When it
+                      comes to protecting a surface from any sliding abrasion
+                      issues, their Durafrax ceramic material is an industry
+                      leader in performance. WRT also offers other products such
+                      as epoxies, trial-able wear products, silicone caulks, and
+                      silicon carbide bricks.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </nuxt-link>
         </div>
-        <div class="column is-6-desktop is-10-mobile">
-          <div class="box company has-text-white">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-128x128">
-                  <img src="./../assets/images/logos/sg.png" />
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p class="is-size-5">
-                    <strong class="title is-4 highlighted"
-                      >Saint-Gobain Refractories and Lining Group</strong
-                    >
-                    <br />
-                    <small>Brazil & the UK</small>
-                    <br />Saint-Gobain Refractories and Lining Group
-                    manufactures various refractories such as tap-hole clays,
-                    shotcrete repair products, castables, cement free
-                    sol-gel/colloidal silica bonded materials, SiC shapes,
-                    various furnace lining materials, and carbon blocks.
-                  </p>
+        <div class="column is-6-desktop is-12-mobile">
+          <nuxt-link to="/products/sg-refractories">
+            <div
+              class="box company has-text-white"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+              data-aos-offset="300"
+              data-aos-delay="1000"
+              data-aos-once="true"
+            >
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-128x128 is-hidden-touch">
+                    <img src="./../assets/images/logos/sg.png" />
+                  </figure>
                 </div>
-              </div>
-            </article>
-          </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p class="is-size-5">
+                      <strong class="title is-4 highlighted"
+                        >Saint-Gobain Refractories and Lining Group</strong
+                      >
+                      <br />
+                      <small>Brazil & the UK</small>
+                      <br />Saint-Gobain Refractories and Lining Group
+                      manufactures various refractories such as tap-hole clays,
+                      shotcrete repair products, castables, cement free
+                      sol-gel/colloidal silica bonded materials, SiC shapes,
+                      various furnace lining materials, and carbon blocks.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </nuxt-link>
         </div>
       </div>
       <!-- Row 2 -->
-      <div class="columns is-centered">
-        <div class="column is-6">
-          <div class="box company has-text-white">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-128x128">
-                  <img src="./../assets/images/logos/sg.png" />
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p class="is-size-5">
-                    <strong class="title is-4 highlighted"
-                      >Saint-Gobain SpyroCor</strong
-                    >
-                    <br />
-                    <small>Worcester, MA</small>
-                    <br />The Saint-Gobain SpyroCor Group, offers a series of
-                    silicon carbide products for the galvanizing, annealing, and
-                    reheat furnace areas. Their proprietary SpyroCor and HeatCor
-                    products are constructed from a 3D manufacturing process
-                    that utilizes silicon carbide to increase the performance of
-                    any furnace radiant tube (e.g., straight tube, u-tube,
-                    tri-tube, w-tube, double-p tube.
-                  </p>
+      <div class="columns is-centered is-multiline">
+        <div class="column is-6-desktop is-12-mobile is-12-tablet">
+          <nuxt-link to="/products/sg-furnace-tube-inserts">
+            <div
+              class="box company has-text-white"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+              data-aos-once="true"
+            >
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-128x128 is-hidden-touch">
+                    <img src="./../assets/images/logos/sg.png" />
+                  </figure>
                 </div>
-              </div>
-            </article>
-          </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p class="is-size-5">
+                      <strong class="title is-4 highlighted"
+                        >Saint-Gobain SpyroCor</strong
+                      >
+                      <br />
+                      <small>Worcester, MA</small>
+                      <br />The Saint-Gobain SpyroCor Group, offers a series of
+                      silicon carbide products for the galvanizing, annealing,
+                      and reheat furnace areas. Their proprietary SpyroCor and
+                      HeatCor products are constructed from a 3D manufacturing
+                      process that utilizes silicon carbide to increase the
+                      performance of any furnace radiant tube (e.g., straight
+                      tube, u-tube, tri-tube, w-tube, double-p tube.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </nuxt-link>
         </div>
 
-        <div class="column is-6">
-          <div class="box company has-text-white">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-128x128">
-                  <img src="./../assets/images/logos/us-liner.png" />
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p class="is-size-5">
-                    <strong class="title is-4 highlighted"
-                      >US Liner Company</strong
-                    >
-                    <br />
-                    <small>Harmony, PA</small>
-                    <br />US Liner Company manufactures several different
-                    advanced thermoplastic composite sheeting products that are
-                    rot, mildew and acid resistant. The three key products ILB
-                    promotes for different industrial and commercial
-                    applications are Versitex, Ecotex, and BXR, all manufactured
-                    at the company’s headquarters in Harmony. When
-                    looking for a light-weight sheeting product to apply for a
-                    given application, nothing compares to US Liner’s quality
-                    and durability.
-                  </p>
+        <div class="column is-6-desktop is-12-mobile is-12-tablet">
+          <nuxt-link to="/products/us-liner">
+            <div
+              class="box company has-text-white"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+              data-aos-delay="1000"
+              data-aos-once="true"
+            >
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-128x128 is-hidden-touch">
+                    <img src="./../assets/images/logos/us-liner.png" />
+                  </figure>
                 </div>
-              </div>
-            </article>
-          </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p class="is-size-5">
+                      <strong class="title is-4 highlighted"
+                        >US Liner Company</strong
+                      >
+                      <br />
+                      <small>Harmony, PA</small>
+                      <br />The US Liner Company manufactures several different
+                      advanced thermoplastic composite sheeting products which
+                      are rot, mildew and acid resistant. The three key products
+                      ILB promotes for different industrial and commercial
+                      applications are Versitex, Ecotex, and BXR, all
+                      manufactured at the company’s headquarters in Harmony.
+                      When looking for a light-weight sheeting product to apply
+                      for a given application, nothing compares to US Liner’s
+                      quality and durability.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </nuxt-link>
         </div>
       </div>
       <!-- Row 3 -->
-      <div class="columns is-centered">
-        <div class="column is-6">
-          <div class="box company has-text-white">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-128x128">
-                  <img src="./../assets/images/logos/quin.png" />
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p class="is-size-5">
-                    <strong class="title is-4 highlighted">Quin Global</strong>
-                    <br />
-                    <small>Omaha, Nebraska</small>
-                    <br />Promotes adhesives capable of setting in 15 minutes or
-                    less and can be used in two specific applications: flooring
-                    and general construction, where two surfaces get laminated
-                    together.
-                  </p>
+      <div class="columns is-centered is-multiline">
+        <div class="column is-6-desktop is-12-mobile is-12-tablet">
+          <nuxt-link to="/products/quin-global">
+            <div
+              class="box company has-text-white"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+              data-aos-once="true"
+            >
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-128x128 is-hidden-touch">
+                    <img src="./../assets/images/logos/quin.png" />
+                  </figure>
                 </div>
-              </div>
-            </article>
-          </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p class="is-size-5">
+                      <strong class="title is-4 highlighted"
+                        >Quin Global</strong
+                      >
+                      <br />
+                      <small>Omaha, Nebraska</small>
+                      <br />Promotes adhesives capable of setting in 15 minutes
+                      or less and can be used in two specific applications:
+                      flooring and general construction, where two surfaces get
+                      laminated together.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </nuxt-link>
         </div>
-        <div class="column is-6">
-          <div class="box company has-text-white">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-128x128">
-                  <img src="./../assets/images/logos/itc.png" />
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p class="is-size-5">
-                    <strong class="title is-4 highlighted">ITC Coatings</strong>
-                    <br />
-                    <small>Fortworth, TX</small>
-                    <br />Coatings—With its offering of five unique water-based
-                    ceramic coating products, ITC caters to many applications.
-                    ITC has products that go on mills thick and cover metal
-                    surfaces, ceramic brick, IFB fire brick, fibrous insulation,
-                    or any general exterior refractory layer. Their coatings
-                    products basically reradiate or reflect heat back into the
-                    product heat source.
-                  </p>
+        <div class="column is-6-desktop is-12-mobile is-12-tablet">
+          <nuxt-link to="/products/itc-coatings">
+            <div
+              class="box company has-text-white"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+              data-aos-delay="1000"
+              data-aos-once="true"
+            >
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-128x128 is-hidden-touch">
+                    <img src="./../assets/images/logos/itc.png" />
+                  </figure>
                 </div>
-              </div>
-            </article>
-          </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p class="is-size-5">
+                      <strong class="title is-4 highlighted"
+                        >ITC Coatings</strong
+                      >
+                      <br />
+                      <small>Fortworth, TX</small>
+                      <br />ITC Coatings offers five unique water based ceramic
+                      coatings products that have many applications. ITC has
+                      products that go on mills thick and cover metal surfaces,
+                      ceramic brick, IFB fire brick, fibrous insulation, or any
+                      general exterior refractory layer. Their coatings products
+                      basically reradiate or reflect heat back into the product
+                      heat source.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </nuxt-link>
         </div>
       </div>
     </section>
@@ -581,14 +757,13 @@
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
       <p>ILB Copyright and Issue Date: March 2020</p>
     </footer>
-
   </section>
 </template>
 
 <script>
 import logo from "./../assets/images/logos/ilblogo.png";
 export default {
-  transition: 'bounce',
+  // transition: "bounce",
   components: {
     // ContactFormModal
   },
@@ -615,7 +790,7 @@ export default {
       heroButton2: "",
       heroProductsLeft: "Products",
       heroProductsRight:
-        "Industrial Materials that Protect your Equipment and Improve Performance",
+        "Industrial Materials that Protect Your Equipment and Improve Performance",
       heroDesignLeft: "Design",
       heroDesignRight:
         "Complete Value-Added Engineering Support to Address Your Needs",
@@ -781,16 +956,28 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
 
-  background-position: center center ;
+  background-position: center center;
   background-repeat: no-repeat;
 }
-
+#blurred-box {
+  background: rgb(0, 0, 0); /* for IE */
+  background: rgba(31, 26, 17, 0.933);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 0px;
+  /* -webkit-box-shadow: 6px 13px 22px 0px #000000;
+  box-shadow: 6px 13px 22px 0px #000000; */
+}
 .hero h1 {
   color: #dbdbdb;
 }
 .shift-hero {
   position: relative;
   top: -8vh;
+}
+.underlined {
+  text-decoration: underline;
 }
 
 #residential-button {
@@ -990,16 +1177,6 @@ export default {
   max-width: 300px;
 }
 
-#blurred-box {
-  background: rgb(0, 0, 0); /* for IE */
-  background: rgba(31, 26, 17, 0.933);
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  padding: 0px;
-  /* -webkit-box-shadow: 6px 13px 22px 0px #000000;
-  box-shadow: 6px 13px 22px 0px #000000; */
-}
 #product-cats {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.776), rgba(0, 0, 0, 0)),
     url("../assets/images/img/welding2-hd.jpg") no-repeat center center fixed;
@@ -1266,5 +1443,6 @@ i.fa::before {
     #c0c0c0 100%
   );
   padding: 20px;
+  text-align: right;
 }
 </style>

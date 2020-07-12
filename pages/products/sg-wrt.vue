@@ -154,8 +154,8 @@
     </div>
 
     <footer class="hero-bg">
-      <div class="content colummns is-centered">
-        <div class="is-size-6 has-text-white column is-8">
+      <div class="content colummns">
+        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
           {{ footer }}
         </div>
       </div>
@@ -171,10 +171,10 @@ export default {
       header: "Saint-Gobain WRT",
       paragraph1Header: "Background",
       paragraph1:
-        "Industrial Linerback & Services (ILB) is a representative of the Saint-Gobain WRT Group which is the company’s wear resistant tile group. The WRT group, based in Latrobe, PA; offers several different products through ILB that can be used in a variety of industries. If combatting wear resistance is your challenge, we have the solution in an impressive ceramic product called Durafrax. If you have an impact issue combined with an abrasive issue, ILB has a solution for that too: a hardened plate or HC250 wear plate that can be bolted in and out. Bottom line, when it comes to resisting abrasion and high heat, Saint-Gobain’s Durafrax is proven to outlast steel 16 to 1 or chromium carbide overlay by 4 to 1.",
+        "Industrial Linerback & Services (ILB) is a representative of the Saint-Gobain WRT Group which is the company’s wear-esistant tile group. The WRT Group, based in Latrobe, PA, offers several different products through ILB that can be used in a variety of industries. If combatting wear resistance is your challenge, we have the solution in an impressive ceramic product called Durafrax. If you have an impact issue combined with an abrasive issue, ILB has a solution for that too: a hardened plate or HC250 wear plate that can be bolted in and out. Bottom line, when it comes to resisting abrasion and high heat, Saint-Gobain’s Durafrax is proven to outlast steel 16 to 1 or chromium carbide overlay by 4 to 1.",
       paragraph2Header: "Market Strategy",
       paragraph2:
-        "Saint-Gobain WRT is an industry leader for wear protection products. We offer pre-engineered tiles, our standard tiles, and a casted product, as well as many other options to include: high alumina silica products, which is Durafrax; plain silicon carbide products; a premium silicon carbide product called hexoly; and some coatings, basalt, silicones, epoxies, and light-weight wearing compounds.",
+        "Saint-Gobain WRT is an industry leader for wear protection products. We offer pre-engineered tiles, our standard tiles, and a casted product, as well as many other options to include: high alumina silica products, which is Durafrax; plain silicon carbide products; a premium silicon carbide product called hexoly; and multiple coatings, basalt, silicones, epoxies, and light-weight wearing compounds.",
       paragraph3:
         "General application areas and industries that have successfully used our products for almost 50 years are:",
       applications: [
@@ -191,7 +191,7 @@ export default {
       ],
       paragraph4Header: "Benefits",
       paragraph4:
-        "All of the benefits above, and project histories around the globe, our marketing material details will explain to end users that it makes a lot of sense to consider Saint-Gobain products to help improve your facility’s performance and equipment longevity.",
+        "All of the benefits above, project histories around the globe, and our marketing material details will explain to end users that it makes a lot of sense to consider Saint-Gobain products to help improve your facility’s performance and equipment longevity.",
       paragraph5:
         "All of the benefits above and our marketing material details, which ILB can share, illustrate why this product line is beneficial from and operations payback standpoint.",
       photosHeader:

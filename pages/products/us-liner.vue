@@ -89,7 +89,7 @@
 
           <hr />
 
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
             {{ paragraph4Header }}
           </h3>
           <span class="heading-fade-effect"></span><br />
@@ -105,14 +105,14 @@
           </div>
 
           <hr />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
             {{ paragraph3Header }}
           </h3>
           <span class="heading-fade-effect"></span><br />
           <div class="is-size-4">{{ paragraph3 }}</div>
 
           <hr />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
             {{ paragraph5Header }}
           </h3>
           <span class="heading-fade-effect"></span><br />
@@ -120,7 +120,7 @@
           <br />
 
           <hr />
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
             {{ photosHeader }}
           </h3>
           <span class="heading-fade-effect"></span><br />
@@ -173,8 +173,8 @@
       <br />
     </div>
     <footer class="hero-bg">
-      <div class="content colummns is-centered">
-        <div class="is-size-6 has-text-white column is-8">
+      <div class="content colummns">
+        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
           {{ footer }}
         </div>
       </div>
@@ -204,7 +204,7 @@ export default {
         "recyclable"
       ],
       qualities2: [
-        "pretty much non-stick (frozen water slides off and spray foam insulation will not stick)",
+        "virtually non-stick (frozen water slides off and spray foam insulation will not stick)",
         "puncture resistant (hot patch method available if it does get punctured)",
         "smooth top finish and textured finish on the back for an adhesive to be used to stick product to wood or steel",
         "can include a UV protection layer on the top surface",
@@ -215,12 +215,12 @@ export default {
         "These unique products are currently changing several industries, one in particular being the tractor trailer industry, the others being the RV industry, railroad, and US Military.  For more details please visit their website at: USLCO.com.",
       paragraph4Header: "Market Strategy",
       paragraph4:
-        "The US Liner sheeting comes in various thicknesses up to almost a quarter of an inch thick. The thinner sheet sizes of Versitex are typically made in 8 ft wide rolls (optional 102&quot; wide rolls) and can come in lengths up to 600 linear feet. The other options are Versitex and Ecotex boards which can be processed in 4 x 8 ft panel sheets then stacked on pallets for shipment. BXR is their translucent panel which comes in 2 ft by 8 ft panels. Here are some further details on these products:",
+        "The US Liner sheeting comes in various thicknesses up to almost a quarter of an inch thick. The thinner sheet sizes of Versitex are typically made in 8 ft wide rolls (optional 102” wide rolls) and can come in lengths up to 600 linear feet. The other options are Versitex and Ecotex boards which can be processed in 4 x 8 ft panel sheets then stacked on pallets for shipment. BXR is their translucent panel which comes in 2 ft by 8 ft panels. Here are some further details on these products:",
       products: [
         {
           name: "Versitex",
           description:
-            "is their highly used, advanced thermoplastic composite sheet product made from continuous glass strands. It is their only product that carries the FDA stamp as it is used to assemble refrigerated truck panels due to its back scrim surface for adhesion to other products such as insulation. These high resistant, impact resistant panels are comprised of Polypropylene resin reinforced with continuous bi-directional glass strands. They comes in approximately six different thicknesses and named accordingly: VR1 (.04”), VR2 (.06”), VR3 (.08”), VR5(.125”), VR8 (.175”), and VR10 (.215”). The Versitex VR sheeting product provides significant energy absorption over traditional FRP panels and exhibits thermal expansion similar to aluminum but far less than steel."
+            "is their highly used, advanced thermoplastic composite sheet product made from continuous glass strands. It is their only product that carries the FDA stamp as it is used to assemble refrigerated truck panels due to its back scrim surface for adhesion to other products such as insulation. These high resistant, impact resistant panels are comprised of Polypropylene resin reinforced with continuous bi-directional glass strands. They comes in approximately six different thicknesses and named accordingly: VR1 (.04”), VR2 (.06”), VR3 (.08”), VR5 (.125”), VR8 (.175”), and VR10 (.215”). The Versitex VR sheeting product provides significant energy absorption over traditional FRP panels and exhibits thermal expansion similar to aluminum but far less than steel."
         },
         {
           name: "Ecotex",
@@ -230,15 +230,16 @@ export default {
         {
           name: "BXR",
           description:
-            "is US Liner’s translucent sheet product used in tractor trailer roofs. It has over five times the tear resistance of the best fiberglass roof currently on the market, is super bright, and has unsurpassed UV protection to deter cracking due to the sun. Its five layer construction makes it very durable by allowing light to be transmitted through the product layers and has outstanding durability and strength. This sheet typically comes in 2 ft x 8 ft panel sizes but can also be supplied in 4 ft 8ft sheets."
+            "is US Liner’s translucent sheet product used in tractor trailer roofs. It has over five times the tear resistance of the best fiberglass roof currently on the market, is super bright, and has unsurpassed UV protection to deter cracking due to the sun. Its five layer construction makes it very durable by allowing light to be transmitted through the product layers and has outstanding durability and strength. This sheet typically comes in 2 ft x 8 ft panel sizes but can also be supplied in 4 ft x 8 ft sheets."
         }
       ],
       paragraph5Header: "More Info",
       paragraph5:
-        "A close review of these products and their many uses show that they have significant merit in protecting shed inner walls, any overhang or walkway, chicken coops, metal building roofs or side walls, and many other applications such as being used as a caisson or concrete form.If you have questions or would like to know more about US Liner products and their potential uses at your facility, please contact ILB by phone or e-mail to get further details on how we can assist with your current needs.",
+        "A close review of these products and their many uses show that they have significant merit in protecting shed inner walls, any overhang or walkway, chicken coops, metal building roofs or side walls, and many other applications such as being used as a caisson or concrete form.",
       photosHeader: "Sample Applications",
+      contactHeader: "Contact Us",
       contact:
-        "If you have questions or would like to know more about US Liner products and their potential uses at your facility, please contact ILB by phone or e-mail to get further details on how we can assist with your current needs.",
+        "If you have questions or would like to know more about US Liner products and their potential uses at your facility, please contact ILB by phone or e-mail us to get further details on how we can assist with your current needs.",
       footer:
         "Publish Date: March 2020--products and applications are copyright of US Liner"
     };
@@ -314,7 +315,7 @@ export default {
 }
 
 .engraved-text-header {
-  color: rgb(31, 80, 43);
+  color: rgb(72, 148, 84);
   text-shadow: 1px 0px rgb(191, 191, 191), 0px -1px rgb(67, 67, 67);
 }
 

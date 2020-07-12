@@ -134,8 +134,8 @@
     </div>
 
     <footer class="hero-bg">
-      <div class="content colummns is-centered">
-        <div class="is-size-6 has-text-white column is-8"><i class="fa fa-copyright" aria-hidden="true"></i>
+      <div class="content colummns">
+        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
           {{ footer }}
         </div>
       </div>
@@ -153,10 +153,10 @@ export default {
       header: "ITC Coatings",
       paragraph1Header: "Background",
       paragraph1:
-        "Industrial Linerback & Services (ILB) is a support partner of International Technical Ceramics (ITC) Coatings, acting as their sole US representative in North America. (ITC has another representative in Canada called NorHeat.) ILB and ITC are currently making significant inroads and entering into many different industries, including steel, cement, automotive, waste energy, asphalt, and energy. During their 20-year history of being in business with their key products, ITC has successfully entered the foundry and pottery markets with its high temperature, energy efficient ceramic coatings. With our outlook plan, we anticipate expanding the business into these other industries with great success.",
+        "Industrial Linerback & Services (ILB) is a support partner of International Technical Ceramics (ITC) Coatings, acting as their sole US representative in North America. (ITC has another representative in Canada called NorHeat). ILB and ITC are currently making significant inroads and entering into many different industries, including steel, cement, automotive, waste energy, asphalt, and energy. During their 20-year history of being in business with their key products, ITC has successfully entered the foundry and pottery markets with its high temperature, energy-efficient ceramic coatings. With our outlook plan, we anticipate expanding the business into these other industries with great success.",
       paragraph2Header: "Material Supply Details",
       paragraph2:
-        "The description and application of ITC’s five key water-based ceramic coatings products are as follows:",
+        "The descriptions and applications of ITC’s five key water-based ceramic coatings products are as follows:",
       products: [
         {
           name: "ITC-100HT",
@@ -166,7 +166,7 @@ export default {
         {
           name: "ITC-213",
           description:
-            "An outstanding ceramics coatings for metal. It is formulated to protect metals and graphite surface’s including those exposed to molton metals."
+            "An outstanding ceramics coatings for metal. It is formulated to protect metals and graphite surfaces including those exposed to molton metals."
         },
         {
           name: "ITC-296A",
@@ -186,7 +186,7 @@ export default {
       ],
       paragraph3Header: "Superior Results",
       paragraph3:
-        "The above products play a significant role in securing the life of the refractory or metal by keeping oxygen away from the metal and keeping heat from penetrating behind any refractory product or fibrous material.",
+        "The above products play a significant role in securing the life of the refractory, fiber or metal by keeping oxygen away from the metal and keeping heat from penetrating behind any refractory product or fibrous material.",
       paragraph4:
         "The protection benefits of these products will deliver significant results from an operations payback standpoint.",
       photosHeader: "Examples of Applications",

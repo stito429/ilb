@@ -8,8 +8,8 @@ const _323b0a7f = () => interopDefault(import('../pages/products/index.vue' /* w
 const _3b0ce8b0 = () => interopDefault(import('../pages/tea.vue' /* webpackChunkName: "pages/tea" */))
 const _35662230 = () => interopDefault(import('../pages/products/itc-coatings.vue' /* webpackChunkName: "pages/products/itc-coatings" */))
 const _187f2314 = () => interopDefault(import('../pages/products/quin-global.vue' /* webpackChunkName: "pages/products/quin-global" */))
+const _5b4e76ac = () => interopDefault(import('../pages/products/sg-furnace-tube-inserts.vue' /* webpackChunkName: "pages/products/sg-furnace-tube-inserts" */))
 const _5b709e47 = () => interopDefault(import('../pages/products/sg-refractories.vue' /* webpackChunkName: "pages/products/sg-refractories" */))
-const _c4d4c59a = () => interopDefault(import('../pages/products/sg-spyrocor.vue' /* webpackChunkName: "pages/products/sg-spyrocor" */))
 const _1b1c59ba = () => interopDefault(import('../pages/products/sg-wrt.vue' /* webpackChunkName: "pages/products/sg-wrt" */))
 const _41a6b9f2 = () => interopDefault(import('../pages/products/us-liner.vue' /* webpackChunkName: "pages/products/us-liner" */))
 const _3143da87 = () => interopDefault(import('../pages/services/inspection-scheduling-services.vue' /* webpackChunkName: "pages/services/inspection-scheduling-services" */))
@@ -55,13 +55,13 @@ export const routerOptions = {
     component: _187f2314,
     name: "products-quin-global"
   }, {
+    path: "/products/sg-furnace-tube-inserts",
+    component: _5b4e76ac,
+    name: "products-sg-furnace-tube-inserts"
+  }, {
     path: "/products/sg-refractories",
     component: _5b709e47,
     name: "products-sg-refractories"
-  }, {
-    path: "/products/sg-spyrocor",
-    component: _c4d4c59a,
-    name: "products-sg-spyrocor"
   }, {
     path: "/products/sg-wrt",
     component: _1b1c59ba,

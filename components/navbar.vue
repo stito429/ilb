@@ -136,8 +136,8 @@ export default {
           route: "/products/sg-refractories"
         },
         {
-          item: "Saint-Gobain SpyroCor",
-          route: "/products/sg-spyrocor"
+          item: "Saint-Gobain Furnace Tube Inserts",
+          route: "/products/sg-furnace-tube-inserts"
         },
         {
           item: "Saint-Gobain WRT",

@@ -63,8 +63,8 @@
     </div>
 
     <footer class="hero-bg">
-      <div class="content colummns is-centered">
-        <div class="is-size-6 has-text-white column is-8">
+      <div class="content colummns">
+        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
           {{ footer }}
         </div>
       </div>
@@ -119,7 +119,14 @@ export default {
   /* min-height: 100vh; */
 }
 .hero-bg {
-  background: rgb(238, 115, 32);
+  background:linear-gradient(
+      to right,
+      rgb(252, 38, 1) 0%,
+      rgb(252, 38, 1) 10%,
+      rgb(252, 38, 1) 50%,
+      rgb(252, 38, 1) 90%,
+      rgb(252, 38, 1) 100%
+    );
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -143,7 +150,7 @@ export default {
     10% 90%,
     553,
     from(rgb(193, 193, 193)),
-    to(rgb(238, 115, 32))
+    to(rgb(252, 38, 1))
   );
 }
 .heading-fade-effect {
@@ -156,26 +163,26 @@ export default {
     0,
     100% 10%,
     555,
-    from(rgb(238, 115, 32)),
+    from(rgb(252, 38, 1)),
     to(rgba(201, 201, 201, 0.756))
   );
 }
 .engraved-text-hero {
   color: rgb(211, 211, 211);
-  text-shadow: 1px 1px rgb(238, 115, 32), -1px -1px rgb(117, 115, 114);
+  text-shadow: 1px 1px rgb(252, 38, 1), -1px -1px rgb(117, 115, 114);
 }
 
 .engraved-text-header {
-  color: rgb(238, 115, 32);
+  color: rgb(252, 38, 1);
   text-shadow: 1px 0px rgb(191, 191, 191), 0px -1px rgb(67, 67, 67);
 }
 
 hr {
-  border: 2px solid rgb(238, 115, 32);
+  border: 2px solid rgb(252, 38, 1);
   border-radius: 4px;
 }
 .logo-color {
-  color: rgb(238, 115, 32);
+  color: rgb(252, 38, 1);
 }
 
 .logo-image {
@@ -190,7 +197,7 @@ hr {
 
 .contact-button {
   border: none;
-  background: rgba(238, 115, 32);
+  background: rgba(252, 38, 1);
   color: #e9e9e9 !important;
   font-weight: 900;
   text-align: center;
@@ -204,7 +211,7 @@ hr {
 }
 
 .contact-button:hover {
-  color: rgba(238, 115, 32) !important;
+  color: rgba(252, 38, 1) !important;
   font-weight: 900 !important;
   letter-spacing: 2px;
   background: rgb(230, 230, 230);
