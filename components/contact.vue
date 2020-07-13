@@ -25,7 +25,7 @@
         >
           <input name="form-name" value="contact-form" type="hidden" />
           <fieldset>
-            <div class="level">
+            <div class="level is-mobile">
               <div class="level-left is-hidden-touch">
                 <figure class="level-item image is-128x128 ">
                   <img class="logo-image"
@@ -34,12 +34,14 @@
                   />
                 </figure>
               </div>
+              <div class="level-left">
               <div class="level-item">
                 <legend
-                  class="title is-3 has-text-centered has-text-weight-bold"
+                  class="title is-3 has-text-weight-bold"
                 >
                   Contact Us
                 </legend>
+              </div>
               </div>
               <div class="level-left">
                 <figure class="level-item image is-128x128">

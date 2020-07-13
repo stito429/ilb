@@ -127,7 +127,7 @@
             </div>
           </div>
 
-                    <!-- CONTACT SECTION -->
+          <!-- CONTACT SECTION -->
           <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
             {{ contactHeader }}
           </h3>
@@ -135,12 +135,12 @@
           <div class="is-size-4">{{ contact }}</div>
           <br />
           <div class="columns is-centered is-vcentered">
-            <div class="column is-4 has-text-centered">
+            <div class="column is-4-desktop has-text-centered">
               <a class="contact-button" href="tel:(724)825-1474">
                 Call<br />724-825-1474</a
               >
             </div>
-            <div class="column is-4 has-text-centered">
+            <div class="column is-4-desktop  has-text-centered">
               <a class="contact-button" @click="$modal.show('contact-form')"
                 >Email<br />
                 verbanicilb@gmail.com</a
@@ -304,8 +304,7 @@ hr {
   border-radius: 3px;
   display: inline-block;
   transition: all 0.3s ease 0s;
-  min-width: 80%;
-  max-width: 100%;
+  width: 100%;
 }
 
 .contact-button:hover {

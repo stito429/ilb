@@ -87,12 +87,12 @@
                 <div class="is-size-4 mission ">{{ paragraph6 }}</div>
                 <br/>
                 <div class="columns is-centered is-vcentered">
-                  <div class="column is-4 has-text-centered">
+                  <div class="column is-5-desktop has-text-centered">
                     <a class="contact-button" href="tel:(724)825-1474">
                       Call<br />724-825-1474</a
                     >
                   </div>
-                  <div class="column is-4 has-text-centered">
+                  <div class="column is-5-desktop has-text-centered">
                     <a
                       class="contact-button"
                       @click="$modal.show('contact-form')"
@@ -251,8 +251,7 @@ export default {
   border-radius: 3px;
   display: inline-block;
   transition: all 0.3s ease 0s;
-  min-width: 80%;
-  max-width: 100%;
+  width: 100%;
 }
 
 .contact-button:hover {

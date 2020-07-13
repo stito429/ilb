@@ -8,7 +8,7 @@
           id="blurred-box"
           data-aos="slide-right"
           data-aos-duration="1500"
-          data-aos-easing="ease-in"
+          data-aos-easing="ease-in-out"
           data-aos-once="true"
           data-aos-offset="400"
           data-aos-delay="0"
@@ -33,7 +33,7 @@
             <!-- <div class="columns is-centered"> -->
             <div class="columns is-centered has-text-centered">
               <div class="column is-9 highlighted is-size-5 shift-hero-phrases">
-                <div class="highlighted is-size-4">
+                <div class="highlighted is-size-4" >
                   {{ heroProductsLeft }}
                 </div>
                 <div class="has-text-white is-size-6">

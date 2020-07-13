@@ -2,8 +2,8 @@
   <section>
     <div class="hero hero-bg is-small">
       <div class="hero-body">
-        <div class="columns is-vcentered is-centered">
-          <div class="column is-2">
+        <div class="columns is-vcentered is-centered is-mobile">
+          <div class="column is-2 is-offset-1 is-hidden-mobile">
             <figure class="image is-128x128">
               <img
                 src="../../assets/images/logos/quin.png"
@@ -11,9 +11,21 @@
               />
             </figure>
           </div>
-          <div class="column is-8">
-            <br />
-            <h1 class="title is-1 has-text-weight-bold engraved-text-hero">
+
+
+          <div class="column is-3 is-hidden-tablet">
+            <figure class="image is-96x96">
+              <img
+                src="../../assets/images/logos/quin.png"
+                class="logo-image"
+              />
+            </figure>
+          </div>
+
+
+
+          <div class="column">
+            <h1 class="title is-size-1-desktop is-size-2-touch is-size-3-tablet is-size-5-mobile has-text-weight-bold engraved-text-hero has-text-centered-mobile">
               {{ header }}
             </h1>
             <span class="hero-fade-effect"></span>
@@ -75,19 +87,19 @@
           <div class="is-size-4">{{ paragraph5 }}</div>
           <hr />
           <!-- CONTACT SECTION -->
-          <h3 class="subtitle is-3 has-text-weight-bold logo-color">
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
             {{ contactHeader }}
           </h3>
           <span class="heading-fade-effect"></span><br />
           <div class="is-size-4">{{ contact }}</div>
           <br />
           <div class="columns is-centered is-vcentered">
-            <div class="column is-4 has-text-centered">
+            <div class="column is-4-desktop has-text-centered">
               <a class="contact-button" href="tel:(724)825-1474">
                 Call<br />724-825-1474</a
               >
             </div>
-            <div class="column is-4 has-text-centered">
+            <div class="column is-4-desktop  has-text-centered">
               <a class="contact-button" @click="$modal.show('contact-form')"
                 >Email<br />
                 verbanicilb@gmail.com</a
@@ -102,7 +114,8 @@
 
     <footer class="hero-bg">
       <div class="content colummns">
-        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
+        <div class="is-size-6 has-text-white column has-text-right is-12">
+          <i class="fa fa-copyright" aria-hidden="true"></i>
           {{ footer }}
         </div>
       </div>
@@ -145,7 +158,8 @@ export default {
       contactHeader: "Contact Us",
       contact:
         "Please contact ILB by phone or e-mail to get further details on any of the adhesives or sanitization products shared above.",
-        footer: "Publish Date: March 2020--products and applications are copyright of Quin Global"
+      footer:
+        "Publish Date: March 2020--products and applications are copyright of Quin Global"
     };
   }
 };
@@ -259,8 +273,7 @@ hr {
   border-radius: 3px;
   display: inline-block;
   transition: all 0.3s ease 0s;
-  min-width: 80%;
-  max-width: 100%;
+  width: 100%;
 }
 
 .contact-button:hover {
