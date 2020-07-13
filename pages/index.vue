@@ -1114,7 +1114,7 @@ export default {
 #hero-button a {
   color: white;
 }
-.classname {
+.classnames{
   -moz-box-shadow: inset 0px 1px 17px -3px #8c8c8c;
   -webkit-box-shadow: inset 0px 1px 17px -3px #8c8c8c;
   box-shadow: inset 0px 1px 17px -3px #8c8c8c;

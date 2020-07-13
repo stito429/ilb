@@ -205,12 +205,11 @@ export default {
 };
 </script>
 
-<style>
+<style sass-scoped>
 #navbar-logo-fix {
   max-width: 150px;
   max-height: 50px;
 }
-
 #navbar-background {
   background: -webkit-linear-gradient(
     top,
@@ -222,20 +221,6 @@ export default {
   );
   /* url("../assets/backgrounds/steel-background.jpg") repeat-x scroll 0 0; */
 }
-/* @media screen and (max-width: 1023px) {
-  .navbar {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .navbar-brand {
-    min-width: 100%;
-  }
-  .navbar-menu {
-    margin-left: auto;
-    min-width: 50%;
-
-  }
-}  */
 
 @media screen and (min-width: 1023px) {
   #dropdown-background {
@@ -248,20 +233,13 @@ export default {
       #e1e1e1 100%
     );
   }
-
-  /* #nav-button {
-  } */
 }
-
 @media screen and (max-width: 1023px) {
   #button-container {
     flex-flow: column wrap;
   }
-  /* #nav-button {
-  } */
 }
-
-/* @media screen and (min-width: 1023px) { */
+@media screen and (min-width: 1023px) {
 .classname {
   background: #f1f1f1;
   background-image: -webkit-linear-gradient(top, #f1f1f1, rgb(201, 201, 201));
@@ -284,17 +262,52 @@ export default {
   padding-right: 2%;
   padding-left: 2%;
   padding-top: 5%;
-  /* box-shadow: 1px 1px 20px 0px #000000;
--webkit-box-shadow: 1px 1px 20px 0px #000000;
--moz-box-shadow: 1px 1px 20px 0px #000000; */
   text-shadow: 0px 0px 27px #ffffff;
-  /* border: inset #C7C7C7 2px; */
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
   text-align: center;
-}
+  -moz-box-shadow: inset 0px 1px 17px -3px #8c8c8c;
+  -webkit-box-shadow: inset 0px 1px 17px -3px #8c8c8c;
+  box-shadow: inset 0px 1px 17px -3px #8c8c8c;
 
+  background: -webkit-linear-gradient(
+    top,
+    #acacac 0%,
+    #cecece 21%,
+    #e7e7e7 50%,
+    #cecece 80%,
+    #acacac 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9c9c9', endColorstr='#f0f0f0');
+  background-color: #c9c9c9;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-left-radius: 5px;
+  text-indent: 0;
+  border: 2px solid #cfcfcf;
+  display: inline-block;
+  color: #292929;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  height: 50px;
+  line-height: 34px;
+  width: 110px;
+  text-decoration: none;
+  text-align: center;
+  margin: 2px;
+}
 .classname:hover {
   background: #f1f1f1;
   background-image: -webkit-linear-gradient(top, #f1f1f1, rgb(201, 201, 201));
@@ -322,12 +335,11 @@ export default {
   -moz-box-shadow: 1px 1px 20px 0px #e6e6e6;
   text-shadow: 0px 0px 27px #ffffff;
   border: inset #c7c7c7 2px;
-
   display: inline-block;
   cursor: pointer;
   text-align: center;
+  
 }
-
 .classname:active {
   background: #f1f1f1;
   background-image: -webkit-linear-gradient(top, #f1f1f1, rgb(201, 201, 201));
@@ -360,7 +372,7 @@ export default {
   cursor: pointer;
   text-align: center;
 }
-
+}
 .phone {
   background: #f1f1f1;
   background-image: -webkit-linear-gradient(top, #f1f1f1, rgb(201, 201, 201));
@@ -391,7 +403,6 @@ export default {
   cursor: pointer;
   text-decoration: none;
 }
-
 .cta {
   height: 80%;
   min-width: 100px;
@@ -399,7 +410,6 @@ export default {
   z-index: 1;
   transition: 1.2s;
 }
-
 .number {
   height: 80%;
   min-width: 100px;
@@ -409,12 +419,10 @@ export default {
   box-shadow: 3px 3px 30px #aaa;
   text-decoration: none;
 }
-
 .cta:hover {
   transform: translateX(-98%);
   transition: 1.2s;
 }
-
 #navbar-phone {
   padding-left: 10%;
 }

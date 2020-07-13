@@ -26,7 +26,7 @@
           <input name="form-name" value="contact-form" type="hidden" />
           <fieldset>
             <div class="level">
-              <div class="level-left">
+              <div class="level-left is-hidden-touch">
                 <figure class="level-item image is-128x128 ">
                   <img class="logo-image"
                     v-bind:src="require('~/assets/images/logos/ilblogo.png')"
