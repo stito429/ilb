@@ -1002,7 +1002,7 @@ export default {
 
 .contact-button {
   border: none;
-  background: rgba(143, 134, 38);
+  background: rgb(230, 106, 4);
   color: #e9e9e9 !important;
   font-weight: 900;
   text-align: center;
@@ -1014,8 +1014,12 @@ export default {
   width: 100%;
 }
 
+.contact-button a {
+  /* color: white; */
+}
+
 .contact-button:hover {
-  color: rgba(143, 134, 38) !important;
+  color: rgb(226, 115, 11) !important;
   font-weight: 900 !important;
   letter-spacing: 2px;
   background: rgb(230, 230, 230);
@@ -1024,8 +1028,12 @@ export default {
   transition: all 0.2s ease 0s;
 }
 
+.contact-button: hover a {
+  color: rgb(226, 115, 11) !important
+}
+
 #residential-button {
-  padding-bottom: 5px;
+  /* padding-bottom: 5px; */
 }
 
 .highlighted {
@@ -1139,7 +1147,7 @@ export default {
 
   max-width: 5000px;
 }
-#hero-button {
+/* #hero-button {
   font-family: arial;
   font-weight: bold;
   color: rgb(255, 255, 255) !important;
@@ -1150,7 +1158,7 @@ export default {
   border-radius: 2px;
   border: 2px groove #d7d9ca;
   background: #da5502;
-}
+} */
 
 #hero-button a {
   color: white;
