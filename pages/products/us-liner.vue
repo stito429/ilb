@@ -241,7 +241,7 @@ export default {
       contact:
         "If you have questions or would like to know more about US Liner products and their potential uses at your facility, please contact ILB by phone or e-mail us to get further details on how we can assist with your current needs.",
       footer:
-        "Publish Date: March 2020--products and applications are copyright of US Liner"
+        "Publish Date: March 2020--products and applications are copyright of US Liner and ILB"
     };
   }
 };

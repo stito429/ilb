@@ -2,9 +2,11 @@
   <section>
     <!-- hero -->
     <section class="hero bg is-fullheight section">
-      <div class="hero-body has-text-weight-bold shift-hero columns ">
-        <div
-          class="column is-4-fullhd is-4-widescreen is-6-desktop is-7-tablet"
+      <div
+        class="hero-body has-text-weight-bold shift-hero columns"
+      >
+      <div class="column is-1 is-hidden-tablet"></div>
+        <div class="column is-4-fullhd is-4-widescreen is-5-desktop is-7-tablet is-narrow-mobile"
           id="blurred-box"
           data-aos="slide-right"
           data-aos-duration="1500"
@@ -13,83 +15,87 @@
           data-aos-offset="400"
           data-aos-delay="0"
         >
-          <div class>
-            <div class="title is-2 has-text-white has-text-centered">
-              Engineered Solutions
-              <br />with a
-              <div
-                class="title is-1 has-text-weight-bold highlighted underlined"
-                data-aos="fade-in"
-                data-aos-duration="1500"
-                data-aos-easing="ease-in"
-                data-aos-once="true"
-                data-aos-offset="400"
-                data-aos-delay="1500"
-              >
-                Global Reach
-                <br />
-              </div>
-            </div>
-            <!-- <div class="columns is-centered"> -->
-            <div class="columns is-centered has-text-centered">
-              <div class="column is-9 highlighted is-size-5 shift-hero-phrases">
-                <div class="highlighted is-size-4" >
-                  {{ heroProductsLeft }}
-                </div>
-                <div class="has-text-white is-size-6">
-                  {{ heroProductsRight }}
-                </div>
-              </div>
-            </div>
-            <div class="columns is-centered has-text-centered">
-              <div class="column is-9 highlighted is-size-5">
-                <div class="highlighted is-size-4">
-                  {{ heroDesignLeft }}
-                </div>
-                <div class="has-text-white is-size-6">
-                  {{ heroDesignRight }}
-                </div>
-              </div>
-            </div>
-            <div class="columns is-centered has-text-centered">
-              <div class="column is-9 highlighted is-size-5">
-                <div class="highlighted is-size-4">
-                  {{ heroServicesLeft }}
-                </div>
-                <div class="has-text-white is-size-6">
-                  {{ heroServicesRight }}
-                </div>
-              </div>
-            </div>
-
-            <!-- </div> -->
-          </div>
-          <div class="columns is-centered">
-            <div class="column is-11 has-text-centered">
-              <div class="has-text-centered">
-                <button id="hero-button" class="is-size-4">
-                  <a @click="$modal.show('contact-form')">
-                    Click Here and Share Your Needs With Us</a
-                  >
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="columns is-centered">
-            <div class="column is-11 has-text-centered" id>
-              <span class="has-text-white">
-                {{ heroResidentialLeft }}
-                <div class="highlighted">{{ heroresidentialRight }}</div>
-              </span>
-              <div class="has-text-centered" id="residential-button">
-                <router-link to="/products/us-liner" tag="button"
-                  >Click Here</router-link
+          <div class="columns is-centered is-mobile">
+            <div class="column is-11-desktop is-9-mobile is-10-tablet">
+              <div class="title is-2 has-text-white has-text-centered">
+                Engineered Solutions
+                <br />with a
+                <div
+                  class="title is-1 has-text-weight-bold highlighted underlined"
+                  data-aos="fade-in"
+                  data-aos-duration="1500"
+                  data-aos-easing="ease-in"
+                  data-aos-once="true"
+                  data-aos-offset="400"
+                  data-aos-delay="1500"
                 >
-                <br />
+                  Global Reach
+                  <br />
+                </div>
+              </div>
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-12 ">
+                  <div class="highlighted is-size-4">
+                    {{ heroProductsLeft }}
+                  </div>
+                  <div class="has-text-white is-size-6">
+                    {{ heroProductsRight }}
+                  </div>
+                </div>
+              </div>
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-9">
+                  <div class="highlighted is-size-4">
+                    {{ heroDesignLeft }}
+                  </div>
+                  <div class="has-text-white is-size-6">
+                    {{ heroDesignRight }}
+                  </div>
+                </div>
+              </div>
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-9">
+                  <div class="highlighted is-size-4">
+                    {{ heroServicesLeft }}
+                  </div>
+                  <div class="has-text-white is-size-6">
+                    {{ heroServicesRight }}
+                  </div>
+                </div>
+              </div>
+
+              <!-- </div> -->
+
+              <div class="columns is-centered">
+                <div class="column is-11 has-text-centered">
+                  <div class="has-text-centered">
+                    <button id="" class="is-size-4 contact-button">
+                      <a @click="$modal.show('contact-form')">
+                        Click Here and Share Your Needs With Us</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="columns is-centered">
+                <div class="column is-11 has-text-centered" id>
+                  <span class="has-text-white">
+                    {{ heroResidentialLeft }}
+                    <div class="highlighted">{{ heroresidentialRight }}</div>
+                  </span>
+                  <div class="has-text-centered" id="residential-button">
+                    <router-link to="/products/us-liner" tag="button"
+                      >Click Here</router-link
+                    >
+                    <br />
+                  </div>
+                </div>
               </div>
             </div>
+           
           </div>
         </div>
+         <div class="column is-1 is-hidden-desktop"></div>
       </div>
     </section>
     <!-- Logo Intro -->
@@ -114,16 +120,18 @@
           class="column is-10-mobile is-offset-1-mobile is-4-widescreen is-5-desktop is-10-tablet"
         >
           <div class="columns ">
-            <div class="column is-12-mobile">
+            <div
+              class="column is-12-mobile"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+              data-aos-offset="400"
+              data-aos-once="true"
+            >
               <div
                 v-for="benefit in benefits"
                 :key="benefit"
                 v-bind:href="benefit"
                 class="engraved-text is-size-4 has-text-weight-bold benefit-box has-text-centered-touch"
-                data-aos="fade-up-left"
-                data-aos-duration="1000"
-                data-aos-offset="400"
-                data-aos-once="true"
               >
                 {{ benefit }}
               </div>
@@ -142,21 +150,22 @@
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-once="true"
-            data-aos-offset="400"
+            data-aos-offset="250"
           >
             Why is ILB Different?
           </h2>
         </div>
       </div>
 
-      <div class="columns is-multiline is-vcentered is-centered">
+      <div class="columns is-multiline is-mobile is-centered">
         <div class="column is-5-desktop is-11-mobile" id->
           <div
             class=""
             data-aos="slide-right"
-            data-aos-duration="1500"
+            data-aos-duration="2000"
             data-aos-once="true"
-            data-aos-offset="500"
+            data-aos-offset="350"
+            data-aos-delay="1000"
           >
             <h2 class="title is- shadowed highlighted has-text-centered">
               One Point of Contact
@@ -178,8 +187,8 @@
           <figure
             class="image"
             data-aos="flip-right"
-            data-aos-delay="1000"
-            data-aos-offset="480"
+            data-aos-delay="500"
+            data-aos-offset="300"
             data-aos-duration="1500"
             data-aos-once="true"
           >
@@ -201,40 +210,51 @@
           data-aos-offset="250"
           data-aos-once="true"
         >
-          <div class="columns has-text-black is-mobile" id="desktop-test">
-            <div class="column is-6-desktop is-half-mobile">
-              <ul class="">
-                <li
-                  v-for="productCat in productCats1"
-                  :key="productCat"
-                  id="product-cat-list"
-                >
-                  <span class="highlighted icon is-large" id="product-cat">
-                    <i class="fas fa-check fa"></i>
-                  </span>
-                  <span
-                    class="has-text-weight-bold has-text-white"
-                    id="product-cat"
-                    v-bind:href="productCat"
-                    v-html="productCat"
-                  ></span>
-                </li>
-              </ul>
+          <div
+            class="columns is-mobile is-centered"
+            id="desktop-test"
+          >
+            <div class="column is-mobile is-half">
+              <div class="columns is-centered is-mobile">
+                <div class="column is-hidden-desktop pr-5"></div>
+                <div class="column is-narrow">
+                  <ul>
+                    <li v-for="productCat in productCats1" :key="productCat">
+                      <span class="highlighted icon is-large" id="product-cat">
+                        <i class="fas fa-check fa"></i>
+                      </span>
+                      <span
+                        class="has-text-weight-bold has-text-white"
+                        id="product-cat"
+                        v-bind:href="productCat"
+                        v-html="productCat"
+                      ></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="column"></div>
+              </div>
             </div>
-            <div class="column is-5-desktop is-half-mobile">
-              <ul class="">
-                <li v-for="productCat in productCats2" :key="productCat">
-                  <span class="highlighted icon is-large" id="product-cat">
-                    <i class="fas fa-check fa"></i>
-                  </span>
-                  <span
-                    class="has-text-weight-bold has-text-white"
-                    id="product-cat"
-                    v-bind:href="productCat"
-                    v-html="productCat"
-                  ></span>
-                </li>
-              </ul>
+            <div class="column is-mobile is-half">
+              <div class="columns is-centered is-mobile">
+                <!-- <div class="column"></div> -->
+                <div class="column is-narrow">
+                  <ul>
+                    <li v-for="productCat in productCats2" :key="productCat">
+                      <span class="highlighted icon is-large" id="product-cat">
+                        <i class="fas fa-check fa"></i>
+                      </span>
+                      <span
+                        class="has-text-weight-bold has-text-white"
+                        id="product-cat"
+                        v-bind:href="productCat"
+                        v-html="productCat"
+                      ></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="column"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -948,7 +968,7 @@ export default {
 <style css-scoped>
 .hero.bg {
   background: linear-gradient(to right, #00000000, #ffffff00),
-    url("../assets/images/img/hero-bg-with-logo-2048.jpg") no-repeat center left
+    url("../assets/images/img/hero-bg-with-logo-2048.jpg") 
       fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -956,7 +976,7 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
 
-  background-position: center center;
+  background-position: right;
   background-repeat: no-repeat;
 }
 #blurred-box {
@@ -980,6 +1000,30 @@ export default {
   text-decoration: underline;
 }
 
+.contact-button {
+  border: none;
+  background: rgba(143, 134, 38);
+  color: #e9e9e9 !important;
+  font-weight: 900;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+
+.contact-button:hover {
+  color: rgba(143, 134, 38) !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px;
+  background: rgb(230, 230, 230);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.2s ease 0s;
+}
+
 #residential-button {
   padding-bottom: 5px;
 }
@@ -987,10 +1031,7 @@ export default {
 .highlighted {
   color: #eda70f;
 }
-.shift-hero-phrases {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
+
 .hero-subtitle-head {
   border-bottom: rgb(0, 0, 0);
 }
@@ -1114,7 +1155,7 @@ export default {
 #hero-button a {
   color: white;
 }
-.classnames{
+.classnames {
   -moz-box-shadow: inset 0px 1px 17px -3px #8c8c8c;
   -webkit-box-shadow: inset 0px 1px 17px -3px #8c8c8c;
   box-shadow: inset 0px 1px 17px -3px #8c8c8c;
@@ -1187,9 +1228,49 @@ export default {
 
   max-width: 5000px;
 }
+/* Extra Small Screen  ----------- */
+@media only screen and (max-width: 670px) {
+  #desktop-test {
+    /* background: rgb(13, 148, 172); */
+  }
+  ul li {
+    list-style-position: outside;
+    text-indent: -3.3em;
+    padding: 1px 10 3px 6px;
+  }
 
+  ul {
+    position: relative;
+    left: 1.4em;
+  }
+
+  .several-solutions {
+    padding-left: em;
+  }
+
+  #several-solutions {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #product-cats-box {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.796),
+      rgba(0, 0, 0, 0.76)
+    );
+    border: 5px outset #a4a09e;
+    border-radius: 1px 1px 1px 1px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  #product-cat {
+    font-size: 1em;
+  }
+}
 /* Small Screen  ----------- */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 671px) and (max-width: 768px) {
   #desktop-test {
     background: rgb(225, 25, 192);
   }
@@ -1201,7 +1282,7 @@ export default {
 
   ul {
     position: relative;
-    left: 1.8em;
+    left: 2.4em;
   }
 
   .several-solutions {
@@ -1226,7 +1307,7 @@ export default {
   }
 
   #product-cat {
-    font-size: 1.1em;
+    font-size: 2em;
   }
 }
 /*  */
@@ -1234,7 +1315,7 @@ export default {
 /* Tablets (portrait) ----------- */
 @media only screen and (min-width: 769px) {
   #desktop-test {
-    background: rgb(8, 162, 8);
+    /* background: rgb(8, 162, 8); */
   }
   #product-cat {
     font-size: 1.5em;
@@ -1268,7 +1349,7 @@ export default {
 /* Desktop  ----------- */
 @media only screen and (min-width: 1024px) and (max-width: 1361px) {
   #desktop-test {
-    background: rgb(50, 62, 226);
+    /* background: rgb(50, 62, 226); */
   }
   ul li {
     list-style-position: outside;
@@ -1305,7 +1386,7 @@ export default {
 /* Widescreen  ----------- */
 @media only screen and (min-width: 1362px) {
   #desktop-test {
-    background: rgb(253, 80, 0);
+    /* background: rgb(253, 80, 0); */
   }
   ul li {
     list-style-position: outside;
