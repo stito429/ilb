@@ -16,7 +16,7 @@
           data-aos-delay="0"
         >
           <div class="columns is-centered is-mobile">
-            <div class="column is-11-desktop is-9-mobile is-10-tablet">
+            <div class="column is-10 is-9-mobile is-10-tablet">
               <div class="title is-2 has-text-white has-text-centered">
                 Engineered Solutions
                 <br />with a
@@ -1015,7 +1015,7 @@ export default {
 }
 
 .contact-button a {
-  /* color: white; */
+  color: white;
 }
 
 .contact-button:hover {
@@ -1028,7 +1028,7 @@ export default {
   transition: all 0.2s ease 0s;
 }
 
-.contact-button: hover a {
+.contact-button:hover a {
   color: rgb(226, 115, 11) !important
 }
 
