@@ -17,7 +17,7 @@
         >
           <div class="columns is-centered is-mobile">
             <div class="column is-10 is-9-mobile is-10-tablet">
-              <div class="title is-2 has-text-white has-text-centered">
+              <div class="title is-2 has-text-white has-text-centered pt-3">
                 Engineered Solutions
                 <br />with a
                 <div
@@ -83,11 +83,9 @@
                     {{ heroResidentialLeft }}
                     <div class="highlighted">{{ heroresidentialRight }}</div>
                   </span>
-                  <div class="has-text-centered" id="residential-button">
+                  <div class="has-text-centered pb-3" id="residential-button">
                     <router-link to="/products/us-liner" tag="button"
-                      >Click Here</router-link
-                    >
-                    <br />
+                      >Click Here</router-link>
                   </div>
                 </div>
               </div>
@@ -164,8 +162,8 @@
             data-aos="slide-right"
             data-aos-duration="2000"
             data-aos-once="true"
-            data-aos-offset="350"
-            data-aos-delay="1000"
+            data-aos-offset="450"
+            data-aos-delay=""
           >
             <h2 class="title is- shadowed highlighted has-text-centered">
               One Point of Contact
@@ -188,7 +186,7 @@
             class="image"
             data-aos="flip-right"
             data-aos-delay="500"
-            data-aos-offset="300"
+            data-aos-offset="500"
             data-aos-duration="1500"
             data-aos-once="true"
           >
@@ -775,7 +773,7 @@
       >
       from
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-      <p>ILB Copyright and Issue Date: March 2020</p>
+      <p>ILB © Copyright and Issue Date: March 2020</p>
     </footer>
   </section>
 </template>
@@ -965,7 +963,7 @@ export default {
 };
 </script>
 
-<style css-scoped>
+<style scoped>
 .hero.bg {
   background: linear-gradient(to right, #00000000, #ffffff00),
     url("../assets/images/img/hero-bg-with-logo-2048.jpg") 
@@ -1021,11 +1019,12 @@ export default {
 .contact-button:hover {
   color: rgb(226, 115, 11) !important;
   font-weight: 900 !important;
-  letter-spacing: 2px;
+  letter-spacing: .3px;
   background: rgb(230, 230, 230);
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.2s ease 0s;
+  
 }
 
 .contact-button:hover a {
@@ -1280,7 +1279,7 @@ export default {
 /* Small Screen  ----------- */
 @media only screen and (min-width: 671px) and (max-width: 768px) {
   #desktop-test {
-    background: rgb(225, 25, 192);
+    /* background: rgb(225, 25, 192); */
   }
   ul li {
     list-style-position: outside;

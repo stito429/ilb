@@ -142,7 +142,7 @@
 
     <footer class="hero-bg">
       <div class="content colummns">
-        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
+        <div class="is-size-6 has-text-white column has-text-right is-12">
           {{ footer }}
         </div>
       </div>
@@ -181,7 +181,7 @@ export default {
       contact:
         "Please contact ILB by phone or e-mail us to get further details on how we can help solve your furnace burner operation issues and challenges",
       footer:
-        "Publish Date: March 2020--products and applications are copyright of Saint-Gobain"
+        "Publish Date: March 2020--products and applications are © Copyright of Saint-Gobain"
     };
   }
 };

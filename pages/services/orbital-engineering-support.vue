@@ -2,15 +2,29 @@
   <section>
     <div class="hero hero-bg is-small">
       <div class="hero-body">
-        <div class="columns is-vcentered is-centered">
-          <div class="column is-2">
-            <figure class="image is-128x128">
-              <img src="../../assets/images/logos/orbital.png" class="logo-image" />
+        <div class="columns is-centered is-mobile">
+          <div class="column is-2 is-offset-1 is-hidden-mobile">
+            <figure class="image">
+              <img
+                src="../../assets/images/logos/orbital.png"
+                class="logo-image"
+              />
             </figure>
           </div>
-          <div class="column is-8">
-            <br />
-            <h1 class="title is-1 has-text-weight-bold engraved-text-hero">
+
+          <div class="column is-3 is-hidden-tablet pt-6">
+            <figure class="image is-128x128">
+              <img
+                src="../../assets/images/logos/orbital.png"
+                class="logo-image"
+              />
+            </figure>
+          </div>
+
+          <div class="column">
+            <h1
+              class="title is-size-1-desktop is-size-2-touch is-size-3-tablet is-size-5-mobile has-text-weight-bold engraved-text-hero has-text-centered-mobile"
+            >
               {{ header }}
             </h1>
             <span class="hero-fade-effect"></span>
@@ -28,18 +42,20 @@
             {{ paragraph1Header }}
           </h3>
           <span class="heading-fade-effect"></span><br />
-              <div class="is-size-4">{{ paragraph1 }}</div>
+          <div class="is-size-4">{{ paragraph1 }}</div>
           <hr />
 
-          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">{{paragraph2Header}}</h3>
+          <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
+            {{ paragraph2Header }}
+          </h3>
           <span class="heading-fade-effect"></span><br />
-          <div class="is-size-4">{{paragraph2}}</div>
+          <div class="is-size-4">{{ paragraph2 }}</div>
           <br />
-          <div class="is-size-4">{{paragraph3}}</div>
+          <div class="is-size-4">{{ paragraph3 }}</div>
           <br />
-          <div class="is-size-4">{{paragraph4}}</div>
-                    <br />
-          <div class="is-size-4">{{paragraph5}}</div>
+          <div class="is-size-4">{{ paragraph4 }}</div>
+          <br />
+          <div class="is-size-4">{{ paragraph5 }}</div>
 
           <hr />
           <!-- CONTACT SECTION -->
@@ -70,7 +86,7 @@
 
     <footer class="hero-bg">
       <div class="content colummns">
-        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
+        <div class="is-size-6 has-text-white column has-text-right is-12">
           {{ footer }}
         </div>
       </div>
@@ -101,7 +117,7 @@ export default {
       paragraph5:
         "For any engineering support you may need, the ILB and Orbital Engineering team will figure it out.",
       footer:
-        "Publish Date: March 2020--service applications offered are the copyright of Orbital Engineering and ILB"
+        "Publish Date: March 2020--service applications offered are the © Copyright of Orbital Engineering and ILB"
     };
   }
 };
@@ -196,7 +212,7 @@ hr {
   padding-left: 50px;
   padding-right: 50px;
 }
-/* 
+
 .contact-button {
   border: none;
   background: rgba(143, 134, 38);
@@ -219,8 +235,5 @@ hr {
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.2s ease 0s;
-} */
-
-
-
+}
 </style>

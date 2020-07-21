@@ -2,15 +2,30 @@
   <section>
     <div class="hero hero-bg is-small">
       <div class="hero-body">
-        <div class="columns is-vcentered is-centered">
-          <div class="column is-2">
+        <div class="columns is-vcentered is-centered is-mobile">
+          <div class="column is-2 is-offset-1 is-hidden-mobile">
             <figure class="image is-128x128">
-              <img src="../../assets/images/logos/itc.png" class="logo-image" />
+              <img
+                src="../../assets/images/logos/itc.png"
+                class="logo-image"
+              />
             </figure>
           </div>
-          <div class="column is-8">
-            <br />
-            <h1 class="title is-1 has-text-weight-bold engraved-text-hero">
+
+
+          <div class="column is-3 is-hidden-tablet">
+            <figure class="image is-96x96">
+              <img
+                src="../../assets/images/logos/itc.png"
+                class="logo-image"
+              />
+            </figure>
+          </div>
+
+
+
+          <div class="column">
+            <h1 class="title is-size-1-desktop is-size-2-touch is-size-3-tablet is-size-5-mobile has-text-weight-bold engraved-text-hero has-text-centered-mobile">
               {{ header }}
             </h1>
             <span class="hero-fade-effect"></span>
@@ -135,7 +150,8 @@
 
     <footer class="hero-bg">
       <div class="content colummns">
-        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
+        <div class="is-size-6 has-text-white column has-text-right is-12">
+          <!-- <i class="fa fa-copyright" aria-hidden="true"></i> -->
           {{ footer }}
         </div>
       </div>
@@ -194,7 +210,7 @@ export default {
       contact:
         "Please contact ILB by phone or e-mail if you have questions and to get further information on how we can help you with your furnace refractory life longevity.",
       footer:
-        "Publish Date: March 2020--products and applications are copyright of ITC Coatings"
+        "Publish Date: March 2020--products and applications are © Copyright of ITC Coatings"
     };
   }
 };

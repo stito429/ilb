@@ -155,7 +155,7 @@
 
     <footer class="hero-bg">
       <div class="content colummns">
-        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
+        <div class="is-size-6 has-text-white column has-text-right is-12">
           {{ footer }}
         </div>
       </div>
@@ -199,13 +199,13 @@ export default {
       contactHeader: "Contact Us",
       contact:
         "Please contact ILB by phone or e-mail if you have questions and to get further information on how we can help you with your wear challenges.",
-        footer: "Publish Date: March 2020--products and applications are copyright of Saint-Gobain"
+        footer: "Publish Date: March 2020--products and applications are © Copyright of Saint-Gobain"
     };
   }
 };
 </script>
 
-<style>
+<style scoped>
 .component {
   background: linear-gradient(
       to right,

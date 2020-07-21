@@ -64,7 +64,7 @@
 
     <footer class="hero-bg">
       <div class="content colummns">
-        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
+        <div class="is-size-6 has-text-white column has-text-right is-12">
           {{ footer }}
         </div>
       </div>
@@ -83,9 +83,9 @@ export default {
         "ILB is backed by 34 years in the Steel Industry where George Verbanic has led the furnace plant groups in designing, building , installing, scheduling and training plant personnel on their new equipment. To get the job done on time and on or under budget, and train staff and team members. When it comes to getting the job done right, ILB has a proven track record in the industry to get the job done on budget, on time, train everyone and complete the job on or under budget.  Over the years, George has been a key leader in installing all of the North American blast furnace charging systems while working for Paul Wurth. He has also supported the Industry independently, including companies such as Precision Machine Control, ArcelorMittal, and US Steel.",
       contactHeader: "Contact Us",
       contact:
-        "Please contact ILB by phone or e-mail if you have questions and to get further information.",
+        "Please contact ILB by phone or e-mail us if you have any questions or need any further information on the services we can provide.",
       footer:
-        "Publish Date: March 2020--service applications offered are the copyright of ILB and its support group"
+        "Publish Date: March 2020--service applications offered are the © Copyright of ILB and its support group"
     };
   }
 };

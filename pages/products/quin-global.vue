@@ -115,7 +115,6 @@
     <footer class="hero-bg">
       <div class="content colummns">
         <div class="is-size-6 has-text-white column has-text-right is-12">
-          <i class="fa fa-copyright" aria-hidden="true"></i>
           {{ footer }}
         </div>
       </div>
@@ -159,7 +158,7 @@ export default {
       contact:
         "Please contact ILB by phone or e-mail to get further details on any of the adhesives or sanitization products shared above.",
       footer:
-        "Publish Date: March 2020--products and applications are copyright of Quin Global"
+        "Publish Date: March 2020--products and applications are © Copyright of Quin Global"
     };
   }
 };

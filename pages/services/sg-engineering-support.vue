@@ -62,7 +62,7 @@
 
     <footer class="hero-bg">
       <div class="content colummns">
-        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
+        <div class="is-size-6 has-text-white column has-text-right is-12">
           {{ footer }}
         </div>
       </div>
@@ -92,7 +92,7 @@ export default {
       paragraph2:
         "For any engineering support you may need, ILB and Saint-Gobain will figure it out as a team.",
       footer:
-        "Publish Date: March 2020--service applications offered are the copyright of Saint-Gobain and ILB"
+        "Publish Date: March 2020--service applications offered are the © Copyright of Saint-Gobain and ILB"
     };
   }
 };

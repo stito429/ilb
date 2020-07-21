@@ -64,7 +64,7 @@
 
     <footer class="hero-bg">
       <div class="content colummns">
-        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
+        <div class="is-size-6 has-text-white column has-text-right is-12">
           {{ footer }}
         </div>
       </div>
@@ -90,9 +90,9 @@ export default {
     //     "These benefits and our marketing materials detail the value-added services and products that ILB can deliver to its customers, which are beneficial from an operations payback standpoint.",
       contactHeader: "Contact Us",
       contact:
-        "Please contact ILB by phone or e-mail if you have questions and to get further information.",
+        "Please contact ILB by phone or e-mail us if you have any questions or need any further information on the services we can provide.",
       footer:
-        "Publish Date: March 2020--service applications offered are the copyright of ILB and its support group"
+        "Publish Date: March 2020--service applications offered are the © Copyright of ILB and its support group"
     };
   }
 };
@@ -119,14 +119,7 @@ export default {
   /* min-height: 100vh; */
 }
 .hero-bg {
-  background:linear-gradient(
-      to right,
-      rgb(252, 38, 1) 0%,
-      rgb(252, 38, 1) 10%,
-      rgb(252, 38, 1) 50%,
-      rgb(252, 38, 1) 90%,
-      rgb(252, 38, 1) 100%
-    );
+  background: rgb(230, 106, 4) 0%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -150,7 +143,7 @@ export default {
     10% 90%,
     553,
     from(rgb(193, 193, 193)),
-    to(rgb(252, 38, 1))
+    to(rgb(230, 106, 4))
   );
 }
 .heading-fade-effect {
@@ -163,26 +156,26 @@ export default {
     0,
     100% 10%,
     555,
-    from(rgb(252, 38, 1)),
+    from(rgb(230, 106, 4)),
     to(rgba(201, 201, 201, 0.756))
   );
 }
 .engraved-text-hero {
   color: rgb(211, 211, 211);
-  text-shadow: 1px 1px rgb(252, 38, 1), -1px -1px rgb(117, 115, 114);
+  text-shadow: 1px 1px rgb(230, 106, 4), -1px -1px rgb(117, 115, 114);
 }
 
 .engraved-text-header {
-  color: rgb(252, 38, 1);
+  color: rgb(230, 106, 4);
   text-shadow: 1px 0px rgb(191, 191, 191), 0px -1px rgb(67, 67, 67);
 }
 
 hr {
-  border: 2px solid rgb(252, 38, 1);
+  border: 2px solid rgb(230, 106, 4);
   border-radius: 4px;
 }
 .logo-color {
-  color: rgb(252, 38, 1);
+  color: rgb(230, 106, 4);
 }
 
 .logo-image {
@@ -197,7 +190,7 @@ hr {
 
 .contact-button {
   border: none;
-  background: rgba(252, 38, 1);
+  background: rgba(230, 106, 4);
   color: #e9e9e9 !important;
   font-weight: 900;
   text-align: center;
@@ -210,7 +203,7 @@ hr {
 }
 
 .contact-button:hover {
-  color: rgba(252, 38, 1) !important;
+  color: rgba(230, 106, 4) !important;
   font-weight: 900 !important;
   letter-spacing: 2px;
   background: rgb(230, 230, 230);
