@@ -7,7 +7,7 @@
           <div class="column is-2-desktop is-3-tablet is-hidden-touch logo-column">
             <figure class="image-container"> 
               <img
-                src="../../assets/images/logos/orbital.png"
+                src="../../assets/images/logos/us-liner.png"
                 class="logo-image"
               />
             </figure>
@@ -16,7 +16,7 @@
                     <div class="column is-2 is-hidden-desktop">
             <figure class="image">
               <img
-                src="../../assets/images/logos/orbital.png"
+                src="../../assets/images/logos/us-liner.png"
                 class="logo-image"
               />
             </figure>

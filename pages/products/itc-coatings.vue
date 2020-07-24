@@ -41,22 +41,6 @@
           </h3>
           <span class="heading-fade-effect"></span><br />
 
-
-
-          <!-- <div class="columns is-centered is-multiline">
-            <div class="column is-12">
-              <div class="is-size-4">{{ paragraph1 }}</div>
-            </div>
-            <div class="column is-12">
-              <figure class="image product-image">
-                <img
-                  :src="require('../../assets/images/product-photos/itc-3.jpg')"
-                />
-              </figure>
-            </div>
-          </div> -->
-
-
           <div class="columns is-centered">
             <div class="column is-full-mobile">
               <figure class="image product-image pl-5 pb-5 is-hidden-mobile">
@@ -133,7 +117,7 @@
             <div class="column is-two-third">
               <figure class="image">
                 <img
-                  class="product-image"
+                  class="product-image-samples"
                   :src="require('../../assets/images/product-photos/itc-1.jpg')"
                 />
               </figure>
@@ -141,7 +125,7 @@
             <div class="column is-two-third">
               <figure class="image">
                 <img
-                  class="product-image"
+                  class="product-image-samples"
                   :src="require('../../assets/images/product-photos/itc-2.jpg')"
                 />
               </figure>
@@ -377,10 +361,9 @@ hr {
   float: right;
 }
 
-#product-image3 {
-  float: right;
+.product-image-samples {
   margin: 0 15px 0 0;
-  max-width: 30%;
+  max-width: 10 0%;
 }
 
 .card-content {
