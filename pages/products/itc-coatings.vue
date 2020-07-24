@@ -1,39 +1,36 @@
 <template>
   <section>
-    <div class="hero hero-bg is-small">
-      <div class="hero-body">
-        <div class="columns is-vcentered is-centered is-mobile">
-          <div class="column is-2 is-offset-1 is-hidden-mobile">
-            <figure class="image is-128x128">
-              <img
-                src="../../assets/images/logos/itc.png"
-                class="logo-image"
-              />
-            </figure>
-          </div>
+      <div class="hero hero-bg is-small">
+        <div class="hero-body">
+          <div class="columns is-mobile is-multiline is-centered pb-3">
+            <div class="column is-1 is-narrow is-hidden-mobile"></div>
+            <div class="column is-1 logo-column is-hidden-mobile">
+              <figure class="image-container"> 
+                <img
+                  src="../../assets/images/logos/itc.png"
+                  class="logo-image"
+                />
+              </figure>
+            </div>
 
+            <div class="column is-2 is-hidden-tablet ">
+              <figure class="image is-64x64">
+                <img
+                  src="../../assets/images/logos/itc.png"
+                  class="logo-image"
+                />
+              </figure>
+            </div>
 
-          <div class="column is-3 is-hidden-tablet">
-            <figure class="image is-96x96">
-              <img
-                src="../../assets/images/logos/itc.png"
-                class="logo-image"
-              />
-            </figure>
-          </div>
-
-
-
-          <div class="column">
-            <h1 class="title is-size-1-desktop is-size-2-touch is-size-3-tablet is-size-5-mobile has-text-weight-bold engraved-text-hero has-text-centered-mobile">
-              {{ header }}
-            </h1>
-            <span class="hero-fade-effect"></span>
-            <br />
+            <div class="column pl-6">
+              <h1 class="title is-size-1-desktop is-size-3-mobile is-size-2-tablet has-text-weight-bold engraved-text-hero ">
+                {{ header }}
+                
+              </h1>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
     <div class="component">
       <section class="has-text-black columns is-centered layout">
@@ -43,18 +40,48 @@
             {{ paragraph1Header }}
           </h3>
           <span class="heading-fade-effect"></span><br />
-          <div class="columns is-centered">
-            <div class="column is-8">
+
+
+
+          <!-- <div class="columns is-centered is-multiline">
+            <div class="column is-12">
               <div class="is-size-4">{{ paragraph1 }}</div>
             </div>
-            <div class="column is-4">
+            <div class="column is-12">
               <figure class="image product-image">
                 <img
                   :src="require('../../assets/images/product-photos/itc-3.jpg')"
                 />
               </figure>
             </div>
+          </div> -->
+
+
+          <div class="columns is-centered">
+            <div class="column is-full-mobile">
+              <figure class="image product-image pl-5 pb-5 is-hidden-mobile">
+                <img
+                  :src="
+                    require('../../assets/images/product-photos/itc-3.jpg')
+                  "
+                />
+              </figure>
+
+              <figure class="image  is-hidden-tablet">
+                <img
+                  :src="
+                    require('../../assets/images/product-photos/itc-3.jpg')
+                  "
+                />
+              </figure>
+              <div class="is-size-4 column is-full-mobile">
+                {{ paragraph1 }}
+              </div>
+            </div>
           </div>
+
+
+
 
           <hr />
 
@@ -150,8 +177,7 @@
 
     <footer class="hero-bg">
       <div class="content colummns">
-        <div class="is-size-6 has-text-white column has-text-right is-12">
-          <!-- <i class="fa fa-copyright" aria-hidden="true"></i> -->
+        <div class="is-size-6 has-text-white column has-text-right is-12"><i class="fa fa-copyright" aria-hidden="true"></i>
           {{ footer }}
         </div>
       </div>
@@ -296,14 +322,28 @@ hr {
   color: rgb(35, 91, 27);
 }
 
+.logo-column {
+  position: relative;
+}
+
+.image-container {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .logo-image {
   border-radius: 3px;
-  position: absolute;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  align-content: right
 }
 
 .layout {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .contact-button {
@@ -330,11 +370,11 @@ hr {
   transition: all 0.2s ease 0s;
 }
 /* Classes specific to ITC  */
+
+
 .product-image {
-  /* width: 100%; */
-  max-width: 100%;
-  padding: 10px;
-  position: right;
+  max-width: 400px;
+  float: right;
 }
 
 #product-image3 {

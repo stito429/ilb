@@ -1,39 +1,36 @@
 <template>
   <section>
-    <div class="hero hero-bg is-small">
-      <div class="hero-body">
-        <div class="columns is-vcentered is-centered is-mobile">
-          <div class="column is-2 is-offset-1 is-hidden-mobile">
-            <figure class="image is-128x128">
-              <img
-                src="../../assets/images/logos/quin.png"
-                class="logo-image"
-              />
-            </figure>
-          </div>
+      <div class="hero hero-bg is-small">
+        <div class="hero-body">
+          <div class="columns is-mobile is-vcentered is-multiline is-centered ">
+            <div class="column is-1 is-narrow is-hidden-mobile"></div>
+            <div class="column is-1 logo-column is-hidden-mobile is-narrow">
+              <figure class="image-container image"> 
+                <img
+                  src="../../assets/images/logos/quin.png"
+                  class="logo-image"
+                />
+              </figure>
+            </div>
 
+            <div class="column is-narrow is-hidden-tablet ">
+              <figure class="image is-64x64">
+                <img
+                  src="../../assets/images/logos/quin.png"
+                  class="logo-image"
+                />
+              </figure>
+            </div>
 
-          <div class="column is-3 is-hidden-tablet">
-            <figure class="image is-96x96">
-              <img
-                src="../../assets/images/logos/quin.png"
-                class="logo-image"
-              />
-            </figure>
-          </div>
-
-
-
-          <div class="column">
-            <h1 class="title is-size-1-desktop is-size-2-touch is-size-3-tablet is-size-5-mobile has-text-weight-bold engraved-text-hero has-text-centered-mobile">
-              {{ header }}
-            </h1>
-            <span class="hero-fade-effect"></span>
-            <br />
+            <div class="column ">
+              <h1 class="title is-size-1-desktop is-size-3-mobile is-size-2-tablet has-text-weight-bold engraved-text-hero pb-5-mobile">
+                {{ header }}
+                
+              </h1>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
     <div class="component">
       <section class="has-text-black columns is-centered layout">
@@ -50,12 +47,14 @@
             {{ paragraph2Header }}
           </h3>
           <span class="heading-fade-effect"></span><br />
-          <div class="columns is-mobile is-centered">
-            <div class="column is-size-4 is-9">
+
+
+          <!-- <div class="columns is-multiline is-centered">
+            <div class="column is-size-4 is-9-desktop is-12-mobile">
               {{ paragraph2 }}
             </div>
 
-            <div class="column">
+            <div class="column is-hidden-touch">
               <figure class="image">
                 <img
                   class="product-image"
@@ -63,7 +62,47 @@
                 />
               </figure>
             </div>
+
+            <div class="column is-hidden-desktop">
+              <figure class="image">
+                <img
+                  class="product-image"
+                  :src="require('../../assets/images/product-photos/quin1.jpg')"
+                />
+              </figure>
+            </div>
+
+
+          </div> -->
+
+
+
+          <div class="columns is-centered">
+            <div class="column is-full-mobile">
+              <figure class="image product-image pl-5 pb-5 is-hidden-mobile">
+                <img
+                  :src="
+                    require('../../assets/images/product-photos/quin1.jpg')
+                  "
+                />
+              </figure>
+
+              <figure class="image  is-hidden-tablet">
+                <img
+                  :src="
+                    require('../../assets/images/product-photos/quin1.jpg')
+                  "
+                />
+              </figure>
+              <div class="is-size-4 column is-full-mobile">
+                {{ paragraph2 }}
+              </div>
+            </div>
           </div>
+
+
+
+
 
           <hr />
           <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
@@ -250,15 +289,26 @@ hr {
   color: rgb(31, 105, 128);
 }
 
-.logo-image {
-  border-radius: 3px;
+/* .logo-column {
   position: absolute;
-  max-height: 100%;
 }
 
+.image-container {
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.logo-image {
+  border-radius: 3px;
+  position: relative;
+  max-height: 20px;
+  vertical-align: middle;
+} */
+
 .layout {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .contact-button {

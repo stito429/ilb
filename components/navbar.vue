@@ -10,13 +10,15 @@
         />
       </nuxt-link>
       <!--workflow on the burger menu when clicked-->
-      <div class="navbar-item has-text-weight-bold is-hidden-desktop" id="navbar-phone">
-        <div class="phone cta ">
+      <div class="navbar-item has-text-weight-bold is-hidden-desktop columns pt-0 pb-4" id="navbar-phone">
+        <div class="column is-2 pt-0 pb-4">
+        <div class="phone cta">
           <span class="icon is-large">
             <i class="fa fa-phone" aria-hidden="true"></i>
           </span>
         </div>
         <a class="phone number" href="tel:(724)825-1474">724-825-1474</a>
+      </div>
       </div>
       <div
         v-on:click="active = !active"
@@ -391,7 +393,8 @@ export default {
   font-family: Arial;
   font-size: 14px;
   font-weight: 700;
-  min-width: 100%;
+  width: 20px;
+  /* max-width: 10%; */
   padding-right: 2%;
   padding-left: 2%;
   padding-top: 5%;
@@ -400,19 +403,22 @@ export default {
   align-items: center;
   border-radius: 5px;
   position: absolute;
+  left: 20px;
   cursor: pointer;
   text-decoration: none;
 }
 .cta {
   height: 80%;
-  min-width: 100px;
+  min-width: 75px;
+  /* max-width: 100px; */
   color: black;
   z-index: 1;
   transition: 1.2s;
 }
 .number {
   height: 80%;
-  min-width: 100px;
+  min-width: 75px;
+  /* max-width: 100px; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
   color: white;

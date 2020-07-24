@@ -2,25 +2,40 @@
   <section>
     <div class="hero hero-bg is-small">
       <div class="hero-body">
-        <div class="columns is-centered">
-          <div class="column is-2">
-            <figure class="image ">
+        <div class="columns  is-centered is-multiline">
+          <div class="column is-1 is-narrow is-hidden-mobile"></div>
+          <div class="column is-2-desktop is-3-tablet is-hidden-touch logo-column">
+            <figure class="image-container"> 
               <img
-                src="../../assets/images/logos/us-liner.png"
+                src="../../assets/images/logos/orbital.png"
                 class="logo-image"
               />
             </figure>
           </div>
-          <div class="column is-8">
-            <h1 class="title is-1 has-text-weight-bold engraved-text-hero">
+
+                    <div class="column is-2 is-hidden-desktop">
+            <figure class="image">
+              <img
+                src="../../assets/images/logos/orbital.png"
+                class="logo-image"
+              />
+            </figure>
+          </div>
+
+          <div class="column">
+            <h1 class="title is-size-1-desktop is-size-2-touch is-size-3-tablet is-size-6-mobile has-text-weight-bold engraved-text-hero ">
               {{ header }}
             </h1>
-            <span class="hero-fade-effect"></span>
-            <br />
           </div>
         </div>
       </div>
     </div>
+
+
+
+
+
+
 
     <div class="component">
       <section class="has-text-black columns is-centered layout">
@@ -327,9 +342,21 @@ hr {
   color: rgb(72, 148, 84);
 }
 
+.logo-column {
+  position: relative;
+}
+
+.image-container {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 .logo-image {
   border-radius: 3px;
-  position: absolute;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
 }
 
 .layout {

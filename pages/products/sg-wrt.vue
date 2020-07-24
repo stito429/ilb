@@ -2,19 +2,26 @@
   <section>
     <div class="hero hero-bg is-small">
       <div class="hero-body">
-        <div class="columns is-vcentered is-centered">
-          <div class="column is-2">
-            <figure class="image is-128x128">
+        <div class="columns is-mobile is-vcentered is-multiline is-centered ">
+          <div class="column is-1 is-narrow is-hidden-mobile"></div>
+          <div class="column is-1 logo-column is-hidden-mobile is-narrow">
+            <figure class="image-container image">
               <img src="../../assets/images/logos/sg.png" class="logo-image" />
             </figure>
           </div>
-          <div class="column is-8">
-            <br />
-            <h1 class="title is-1 has-text-weight-bold engraved-text-hero">
+
+          <div class="column is-narrow is-hidden-tablet ">
+            <figure class="image is-64x64">
+              <img src="../../assets/images/logos/sg.png" class="logo-image" />
+            </figure>
+          </div>
+
+          <div class="column ">
+            <h1
+              class="title is-size-1-desktop is-size-3-mobile is-size-2-tablet has-text-weight-bold engraved-text-hero "
+            >
               {{ header }}
             </h1>
-            <span class="hero-fade-effect"></span>
-            <br />
           </div>
         </div>
       </div>
@@ -28,21 +35,29 @@
             {{ paragraph1Header }}
           </h3>
           <span class="heading-fade-effect"></span><br />
+
           <div class="columns is-centered">
-            <div class="column">
-              <div class="is-size-4">              <figure class="image product-image">
+            <div class="column is-full-mobile">
+              <figure class="image product-image pl-5 pb-5 is-hidden-mobile">
                 <img
                   :src="
                     require('../../assets/images/product-photos/sg-wrt1.png')
                   "
                 />
-              </figure>{{ paragraph1 }}</div>
+              </figure>
+
+              <figure class="image product-image is-hidden-tablet">
+                <img
+                  :src="
+                    require('../../assets/images/product-photos/sg-wrt1.png')
+                  "
+                />
+              </figure>
+              <div class="is-size-4 column is-full-mobile">
+                {{ paragraph1 }}
+              </div>
             </div>
- 
-
-
           </div>
-
           <hr />
 
           <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
@@ -52,18 +67,24 @@
           <div class="columns is-centered">
             <div class="column ">
               <div class="is-size-4">
-                                <figure class="image product-image">
+                <figure class="image product-image pl-5 pb-5 is-hidden-mobile">
                   <img
                     :src="
                       require('../../assets/images/product-photos/sg-wrt5.png')
                     "
                   />
-                </figure>{{ paragraph2 }}
-
+                </figure>
+                                <figure class="image product-image is-hidden-tablet">
+                  <img
+                    :src="
+                      require('../../assets/images/product-photos/sg-wrt5.png')
+                    "
+                  />
+                </figure>
+                {{ paragraph2 }}
               </div>
             </div>
           </div>
-
 
           <div class="is-size-4">{{ paragraph3 }}</div>
           <br />
@@ -95,7 +116,7 @@
           <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
             {{ paragraph4Header }}
           </h3>
-                    <span class="heading-fade-effect"></span><br />
+          <span class="heading-fade-effect"></span><br />
           <div class="is-size-4">{{ paragraph4 }}</div>
           <br />
           <div class="is-size-4">{{ paragraph6 }}</div>
@@ -103,7 +124,7 @@
           <h3 class="subtitle is-2 has-text-weight-bold engraved-text-header">
             {{ photosHeader }}
           </h3>
-                    <span class="heading-fade-effect"></span><br />
+          <span class="heading-fade-effect"></span><br />
           <div class="columns is-centered">
             <div class="column is-two-third">
               <figure class="image">
@@ -194,12 +215,12 @@ export default {
         "All of the benefits above, project histories around the globe, and our marketing material details will explain to end users that it makes a lot of sense to consider Saint-Gobain products to help improve your facility’s performance and equipment longevity.",
       paragraph5:
         "All of the benefits above and our marketing material details, which ILB can share, illustrate why this product line is beneficial from and operations payback standpoint.",
-      photosHeader:
-        "Samples",
+      photosHeader: "Samples",
       contactHeader: "Contact Us",
       contact:
         "Please contact ILB by phone or e-mail if you have questions and to get further information on how we can help you with your wear challenges.",
-        footer: "Publish Date: March 2020--products and applications are © Copyright of Saint-Gobain"
+      footer:
+        "Publish Date: March 2020--products and applications are © Copyright of Saint-Gobain"
     };
   }
 };
@@ -283,14 +304,28 @@ hr {
   color: rgb(12, 147, 162);
 }
 
+.logo-column {
+  /* position: relative; */
+}
+
+.image-container {
+  position: relative;
+  /* top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-10%); */
+}
+
 .logo-image {
   border-radius: 3px;
-  position: absolute;
+  position: relative;
+  max-width: 100%;
+  vertical-align: middle;
+  align-content: right;
 }
 
 .layout {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .contact-button {
@@ -317,11 +352,9 @@ hr {
   transition: all 0.2s ease 0s;
 }
 
-
-
 .product-image {
-  max-width: 100%;
-  padding: 10px;
+  max-width: 100%px;
   float: right;
+  
 }
 </style>

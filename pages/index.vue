@@ -9,7 +9,7 @@
         <div class="column is-4-fullhd is-4-widescreen is-5-desktop is-7-tablet is-narrow-mobile"
           id="blurred-box"
           data-aos="slide-right"
-          data-aos-duration="1500"
+          data-aos-duration="2000"
           data-aos-easing="ease-in-out"
           data-aos-once="true"
           data-aos-offset="400"
@@ -23,7 +23,7 @@
                 <div
                   class="title is-1 has-text-weight-bold highlighted underlined"
                   data-aos="fade-in"
-                  data-aos-duration="1500"
+                  data-aos-duration="2000"
                   data-aos-easing="ease-in"
                   data-aos-once="true"
                   data-aos-offset="400"
@@ -83,7 +83,7 @@
                     {{ heroResidentialLeft }}
                     <div class="highlighted">{{ heroresidentialRight }}</div>
                   </span>
-                  <div class="has-text-centered pb-3" id="residential-button">
+                  <div class="has-text-centered pb-3">
                     <router-link to="/products/us-liner" tag="button"
                       >Click Here</router-link>
                   </div>
@@ -105,7 +105,7 @@
           <figure
             class="image is-3-by-1"
             data-aos="zoom-out"
-            data-aos-duration="750"
+            data-aos-duration="1500"
             data-aos-anchor-placement="bottom-bottom"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
@@ -121,7 +121,7 @@
             <div
               class="column is-12-mobile"
               data-aos="fade-up-left"
-              data-aos-duration="1000"
+              data-aos-duration="2000"
               data-aos-offset="400"
               data-aos-once="true"
             >
@@ -146,9 +146,9 @@
           <h2
             class="title is-2 highlighted has-text-centered shadowed"
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="2000"
             data-aos-once="true"
-            data-aos-offset="250"
+            data-aos-offset="450"
           >
             Why is ILB Different?
           </h2>
@@ -187,7 +187,7 @@
             data-aos="flip-right"
             data-aos-delay="500"
             data-aos-offset="500"
-            data-aos-duration="1500"
+            data-aos-duration="2000"
             data-aos-once="true"
           >
             <img src="./../assets/images/img/contact.jpg" id="contact-photo" />
@@ -204,7 +204,7 @@
           id="product-cats-box"
           data-aos="flip-left"
           data-aos-delay="1000"
-          data-aos-duration="1500"
+          data-aos-duration="2000"
           data-aos-offset="250"
           data-aos-once="true"
         >
@@ -521,7 +521,7 @@
               class="box company has-text-white"
               data-aos="fade-up-left"
               data-aos-duration="1000"
-              data-aos-offset="300"
+              data-aos-offset="350"
               data-aos-once="true"
             >
               <article class="media">
@@ -559,7 +559,7 @@
               class="box company has-text-white"
               data-aos="fade-up-right"
               data-aos-duration="1000"
-              data-aos-offset="300"
+              data-aos-offset="350"
               data-aos-delay="1000"
               data-aos-once="true"
             >
@@ -1010,6 +1010,10 @@ export default {
   display: inline-block;
   transition: all 0.3s ease 0s;
   width: 100%;
+  -webkit-animation: glowing 1000ms infinite;
+  -moz-animation: glowing 1000ms infinite;
+  -o-animation: glowing 1000ms infinite;
+  animation: glowing 2000ms infinite;
 }
 
 .contact-button a {
@@ -1020,20 +1024,40 @@ export default {
   color: rgb(226, 115, 11) !important;
   font-weight: 900 !important;
   letter-spacing: .3px;
-  background: rgb(230, 230, 230);
+  background: rgb(230, 230, 230) !important;
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.2s ease 0s;
-  
 }
 
 .contact-button:hover a {
   color: rgb(226, 115, 11) !important
 }
 
-#residential-button {
-  /* padding-bottom: 5px; */
+/* @-webkit-keyframes glowing {
+  0% { background-color: #E2730B; -webkit-box-shadow: 0 0 3px #E2730B; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+} */
+
+/* @-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+} */
+
+/* @-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+} */
+
+@keyframes glowing {
+  0% { background-color: #E2730B; box-shadow: 0 0 5px #E2730B; }
+  50% { background-color: #db7c22; box-shadow: 0 0 15px #b86314; }
+  100% { background-color: #E2730B; box-shadow: 0 0 4px #E2730B; }
 }
+
 
 .highlighted {
   color: #eda70f;

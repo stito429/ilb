@@ -2,21 +2,21 @@
   <section>
     <div class="hero hero-bg is-small">
       <div class="hero-body">
-        <div class="columns is-centered">
-          <div class="column is-2">
-            <figure class="image ">
+        <div class="columns  is-centered is-multiline">
+          <div class="column is-1 is-narrow is-hidden-mobile"></div>
+          <div class="column is-2-desktop is-3-tablet is-hidden-touch logo-column">
+            <figure class="image-container"> 
               <img
                 src="../../assets/images/logos/ilblogo.png"
                 class="logo-image"
               />
             </figure>
           </div>
-          <div class="column is-8">
-            <h1 class="title is-1 has-text-weight-bold engraved-text-hero">
+
+          <div class="column">
+            <h1 class="title is-size-1-desktop is-size-2-touch is-size-3-tablet is-size-5-mobile has-text-weight-bold engraved-text-hero ">
               {{ header }}
             </h1>
-            <span class="hero-fade-effect"></span>
-            <br />
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@ export default {
   /* min-height: 100vh; */
 }
 .hero-bg {
-  background: rgb(230, 106, 4) 0%;
+  background: rgb(237, 167, 15) 0%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -128,6 +128,10 @@ export default {
 
   background-position: left;
   background-repeat: no-repeat;
+}
+
+.hero-body {
+  padding: 0px;
 }
 
 .hero-fade-effect {
@@ -143,7 +147,7 @@ export default {
     10% 90%,
     553,
     from(rgb(193, 193, 193)),
-    to(rgb(230, 106, 4))
+    to(rgb(237, 167, 15))
   );
 }
 .heading-fade-effect {
@@ -156,41 +160,54 @@ export default {
     0,
     100% 10%,
     555,
-    from(rgb(230, 106, 4)),
+    from(rgb(237, 167, 15)),
     to(rgba(201, 201, 201, 0.756))
   );
 }
 .engraved-text-hero {
-  color: rgb(211, 211, 211);
-  text-shadow: 1px 1px rgb(230, 106, 4), -1px -1px rgb(117, 115, 114);
+  color: rgb(214, 214, 214);
+  text-shadow: 1px 1px rgb(237, 167, 15), -1px -1px rgb(117, 115, 114);
 }
 
 .engraved-text-header {
-  color: rgb(230, 106, 4);
+  color: rgb(237, 167, 15);
   text-shadow: 1px 0px rgb(191, 191, 191), 0px -1px rgb(67, 67, 67);
 }
 
 hr {
-  border: 2px solid rgb(230, 106, 4);
+  border: 2px solid rgb(237, 167, 15);
   border-radius: 4px;
 }
 .logo-color {
-  color: rgb(230, 106, 4);
+  color: rgb(237, 167, 15);
 }
 
+.logo-column {
+  position: relative;
+}
+
+.image-container {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 .logo-image {
   border-radius: 3px;
-  position: absolute;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
 }
 
+
 .layout {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .contact-button {
   border: none;
-  background: rgba(230, 106, 4);
+  background: rgba(237, 167, 15);
   color: #e9e9e9 !important;
   font-weight: 900;
   text-align: center;
@@ -203,7 +220,7 @@ hr {
 }
 
 .contact-button:hover {
-  color: rgba(230, 106, 4) !important;
+  color: rgba(237, 167, 15  ) !important;
   font-weight: 900 !important;
   letter-spacing: 2px;
   background: rgb(230, 230, 230);
