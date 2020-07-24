@@ -5,8 +5,8 @@
       <div
         class="hero-body has-text-weight-bold shift-hero columns"
       >
-      <div class="column is-1 is-hidden-tablet"></div>
-        <div class="column is-4-fullhd is-4-widescreen is-5-desktop is-7-tablet is-narrow-mobile"
+      <div class="column is-1 is-hidden-desktop"></div>
+        <div class="column is-4-fullhd is-4-widescreen is-5-desktop is-9-tablet is-11-mobile"
           id="blurred-box"
           data-aos="slide-right"
           data-aos-duration="2000"
@@ -17,7 +17,7 @@
         >
           <div class="columns is-centered is-mobile">
             <div class="column is-10 is-9-mobile is-10-tablet">
-              <div class="title is-2 has-text-white has-text-centered pt-3">
+              <div class="title is-3 has-text-white has-text-centered pt-3">
                 Engineered Solutions
                 <br />with a
                 <div

@@ -409,7 +409,7 @@ export default {
 }
 .cta {
   height: 80%;
-  min-width: 75px;
+  min-width: 90px;
   /* max-width: 100px; */
   color: black;
   z-index: 1;
@@ -417,7 +417,7 @@ export default {
 }
 .number {
   height: 80%;
-  min-width: 75px;
+  min-width: 90px;
   /* max-width: 100px; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
