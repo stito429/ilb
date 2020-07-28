@@ -119,7 +119,7 @@ export default {
   /* min-height: 100vh; */
 }
 .hero-bg {
-  background: rgb(204, 139, 40) 0%;
+  background: rgb(201, 160, 71) 0%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -137,7 +137,7 @@ export default {
 .hero-fade-effect {
   display: block;
   border: none;
-  color: rgb(199, 199, 199);
+  color: rgb(201, 160, 71);
   height: 1px;
   background: black;
   background: -webkit-gradient(
@@ -147,7 +147,7 @@ export default {
     10% 90%,
     553,
     from(rgb(193, 193, 193)),
-    to(rgb(204, 139, 40))
+    to(rgb(201, 160, 71))
   );
 }
 .heading-fade-effect {
@@ -160,26 +160,26 @@ export default {
     0,
     100% 10%,
     555,
-    from(rgb(204, 139, 40)),
+    from(rgb(201, 160, 71)),
     to(rgba(201, 201, 201, 0.756))
   );
 }
 .engraved-text-hero {
   color: rgb(214, 214, 214);
-  text-shadow: 1px 1px rgb(204, 139, 40), -1px -1px rgb(117, 115, 114);
+  text-shadow: 1px 1px rgb(201, 160, 71), -1px -1px rgb(117, 115, 114);
 }
 
 .engraved-text-header {
-  color: rgb(204, 139, 40);
+  color: rgb(201, 160, 71);
   text-shadow: 1px 0px rgb(191, 191, 191), 0px -1px rgb(67, 67, 67);
 }
 
 hr {
-  border: 2px solid rgb(204, 139, 40);
+  border: 2px solid rgb(201, 160, 71);
   border-radius: 4px;
 }
 .logo-color {
-  color: rgb(204, 139, 40);
+  color: rgb(201, 160, 71);
 }
 
 .logo-column {
@@ -207,7 +207,7 @@ hr {
 
 .contact-button {
   border: none;
-  background: rgba(204, 139, 40);
+  background: rgba(201, 160, 71);
   color: #e9e9e9 !important;
   font-weight: 900;
   text-align: center;
@@ -220,7 +220,7 @@ hr {
 }
 
 .contact-button:hover {
-  color: rgba(204, 139, 40  ) !important;
+  color: rgba(201, 160, 71) !important;
   font-weight: 900 !important;
   letter-spacing: 2px;
   background: rgb(230, 230, 230);
