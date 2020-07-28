@@ -74,7 +74,7 @@
                     "
                   />
                 </figure>
-                                <figure class="image product-image is-hidden-tablet">
+                <figure class="image product-image is-hidden-tablet">
                   <img
                     :src="
                       require('../../assets/images/product-photos/sg-wrt5.png')
@@ -355,6 +355,5 @@ hr {
 .product-image {
   max-width: 100%px;
   float: right;
-  
 }
 </style>

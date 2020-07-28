@@ -2,98 +2,94 @@
   <section>
     <!-- hero -->
     <section class="hero bg is-fullheight section">
-      <div
-        class="hero-body has-text-weight-bold shift-hero columns"
-      >
-      <div class="column is-1 is-hidden-desktop"></div>
-        <div class="column is-4-fullhd is-4-widescreen is-5-desktop is-9-tablet is-11-mobile"
+      <div class="hero-body has-text-weight-bold shift-hero columns ">
+        <div
+          class="column is-4-fullhd is-4-widescreen is-6-desktop is-7-tablet"
           id="blurred-box"
           data-aos="slide-right"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
           data-aos-easing="ease-in-out"
           data-aos-once="true"
           data-aos-offset="400"
           data-aos-delay="0"
         >
-          <div class="columns is-centered is-mobile">
-            <div class="column is-10 is-9-mobile is-10-tablet">
-              <div class="title is-3 has-text-white has-text-centered pt-3">
-                Engineered Solutions
-                <br />with a
-                <div
-                  class="title is-1 has-text-weight-bold highlighted underlined"
-                  data-aos="fade-in"
-                  data-aos-duration="2000"
-                  data-aos-easing="ease-in"
-                  data-aos-once="true"
-                  data-aos-offset="400"
-                  data-aos-delay="1500"
-                >
-                  Global Reach
-                  <br />
-                </div>
+          <div class>
+            <div class="title is-2 has-text-white has-text-centered">
+              Engineered Solutions
+              <br />with a
+              <div
+                class="title is-1 has-text-weight-bold highlighted underlined"
+                data-aos="fade-in"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in"
+                data-aos-once="true"
+                data-aos-offset="400"
+                data-aos-delay="1500"
+              >
+                Global Reach
+                <br />
               </div>
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-12 ">
-                  <div class="highlighted is-size-4">
-                    {{ heroProductsLeft }}
-                  </div>
-                  <div class="has-text-white is-size-6">
-                    {{ heroProductsRight }}
-                  </div>
+            </div>
+            <!-- <div class="columns is-centered"> -->
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-9 highlighted is-size-5 shift-hero-phrases">
+                <div class="highlighted is-size-4" >
+                  {{ heroProductsLeft }}
                 </div>
-              </div>
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-9">
-                  <div class="highlighted is-size-4">
-                    {{ heroDesignLeft }}
-                  </div>
-                  <div class="has-text-white is-size-6">
-                    {{ heroDesignRight }}
-                  </div>
-                </div>
-              </div>
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-9">
-                  <div class="highlighted is-size-4">
-                    {{ heroServicesLeft }}
-                  </div>
-                  <div class="has-text-white is-size-6">
-                    {{ heroServicesRight }}
-                  </div>
-                </div>
-              </div>
-
-              <!-- </div> -->
-
-              <div class="columns is-centered">
-                <div class="column is-11 has-text-centered">
-                  <div class="has-text-centered">
-                    <button id="" class="is-size-4 contact-button">
-                      <a @click="$modal.show('contact-form')">
-                        Click Here and Share Your Needs With Us</a
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="columns is-centered">
-                <div class="column is-11 has-text-centered" id>
-                  <span class="has-text-white">
-                    {{ heroResidentialLeft }}
-                    <div class="highlighted">{{ heroresidentialRight }}</div>
-                  </span>
-                  <div class="has-text-centered pb-3">
-                    <router-link to="/products/us-liner" tag="button"
-                      >Click Here</router-link>
-                  </div>
+                <div class="has-text-white is-size-6">
+                  {{ heroProductsRight }}
                 </div>
               </div>
             </div>
-           
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-9 highlighted is-size-5">
+                <div class="highlighted is-size-4">
+                  {{ heroDesignLeft }}
+                </div>
+                <div class="has-text-white is-size-6">
+                  {{ heroDesignRight }}
+                </div>
+              </div>
+            </div>
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-9 highlighted is-size-5">
+                <div class="highlighted is-size-4">
+                  {{ heroServicesLeft }}
+                </div>
+                <div class="has-text-white is-size-6">
+                  {{ heroServicesRight }}
+                </div>
+              </div>
+            </div>
+
+            <!-- </div> -->
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-11 has-text-centered">
+              <div class="has-text-centered">
+                <button id="hero-button" class="is-size-4">
+                  <a @click="$modal.show('contact-form')">
+                    Click Here and Share Your Needs With Us</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-11 has-text-centered" id>
+              <span class="has-text-white">
+                {{ heroResidentialLeft }}
+                <div class="highlighted">{{ heroresidentialRight }}</div>
+              </span>
+              <div class="has-text-centered" id="residential-button">
+                <router-link to="/products/us-liner" tag="button"
+                  >Click Here</router-link
+                >
+                <br />
+              </div>
+            </div>
           </div>
         </div>
-         <div class="column is-1 is-hidden-desktop"></div>
       </div>
     </section>
     <!-- Logo Intro -->
@@ -105,7 +101,7 @@
           <figure
             class="image is-3-by-1"
             data-aos="zoom-out"
-            data-aos-duration="1500"
+            data-aos-duration="750"
             data-aos-anchor-placement="bottom-bottom"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
@@ -118,18 +114,16 @@
           class="column is-10-mobile is-offset-1-mobile is-4-widescreen is-5-desktop is-10-tablet"
         >
           <div class="columns ">
-            <div
-              class="column is-12-mobile"
-              data-aos="fade-up-left"
-              data-aos-duration="2000"
-              data-aos-offset="400"
-              data-aos-once="true"
-            >
+            <div class="column is-12-mobile">
               <div
                 v-for="benefit in benefits"
                 :key="benefit"
                 v-bind:href="benefit"
                 class="engraved-text is-size-4 has-text-weight-bold benefit-box has-text-centered-touch"
+                data-aos="fade-up-left"
+                data-aos-duration="1000"
+                data-aos-offset="400"
+                data-aos-once="true"
               >
                 {{ benefit }}
               </div>
@@ -146,24 +140,23 @@
           <h2
             class="title is-2 highlighted has-text-centered shadowed"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-once="true"
-            data-aos-offset="450"
+            data-aos-offset="400"
           >
             Why is ILB Different?
           </h2>
         </div>
       </div>
 
-      <div class="columns is-multiline is-mobile is-centered">
+      <div class="columns is-multiline is-vcentered is-centered">
         <div class="column is-5-desktop is-11-mobile" id->
           <div
             class=""
             data-aos="slide-right"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             data-aos-once="true"
-            data-aos-offset="450"
-            data-aos-delay=""
+            data-aos-offset="500"
           >
             <h2 class="title is- shadowed highlighted has-text-centered">
               One Point of Contact
@@ -185,9 +178,9 @@
           <figure
             class="image"
             data-aos="flip-right"
-            data-aos-delay="500"
-            data-aos-offset="500"
-            data-aos-duration="2000"
+            data-aos-delay="1000"
+            data-aos-offset="480"
+            data-aos-duration="1500"
             data-aos-once="true"
           >
             <img src="./../assets/images/img/contact.jpg" id="contact-photo" />
@@ -204,55 +197,44 @@
           id="product-cats-box"
           data-aos="flip-left"
           data-aos-delay="1000"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
           data-aos-offset="250"
           data-aos-once="true"
         >
-          <div
-            class="columns is-mobile is-centered"
-            id="desktop-test"
-          >
-            <div class="column is-mobile is-half">
-              <div class="columns is-centered is-mobile">
-                <div class="column is-hidden-desktop pr-5"></div>
-                <div class="column is-narrow">
-                  <ul>
-                    <li v-for="productCat in productCats1" :key="productCat">
-                      <span class="highlighted icon is-large" id="product-cat">
-                        <i class="fas fa-check fa"></i>
-                      </span>
-                      <span
-                        class="has-text-weight-bold has-text-white"
-                        id="product-cat"
-                        v-bind:href="productCat"
-                        v-html="productCat"
-                      ></span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="column"></div>
-              </div>
+          <div class="columns has-text-black is-mobile" id="desktop-test">
+            <div class="column is-6-desktop is-half-mobile">
+              <ul class="">
+                <li
+                  v-for="productCat in productCats1"
+                  :key="productCat"
+                  id="product-cat-list"
+                >
+                  <span class="highlighted icon is-large" id="product-cat">
+                    <i class="fas fa-check fa"></i>
+                  </span>
+                  <span
+                    class="has-text-weight-bold has-text-white"
+                    id="product-cat"
+                    v-bind:href="productCat"
+                    v-html="productCat"
+                  ></span>
+                </li>
+              </ul>
             </div>
-            <div class="column is-mobile is-half">
-              <div class="columns is-centered is-mobile">
-                <!-- <div class="column"></div> -->
-                <div class="column is-narrow">
-                  <ul>
-                    <li v-for="productCat in productCats2" :key="productCat">
-                      <span class="highlighted icon is-large" id="product-cat">
-                        <i class="fas fa-check fa"></i>
-                      </span>
-                      <span
-                        class="has-text-weight-bold has-text-white"
-                        id="product-cat"
-                        v-bind:href="productCat"
-                        v-html="productCat"
-                      ></span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="column"></div>
-              </div>
+            <div class="column is-5-desktop is-half-mobile">
+              <ul class="">
+                <li v-for="productCat in productCats2" :key="productCat">
+                  <span class="highlighted icon is-large" id="product-cat">
+                    <i class="fas fa-check fa"></i>
+                  </span>
+                  <span
+                    class="has-text-weight-bold has-text-white"
+                    id="product-cat"
+                    v-bind:href="productCat"
+                    v-html="productCat"
+                  ></span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -521,7 +503,7 @@
               class="box company has-text-white"
               data-aos="fade-up-left"
               data-aos-duration="1000"
-              data-aos-offset="350"
+              data-aos-offset="300"
               data-aos-once="true"
             >
               <article class="media">
@@ -559,7 +541,7 @@
               class="box company has-text-white"
               data-aos="fade-up-right"
               data-aos-duration="1000"
-              data-aos-offset="350"
+              data-aos-offset="300"
               data-aos-delay="1000"
               data-aos-once="true"
             >
@@ -773,7 +755,7 @@
       >
       from
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-      <p>ILB © Copyright and Issue Date: March 2020</p>
+      <p>ILB Copyright and Issue Date: March 2020</p>
     </footer>
   </section>
 </template>
@@ -963,18 +945,17 @@ export default {
 };
 </script>
 
-<style scoped>
+<style css-scoped>
 .hero.bg {
   background: linear-gradient(to right, #00000000, #ffffff00),
-    url("../assets/images/img/hero-bg-with-logo-2048.jpg") 
+    url("../assets/images/img/hero-bg-with-logo-2048.jpg") no-repeat center left
       fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-
-  background-position: right;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 #blurred-box {
@@ -997,72 +978,16 @@ export default {
 .underlined {
   text-decoration: underline;
 }
-
-.contact-button {
-  border: none;
-  background: rgb(230, 106, 4);
-  color: #e9e9e9 !important;
-  font-weight: 900;
-  text-align: center;
-  padding: 20px;
-  text-transform: uppercase;
-  border-radius: 3px;
-  display: inline-block;
-  transition: all 0.3s ease 0s;
-  width: 100%;
-  -webkit-animation: glowing 1000ms infinite;
-  -moz-animation: glowing 1000ms infinite;
-  -o-animation: glowing 1000ms infinite;
-  animation: glowing 2000ms infinite;
+#residential-button {
+  padding-bottom: 5px;
 }
-
-.contact-button a {
-  color: white;
-}
-
-.contact-button:hover {
-  color: rgb(226, 115, 11) !important;
-  font-weight: 900 !important;
-  letter-spacing: .3px;
-  background: rgb(230, 230, 230) !important;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  transition: all 0.2s ease 0s;
-}
-
-.contact-button:hover a {
-  color: rgb(226, 115, 11) !important
-}
-
-/* @-webkit-keyframes glowing {
-  0% { background-color: #E2730B; -webkit-box-shadow: 0 0 3px #E2730B; }
-  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-} */
-
-/* @-moz-keyframes glowing {
-  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-} */
-
-/* @-o-keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-} */
-
-@keyframes glowing {
-  0% { background-color: #E2730B; box-shadow: 0 0 5px #E2730B; }
-  50% { background-color: #db7c22; box-shadow: 0 0 15px #b86314; }
-  100% { background-color: #E2730B; box-shadow: 0 0 4px #E2730B; }
-}
-
-
 .highlighted {
   color: #eda70f;
 }
-
+.shift-hero-phrases {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 .hero-subtitle-head {
   border-bottom: rgb(0, 0, 0);
 }
@@ -1079,14 +1004,12 @@ export default {
   font-size: 16px;
   font-weight: 900;
 }
-
 .card-header {
   padding-top: 10px;
 }
 .card {
   height: 100%;
 }
-
 .is-shady {
   animation: flyintoright 0.9s backwards;
   /* background: #fff; */
@@ -1100,12 +1023,10 @@ export default {
 .is-shady:hover {
   box-shadow: 0 10px 16px #4d4119, 0 6px 6px rgba(0, 0, 0, 0.6);
 }
-
 .hero-box {
   background: rgba(235, 212, 163, 0.5);
   opacity: 80%;
 }
-
 /* .texture-background {
   background: linear-gradient(
       rgba(130, 129, 126, 0.536),
@@ -1118,7 +1039,6 @@ export default {
   -o-background-size: cover;
   background-size: cover;
 } */
-
 .logo-background {
   background: -webkit-linear-gradient(
       top,
@@ -1136,7 +1056,6 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 /* .carbon-background {
   background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
     linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
@@ -1167,10 +1086,9 @@ export default {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
   max-width: 5000px;
 }
-/* #hero-button {
+#hero-button {
   font-family: arial;
   font-weight: bold;
   color: rgb(255, 255, 255) !important;
@@ -1181,16 +1099,14 @@ export default {
   border-radius: 2px;
   border: 2px groove #d7d9ca;
   background: #da5502;
-} */
-
+}
 #hero-button a {
   color: white;
 }
-.classnames {
+.classnames{
   -moz-box-shadow: inset 0px 1px 17px -3px #8c8c8c;
   -webkit-box-shadow: inset 0px 1px 17px -3px #8c8c8c;
   box-shadow: inset 0px 1px 17px -3px #8c8c8c;
-
   background: -webkit-linear-gradient(
     top,
     #acacac 0%,
@@ -1244,11 +1160,9 @@ export default {
   position: relative;
   top: 1px;
 }
-
 #landing-logo {
   max-width: 300px;
 }
-
 #product-cats {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.776), rgba(0, 0, 0, 0)),
     url("../assets/images/img/welding2-hd.jpg") no-repeat center center fixed;
@@ -1256,75 +1170,29 @@ export default {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
   max-width: 5000px;
 }
-/* Extra Small Screen  ----------- */
-@media only screen and (max-width: 670px) {
-  #desktop-test {
-    /* background: rgb(13, 148, 172); */
-  }
-  ul li {
-    list-style-position: outside;
-    text-indent: -3.3em;
-    padding: 1px 10 3px 6px;
-  }
-
-  ul {
-    position: relative;
-    left: 1.4em;
-  }
-
-  .several-solutions {
-    padding-left: em;
-  }
-
-  #several-solutions {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  #product-cats-box {
-    background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.796),
-      rgba(0, 0, 0, 0.76)
-    );
-    border: 5px outset #a4a09e;
-    border-radius: 1px 1px 1px 1px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  #product-cat {
-    font-size: 1em;
-  }
-}
 /* Small Screen  ----------- */
-@media only screen and (min-width: 671px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   #desktop-test {
-    /* background: rgb(225, 25, 192); */
+    background: rgb(225, 25, 192);
   }
   ul li {
     list-style-position: outside;
     text-indent: -3em;
     padding: 1px 10 3px 6px;
   }
-
   ul {
     position: relative;
-    left: 2.4em;
+    left: 1.8em;
   }
-
   .several-solutions {
     padding-left: em;
   }
-
   #several-solutions {
     display: flex;
     flex-direction: column-reverse;
   }
-
   #product-cats-box {
     background: linear-gradient(
       to right,
@@ -1336,22 +1204,19 @@ export default {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
   #product-cat {
-    font-size: 2em;
+    font-size: 1.1em;
   }
 }
 /*  */
-
 /* Tablets (portrait) ----------- */
 @media only screen and (min-width: 769px) {
   #desktop-test {
-    /* background: rgb(8, 162, 8); */
+    background: rgb(8, 162, 8);
   }
   #product-cat {
     font-size: 1.5em;
   }
-
   #product-cats-box {
     background: linear-gradient(
       to right,
@@ -1363,40 +1228,34 @@ export default {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
   ul li {
     list-style-position: outside;
     text-indent: -3em;
     padding: 1px 10 3px 6px;
   }
-
   ul {
     position: relative;
     left: 2em;
   }
 }
 /*  */
-
 /* Desktop  ----------- */
 @media only screen and (min-width: 1024px) and (max-width: 1361px) {
   #desktop-test {
-    /* background: rgb(50, 62, 226); */
+    background: rgb(50, 62, 226);
   }
   ul li {
     list-style-position: outside;
     text-indent: -3em;
     padding: 1px 10 3px 6px;
   }
-
   ul {
     position: relative;
     left: 3em;
   }
-
   .several-solutions {
     padding-left: 1em;
   }
-
   #product-cats-box {
     background: linear-gradient(
       to right,
@@ -1408,7 +1267,6 @@ export default {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
   #product-cat {
     font-size: 1.5em;
   }
@@ -1417,7 +1275,7 @@ export default {
 /* Widescreen  ----------- */
 @media only screen and (min-width: 1362px) {
   #desktop-test {
-    /* background: rgb(253, 80, 0); */
+    background: rgb(253, 80, 0);
   }
   ul li {
     list-style-position: outside;
@@ -1431,7 +1289,6 @@ export default {
   .several-solutions {
     padding-left: 1em;
   }
-
   #product-cats-box {
     background: linear-gradient(
       to right,
@@ -1443,13 +1300,11 @@ export default {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
   #product-cat {
     font-size: 2em;
   }
 }
 /*  */
-
 #text-background {
   background: linear-gradient(
     to right,
@@ -1457,7 +1312,6 @@ export default {
     rgba(0, 0, 0, 0.009)
   );
 }
-
 #product-companies {
   background: linear-gradient(
       to right,
@@ -1470,12 +1324,9 @@ export default {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
   max-width: 5000px;
-
   /* Set up proportionate scaling */
 }
-
 .card-background {
   background: -webkit-linear-gradient(
     top,
@@ -1486,65 +1337,52 @@ export default {
     #e1e1e1 100%
   );
 }
-
 .benefits-box {
   border-left: 6px solid #eda70f;
-
   padding-left: 6px;
   max-height: 300px;
 }
-
 .benefit-box {
   border-bottom: 5px ridge #bab5b5;
   border-radius: 3px;
   padding-bottom: 0px;
 }
-
 .title {
   font-variant: small-caps;
   font-family: "Arial Black", Gadget, sans-serif;
 }
-
 .company {
   background: rgba(114, 114, 114, 0);
 }
-
 hr {
   border: 0;
   border-top: 1px solid #8c8c8c;
   border-bottom: 1px solid #fff;
 }
-
 ul {
   list-style-position: outside;
 }
-
 .engraved-text {
   color: rgba(24, 24, 24, 0.906);
   /* text-shadow: 0px -1px 0px rgb(223, 223, 223); 50% black coming from the top */
   text-shadow: 1px 1px rgb(205, 205, 205), -1px -1px rgb(101, 101, 101);
 }
-
 .products-cats-text {
   color: rgb(253, 80, 0);
   text-shadow: -1px -3px 1px rgb(62, 45, 1);
 }
-
 #contact-photo {
   border: 5px outset #a4a09e;
   border-radius: 1px 1px 1px 1px;
   max-height: 300px;
   max-width: 100%;
 }
-
 i.fa::before {
   font-size: 40px;
 }
-
 .shadowed {
   text-shadow: -10px -10px 10px #000000;
 }
-
 #landing-footer {
   background: -webkit-linear-gradient(
     top,
