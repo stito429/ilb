@@ -192,7 +192,7 @@ export default {
         {
           name: "ITC-213",
           description:
-            "An outstanding ceramics coatings for metal. It is formulated to protect metals and graphite surfaces including those exposed to molton metals."
+            "An outstanding ceramics coatings for metal. It is formulated to protect metals and graphite surfaces including those exposed to molton metals before the final coat is applied."
         },
         {
           name: "ITC-296A",
@@ -218,7 +218,7 @@ export default {
       photosHeader: "Examples of Applications",
       contactHeader: "Contact Us",
       contact:
-        "Please contact ILB by phone or e-mail if you have questions and to get further information on how we can help you with your furnace refractory life longevity.",
+        "Please contact ILB by phone or e-mail if you have any questions about how we can help extend your furnace refractory life longevity.",
       footer:
         "Publish Date: March 2020--products and applications are © Copyright of ITC Coatings"
     };

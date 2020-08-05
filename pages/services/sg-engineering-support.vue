@@ -100,7 +100,7 @@ export default {
     //     "These benefits and our marketing materials detail the value-added services and products that ILB can deliver to its customers, which are beneficial from an operations payback standpoint.",
       contactHeader: "Contact Us",
       contact:
-        "Please contact ILB by phone or e-mail if you have questions and to get further information on how we can help you with your engineering and operational challenges.",
+        "Please contact ILB by phone or e-mail if you have any questions about getting further information on how we can assist you with your engineering and operational needs.",
       paragraph2:
         "For any engineering support you may need, ILB and Saint-Gobain will figure it out as a team.",
       footer:

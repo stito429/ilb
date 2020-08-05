@@ -79,7 +79,7 @@
               </div>
               <div class="columns is-centered">
                 <div class="column is-11 has-text-centered" id>
-                  <span class="has-text-white">
+                  <span class="has-text-white is-size-5">
                     {{ heroResidentialLeft }}
                     <div class="highlighted">{{ heroresidentialRight }}</div>
                   </span>
@@ -621,7 +621,7 @@
                       HeatCor products are constructed from a 3D manufacturing
                       process that utilizes silicon carbide to increase the
                       performance of any furnace radiant tube (e.g., straight
-                      tube, u-tube, tri-tube, w-tube, double-p tube.
+                      tube, u-tube, tri-tube, w-tube, double-p tube).
                     </p>
                   </div>
                 </div>
@@ -1043,11 +1043,11 @@ export default {
   50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
   100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
 } */
-@keyframes glowing {
+/* @keyframes glowing {
   0% { background-color: #E2730B; box-shadow: 0 0 5px #E2730B; }
   50% { background-color: #db7c22; box-shadow: 0 0 15px #b86314; }
   100% { background-color: #E2730B; box-shadow: 0 0 4px #E2730B; }
-}
+} */
 .highlighted {
   color: #eda70f;
 }

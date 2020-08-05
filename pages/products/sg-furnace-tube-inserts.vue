@@ -187,11 +187,11 @@ export default {
       ],
       paragraph4Header: "Benefits",
       paragraph4:
-        "Based on these benefits and our marketing material details, which ILB can share with our customers, it makes sense to consider SpyroCor from an operations payback standpoint.  We will work with your team to achieve your performance goals and maximize your cost savings.",
+        "Based on these benefits and our marketing material details, which ILB can share with customers, it makes sense to consider SpyroCor from an operations payback standpoint.  We will work with your team to achieve your performance goals and maximize your cost savings.",
       photosHeader: "Tube Inserts",
-      contactHeader: "Contact Us",
+      contactHeader: "Contact",
       contact:
-        "Please contact ILB by phone or e-mail us to get further details on how we can help solve your furnace burner operation issues and challenges",
+        "Please contact ILB by phone or e-mail us to get further details on how we can help solve your furnace burner operation issues and challenges.",
       footer:
         "Publish Date: March 2020--products and applications are © Copyright of Saint-Gobain"
     };

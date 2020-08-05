@@ -90,7 +90,7 @@ export default {
     //     "These benefits and our marketing materials detail the value-added services and products that ILB can deliver to its customers, which are beneficial from an operations payback standpoint.",
       contactHeader: "Contact Us",
       contact:
-        "Please contact ILB by phone or e-mail us if you have any questions or need any further information on the services we can provide.",
+        "Please contact ILB by phone or e-mail if you have any questions about getting further information on these types of support services.",
       footer:
         "Publish Date: March 2020--service applications offered are the © Copyright of ILB and its support group"
     };

@@ -250,11 +250,11 @@ export default {
       ],
       paragraph5Header: "More Info",
       paragraph5:
-        "A close review of these products and their many uses show that they have significant merit in protecting shed inner walls, any overhang or walkway, chicken coops, metal building roofs or side walls, and many other applications such as being used as a caisson or concrete form.",
+        "A close review of these products and their many uses show that they have significant merit in protecting shed inner walls, any overhang or walkway, chicken coops, metal buildings, roofs or side walls, and many other applications such as being used as a caisson or concrete form.",
       photosHeader: "Sample Applications",
       contactHeader: "Contact Us",
       contact:
-        "If you have questions or would like to know more about US Liner products and their potential uses at your facility, please contact ILB by phone or e-mail us to get further details on how we can assist with your current needs.",
+        "Please contact ILB by phone or e-mail to get further information on how we can assist you with your current needs.",
       footer:
         "Publish Date: March 2020--products and applications are © Copyright of US Liner and ILB"
     };
