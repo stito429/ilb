@@ -193,7 +193,7 @@
                       <input
                         class="input"
                         type="email"
-                        name="Email"
+                        name="Email Address"
                         placeholder="Email Address"
                         v-validate="'required|email'"
                         v-model="Email"
