@@ -176,7 +176,7 @@
               your industrial, commerical, and residential needs. There's no
               need to coordinate with multiple companies for your next project.
               Let ILB combine and match products and services for all of your
-              applications.
+              application needs.
             </div>
           </div>
         </div>
@@ -380,7 +380,7 @@
             <div class="card-content">
               <div class="content">
                 <p class="is-size-5 has-text-black">
-                  Together, our highest levels of EXPERTISE and EXPERIENCE in
+                  Together, our highest levels of EXPERTISE and EXPERIENCE is used in
                   choosing the right products and services for each unique job.
                 </p>
               </div>
@@ -446,9 +446,9 @@
             <div class="card-content">
               <div class="content">
                 <p class="is-size-5 has-text-black">
-                  Whatever your needs are we listen, learn, and with your
-                  approval, will implement the best solution moving forward to
-                  achieve YOUR highest expectations.
+                  Whatever your needs are we take action by listening and learning; 
+                  then with your approval we will implement the best solution moving forward 
+                  to achieve your highest expectation. 
                 </p>
               </div>
             </div>
@@ -479,7 +479,7 @@
             <div class="card-content">
               <div class="content">
                 <p class="is-size-5 has-text-black">
-                  Our mission is to complete each customer request with the
+                  Our mission is to complete each customer delivery request with the
                   highest level of professionalism and INTEGRITY while keeping
                   your expectations in mind.
                 </p>
@@ -836,7 +836,7 @@ export default {
         {
           title: "Proficiency",
           description:
-            "We empower together our highest levels of EXPERTISE and EXPERIENCE are in choosing the right products and services for the job.",
+            "We empower together our highest levels of EXPERTISE and EXPERIENCE is used in choosing the right products and services for the job.",
           iconPath: "./../assets/icon-handshake.png"
         },
         {
@@ -848,18 +848,18 @@ export default {
         {
           title: "Personalization",
           description:
-            "Whatever your needs are; we listen, we learn, and with your approval, we will implement the best solution moving forward to reach YOUR highest expectations.",
+            "Whatever your needs are we take action by listening and learning; then with your approval we will implement the best solution moving forward to achieve your highest expectation.",
           iconPath: "./../assets/icon-handshake.png"
         },
         {
           title: "Mission",
           description:
-            "Our mission is to complete each CUSTOMER request with the highest level of professionalism and integrity while keeping your expectations in mind.",
+            "Our mission is to complete each CUSTOMER delivery request with the highest level of professionalism and integrity while keeping your expectations in mind.",
           iconPath: "./../assets/icon-handshake.png"
         }
       ],
       productCats1: ["Ceramics", "Sheeting", "Refractories"],
-      productCats2: ["Coating", "Adhesives", "Engineering <br/>Services"],
+      productCats2: ["Coatings", "Adhesives", "Engineering <br/>Services"],
       customers: [
         "Steel",
         "Cement",

@@ -12,7 +12,7 @@
     height="auto"
   >
     <div>
-      <ValidationObserver v-slot="{ handleSubmit }">
+      <ValidationObserver v-slot="{ submit }">
         <form
           action="/"
           netlify
