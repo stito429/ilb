@@ -611,14 +611,14 @@
                   <div class="content">
                     <p class="is-size-5">
                       <strong class="title is-4 highlighted"
-                        >Saint-Gobain SpyroCor</strong
+                        >Saint-Gobain SpyroCor®</strong
                       >
                       <br />
                       <small>Worcester, MA</small>
-                      <br />The Saint-Gobain SpyroCor Group, offers a series of
+                      <br />The Saint-Gobain SpyroCor® Group, offers a series of
                       silicon carbide products for the galvanizing, annealing,
-                      and reheat furnace areas. Their proprietary SpyroCor and
-                      HeatCor products are constructed from a 3D manufacturing
+                      and reheat furnace areas. Their proprietary SpyroCor® and
+                      HeatCor™ products are constructed from a 3D manufacturing
                       process that utilizes silicon carbide to increase the
                       performance of any furnace radiant tube (e.g., straight
                       tube, u-tube, tri-tube, w-tube, double-p tube).
@@ -886,11 +886,11 @@ export default {
           route: "/products/sgwrt"
         },
         {
-          name: "Saint-Gobain SpyroCor",
+          name: "Saint-Gobain SpyroCor\xAE",
           location: "",
           description:
-            "The Saint-Gobain SpyroCor Group, headquartered in Worcester, MA, offers a series of silicon carbide products for the galvanizing, annealing, and reheat furnace areas. Their proprietary SpyroCor and HeatCor products are constructed from a 3D manufacturing process that utilizes silicon carbide to increase the performance of any furnace radiant tube (e.g., straight tube, u-tube, tri-tube, w-tube, and double-p tube).",
-          route: "/products/sg-spyrocor"
+            "The Saint-Gobain SpyroCor\xAE Group, headquartered in Worcester, MA, offers a series of silicon carbide products for the galvanizing, annealing, and reheat furnace areas. Their proprietary SpyroCor\xAE and HeatCor™ products are constructed from a 3D manufacturing process that utilizes silicon carbide to increase the performance of any furnace radiant tube (e.g., straight tube, u-tube, tri-tube, w-tube, and double-p tube).",
+          route: "/products/sg-SpyroCor\xAE"
         },
         {
           name: "Saint-Gobain Refractories and Linings",
