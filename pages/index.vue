@@ -816,7 +816,7 @@ export default {
       heroServicesRight:
         "Partnerships Backed by Technical Expertise and Experience",
       heroResidentialLeft: "Looking for industrial grade products for ",
-      heroresidentialRight: "Residential or Construction Applications?",
+      heroresidentialRight: "Residential, Construction, or Farming Applications?",
       cta: "",
       intro1: "What makes ILB different?",
       intro2: "We",
